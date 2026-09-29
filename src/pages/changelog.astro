@@ -1,0 +1,29 @@
+---
+import Base from '../layouts/Base.astro';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<Base
+  title="Changelog"
+  description="Release history for AI Blog Writer with Sources, the source-backed AI draft plugin for WordPress."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Changelog', path: '/changelog/' }])]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Changelog</p>
+      <h1>Changelog</h1>
+
+      <h2 id="1-0-0">1.0.0</h2>
+      <p class="meta">Initial public release. Submitted to WordPress.org, September 2026.</p>
+      <ul>
+        <li>Bring-your-own-key drafting with OpenAI, Anthropic, Google and xAI models</li>
+        <li>Delegated and Guided workflows with user-supplied sources, outline review and provenance</li>
+        <li>Writer profiles linked to WordPress author accounts</li>
+        <li>Optional Rank Math metadata integration</li>
+        <li>Usage tracking with optional estimated cost ceilings</li>
+        <li>Retention cleanup, privacy export and erasure, and opt-in data removal on uninstall</li>
+        <li>Single-site and network activation support</li>
+      </ul>
+    </div>
+  </section>
+</Base>

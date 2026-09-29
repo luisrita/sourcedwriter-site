@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import { FAQ } from '../lib/faq';
+import { breadcrumbNode, faqNode } from '../lib/schema';
+---
+
+<Base
+  title="Frequently asked questions"
+  description="Answers about AI Blog Writer with Sources: auto-publishing, web search, supported AI models, costs, API key safety, Rank Math, multisite and accuracy."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'FAQ', path: '/faq/' }]), faqNode(FAQ)]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">FAQ</p>
+      <h1>Frequently asked questions</h1>
+      {
+        FAQ.map((item) => (
+          <details>
+            <summary>
+              <h2>{item.q}</h2>
+            </summary>
+            <p>{item.a}</p>
+          </details>
+        ))
+      }
+      <p style="margin-top:2rem">
+        Still stuck? See <a href="/docs/troubleshooting/">Troubleshooting</a> or email
+        <a href="mailto:info@sourcedwriter.com">info@sourcedwriter.com</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  details {
+    border-bottom: 1px solid var(--border);
+    padding: 0.5rem 0;
+  }
+  summary {
+    cursor: pointer;
+    list-style-position: outside;
+  }
+  summary h2 {
+    display: inline;
+    font-size: 1.15rem;
+    margin: 0;
+  }
+  details p {
+    margin: 0.5rem 0 0.75rem;
+  }
+</style>

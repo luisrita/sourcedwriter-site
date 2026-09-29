@@ -1,0 +1,54 @@
+---
+import { PLUGIN, SITE } from '../config';
+
+interface Props {
+  variant?: 'hero' | 'plain';
+}
+
+const { variant = 'plain' } = Astro.props;
+const notify = `mailto:${SITE.contactEmail}?subject=${encodeURIComponent('Tell me when AI Blog Writer is on WordPress.org')}`;
+---
+
+<div class:list={['cta', variant]}>
+  {
+    PLUGIN.wordpressOrgLive ? (
+      <>
+        <a class="btn" href={PLUGIN.wordpressOrgUrl} rel="external">
+          Get it free on WordPress.org
+        </a>
+        <a class="btn btn--ghost" href="/docs/getting-started/">
+          Setup guide
+        </a>
+      </>
+    ) : (
+      <>
+        <a class="btn" href={notify}>
+          Get notified at launch
+        </a>
+        <a class="btn btn--ghost" href="/docs/getting-started/">
+          Read the setup guide
+        </a>
+        <p class="status">Free plugin, now in WordPress.org review.</p>
+      </>
+    )
+  }
+</div>
+
+<style>
+  .cta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+  }
+  .status {
+    flex-basis: 100%;
+    margin: 0.25rem 0 0;
+    font-size: 0.95rem;
+    opacity: 0.8;
+  }
+  .hero .btn--ghost {
+    color: var(--text-hero);
+  }
+</style>

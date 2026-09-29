@@ -1,0 +1,140 @@
+---
+import Base from '../layouts/Base.astro';
+import InstallCta from '../components/InstallCta.astro';
+import { breadcrumbNode, softwareNode } from '../lib/schema';
+
+const shots = [
+  {
+    n: 2, w: 1280, h: 1571,
+    title: 'A brief, not a prompt',
+    text: 'Topic, talking points, audience, search intent, primary phrase, supporting terms, tone, length, language, market, call to action, facts to include or avoid, and up to eight source URLs.',
+    alt: 'New article brief form with topic, workflow, SEO fields, source URLs and writer profile',
+  },
+  {
+    n: 3, w: 1280, h: 984,
+    title: 'Guided source review',
+    text: 'Read the notes extracted from each source and its retrieval date. Deselect anything stale or off topic before the outline is written.',
+    alt: 'Guided source review with extracted notes and retrieval dates',
+  },
+  {
+    n: 4, w: 1280, h: 890,
+    title: 'Outline approval',
+    text: 'Edit, reorder or remove sections before any article text exists. Structural mistakes are cheapest to fix here.',
+    alt: 'Outline review screen, editable section by section',
+  },
+  {
+    n: 5, w: 1280, h: 1275,
+    title: 'A job summary you can audit',
+    text: 'Draft link, sources used, SEO suggestions and provider usage for every job.',
+    alt: 'Completed job with draft link, sources, SEO suggestions and provider usage',
+  },
+  {
+    n: 9, w: 1280, h: 844,
+    title: 'Citations, warnings and provenance in the editor',
+    text: 'The draft is core blocks with inline source links. The sidebar shows provider, model, time, warnings, sources and SEO suggestions, and lets you rewrite a single section.',
+    alt: 'Block editor with the AI Blog Writer sidebar showing provenance and warnings',
+  },
+  {
+    n: 6, w: 1280, h: 1659,
+    title: 'Writer profiles linked to real authors',
+    text: 'Voice, tone, expertise, point of view, preferred vocabulary, structure and words to avoid. Each profile maps to a WordPress author, and AI can propose one from a sample.',
+    alt: 'Writer profile editor with voice fields and AI-assisted proposal panel',
+  },
+  {
+    n: 7, w: 1280, h: 1580,
+    title: 'Settings that respect your setup',
+    text: 'Provider, model, encrypted key or wp-config.php constant, connection test, content defaults, cost ceilings and retention.',
+    alt: 'Settings screen with provider, model, API key, defaults, cost ceilings and retention',
+  },
+  {
+    n: 8, w: 1280, h: 760,
+    title: 'Usage and cost',
+    text: 'See the estimated site cost for the month and the provider connection state. Set site and per-user monthly ceilings.',
+    alt: 'Usage and cost screen showing estimated monthly cost',
+  },
+];
+---
+
+<Base
+  title="Features"
+  description="Every feature of the free AI Blog Writer with Sources plugin: brief form, source extraction, Guided review, cited drafts, writer profiles, Rank Math, cost ceilings and privacy controls."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Features', path: '/features/' }]), softwareNode()]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Features</p>
+      <h1>Everything in the free plugin</h1>
+      <p class="lead">
+        No account, no subscription and no upsell inside the plugin. You bring an API key from OpenAI, Anthropic,
+        Google or xAI, and everything else runs on your WordPress site.
+      </p>
+      <InstallCta />
+    </div>
+  </section>
+
+  {
+    shots.map((s, i) => (
+      <section class:list={['section', { 'section--soft': i % 2 === 0 }]}>
+        <div class:list={['container', 'row', { flip: i % 2 === 1 }]}>
+          <div>
+            <h2>{s.title}</h2>
+            <p>{s.text}</p>
+          </div>
+          <figure>
+            <img src={`/images/screenshot-${s.n}.png`} width={s.w} height={s.h} alt={s.alt} loading="lazy" />
+          </figure>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="section">
+    <div class="container">
+      <h2>Also included</h2>
+      <ul class="cols">
+        <li>Delegated mode that runs straight through, with a one-time review acknowledgement</li>
+        <li>Resumable WP-Cron stages, with retry and cancel</li>
+        <li>WP-CLI: <code>wp aibcg job run &lt;job-id&gt;</code></li>
+        <li>Single-site and network activation</li>
+        <li>About 30 output languages</li>
+        <li>Retention cleanup (90 days by default)</li>
+        <li>WordPress personal data export and erasure</li>
+        <li>Opt-in data removal on uninstall</li>
+        <li>A diagnostics report that leaves out keys, prompts and content</li>
+        <li>No analytics, tracking or phone-home code</li>
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .row {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .row {
+      grid-template-columns: 1fr 1.4fr;
+    }
+    .row.flip > div {
+      order: 2;
+    }
+  }
+  .row h2 {
+    margin-top: 0;
+  }
+  .row img {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: block;
+  }
+  .cols {
+    columns: 2 280px;
+    padding-left: 1.2rem;
+  }
+  .cols li {
+    break-inside: avoid;
+    margin-bottom: 0.4rem;
+  }
+</style>

@@ -1,0 +1,85 @@
+---
+import Base from './Base.astro';
+import { breadcrumbNode, articleNode } from '../lib/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  section: { name: string; path: string };
+  published?: Date;
+  updated?: Date;
+  articleType?: 'Article' | 'TechArticle';
+  markdownPath?: string;
+}
+
+const { title, description, section, published, updated, articleType, markdownPath } = Astro.props;
+const path = Astro.url.pathname;
+const crumbs = [{ name: 'Home', path: '/' }, section, { name: title, path }];
+
+const schema: object[] = [breadcrumbNode(crumbs)];
+if (published) schema.push(articleNode({ path, title, description, published, updated, type: articleType }));
+
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+
+<Base
+  title={title}
+  description={description}
+  ogType={published ? 'article' : 'website'}
+  published={published}
+  updated={updated}
+  schema={schema}
+  markdownPath={markdownPath}
+>
+  <div class="container layout">
+    <div class="main">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <ol>
+          {crumbs.slice(0, -1).map((c) => <li><a href={c.path}>{c.name}</a></li>)}
+          <li aria-current="page">{title}</li>
+        </ol>
+      </nav>
+      <article class="prose">
+        <h1>{title}</h1>
+        {
+          published && (
+            <p class="meta">
+              By <a href="/about/">Luis Rita</a> · <time datetime={published.toISOString()}>{fmt(published)}</time>
+              {updated && updated > published && (
+                <> · Updated <time datetime={updated.toISOString()}>{fmt(updated)}</time></>
+              )}
+            </p>
+          )
+        }
+        <slot />
+      </article>
+    </div>
+    {
+      Astro.slots.has('aside') && (
+        <aside class="aside">
+          <slot name="aside" />
+        </aside>
+      )
+    }
+  </div>
+</Base>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+  }
+  .prose {
+    overflow-wrap: break-word;
+  }
+  @media (min-width: 960px) {
+    .layout:has(.aside) {
+      grid-template-columns: minmax(0, 1fr) 260px;
+    }
+    .aside {
+      order: 2;
+      padding-top: 4.5rem;
+    }
+  }
+</style>

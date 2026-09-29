@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<Base
+  title="About"
+  description="Who builds AI Blog Writer with Sources, why it is source-first, and how to get in touch."
+  schema={[
+    breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'About', path: '/about/' }]),
+    { '@type': 'AboutPage', url: `${SITE.url}/about/`, mainEntity: { '@id': `${SITE.url}/about/#person` } },
+  ]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">About</p>
+      <h1>Built by Luis Rita</h1>
+      <p class="lead">
+        {SITE.productName} is an independent WordPress plugin designed, built and supported by {SITE.author.name}.
+      </p>
+
+      <h2>Why source-first</h2>
+      <p>
+        Generating a draft has become easy. It's now built into editors, hosts and SEO plugins. What's still hard is
+        publishing AI-assisted content you can defend: knowing where each claim came from, spotting what went stale, and
+        keeping a consistent voice. This plugin is built around that problem. It writes from sources you choose, cites
+        them, and stops at a draft so a person decides what goes live.
+      </p>
+
+      <h2>Principles</h2>
+      <ul>
+        <li><strong>Drafts, never auto-publish.</strong> A person stays responsible for what's published.</li>
+        <li><strong>Your data stays yours.</strong> Your key, your provider, your database. Nothing is sent to the author.</li>
+        <li><strong>Plain about limits.</strong> No ranking, traffic or accuracy guarantees.</li>
+        <li><strong>WordPress-native.</strong> Core blocks, real author accounts and standard privacy tools.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Support, bug reports, security issues and partnership questions:
+        <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. For bugs, attach the JSON report from
+        <strong>AI Blog Writer → Diagnostics</strong>. It leaves out keys and content.
+      </p>
+    </div>
+  </section>
+</Base>

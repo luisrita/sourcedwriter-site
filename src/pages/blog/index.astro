@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { breadcrumbNode } from '../../lib/schema';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft)).sort(
+  (a, b) => b.data.published.valueOf() - a.data.published.valueOf(),
+);
+const fmt = (d: Date) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+---
+
+<Base
+  title="Guides"
+  description="Practical guides to AI-assisted writing in WordPress: source-backed drafting, reviewing AI articles, verifying claims and using your own AI API key safely."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Guides', path: '/blog/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Guides</p>
+      <h1>Publishing AI-assisted content you can stand behind</h1>
+      <p class="lead">Workflows, checklists and security notes for WordPress teams that use AI to draft.</p>
+      <ul class="posts">
+        {
+          posts.map((p) => (
+            <li class="card">
+              <h2>
+                <a href={`/blog/${p.id}/`}>{p.data.title}</a>
+              </h2>
+              <p class="meta">
+                <time datetime={p.data.published.toISOString()}>{fmt(p.data.published)}</time>
+              </p>
+              <p>{p.data.description}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .posts {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  .posts h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.25rem;
+  }
+  .posts p {
+    margin: 0.25rem 0 0;
+  }
+</style>

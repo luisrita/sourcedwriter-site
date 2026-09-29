@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { breadcrumbNode } from '../../lib/schema';
+
+const docs = (await getCollection('docs')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Base
+  title="Documentation"
+  description="Set up and use AI Blog Writer with Sources: install, connect your AI provider, run Guided or Delegated jobs, manage sources, profiles, costs and privacy."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Docs', path: '/docs/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Documentation</p>
+      <h1>Everything the plugin does, and how to set it up</h1>
+      <p class="lead">
+        Start with <a href="/docs/getting-started/">Getting started</a>. Every page is also available as plain Markdown
+        (add <code>.md</code> to the URL) and in <a href="/llms-full.txt">llms-full.txt</a>.
+      </p>
+      <div class="grid" style="margin-top:2rem">
+        {
+          docs.map((d) => (
+            <a class="card doc" href={`/docs/${d.id}/`}>
+              <h2>{d.data.title}</h2>
+              <p>{d.data.description}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .doc {
+    color: inherit;
+    text-decoration: none;
+  }
+  .doc:hover {
+    border-color: var(--accent);
+  }
+  .doc h2 {
+    font-size: 1.15rem;
+    margin: 0 0 0.5rem;
+    color: var(--accent);
+  }
+  .doc p {
+    color: var(--text-soft);
+    margin: 0;
+  }
+</style>

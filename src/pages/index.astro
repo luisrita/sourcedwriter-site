@@ -1,0 +1,280 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import InstallCta from '../components/InstallCta.astro';
+import { SITE, PLUGIN } from '../config';
+import { softwareNode } from '../lib/schema';
+
+const guides = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf())
+  .slice(0, 3);
+---
+
+<Base
+  title={`${SITE.shortName} for WordPress that cites its sources`}
+  fullTitle="AI Blog Writer for WordPress with Sources and Citations | Free Plugin"
+  description={SITE.description}
+  schema={[softwareNode()]}
+>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="kicker">Free WordPress plugin · Bring your own AI key</p>
+        <h1>The AI blog writer for WordPress that cites its sources</h1>
+        <p class="hero-lead">
+          Give it a brief and the pages you trust. Get back an editable WordPress draft where each claim links to its
+          source, with warnings about anything to check. It never publishes on its own.
+        </p>
+        <InstallCta variant="hero" />
+      </div>
+      <figure class="hero-shot">
+        <img
+          src="/images/screenshot-9.png"
+          width="1280"
+          height="844"
+          alt="A generated WordPress draft in the block editor with inline source links, and the AI Blog Writer sidebar showing provenance and warnings"
+          fetchpriority="high"
+        />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">How it works</p>
+      <h2>From sources to a reviewed draft in three steps</h2>
+      <ol class="steps grid">
+        <li class="card">
+          <h3>1. Brief and sources</h3>
+          <p>
+            Enter the topic, audience, search intent and talking points, then paste up to eight URLs you trust. Only
+            those pages are fetched, from your own server.
+          </p>
+        </li>
+        <li class="card">
+          <h3>2. Review what it will write from</h3>
+          <p>
+            In <strong>Guided</strong> mode, check the extracted notes and retrieval date of each source, then edit
+            the outline before any text is written. Or choose <strong>Delegated</strong> to run straight through.
+          </p>
+        </li>
+        <li class="card">
+          <h3>3. A cited WordPress draft</h3>
+          <p>
+            You get normal blocks with inline source links, a list of warnings, SEO suggestions and a record of which
+            model wrote it. Edit it and publish when you're ready.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container split">
+      <div>
+        <p class="eyebrow">Why sources</p>
+        <h2>Accuracy depends on what the model reads, not on the model</h2>
+        <p>
+          AI writers that work from memory get prices, dates and rules wrong in ways that sound right. This plugin
+          writes from pages you selected and fetched today, and ties each claim back to them. Checking a draft becomes
+          a matter of following the links.
+        </p>
+        <ul class="ticks">
+          <li>Inline citations that use the source's title</li>
+          <li>Retrieval dates, so stale facts are easy to spot</li>
+          <li>Warnings for failed, deselected or missing sources</li>
+          <li>Provenance saved with the post: provider, model and time</li>
+        </ul>
+        <p><a href="/blog/source-backed-blog-posts-wordpress/">Read the source-backed workflow →</a></p>
+      </div>
+      <figure>
+        <img
+          src="/images/screenshot-3.png"
+          width="1280"
+          height="984"
+          loading="lazy"
+          alt="Guided source review screen listing each source with extracted notes and its retrieval date"
+        />
+        <figcaption>Guided mode: review extracted notes before anything is written.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Features</p>
+      <h2>Built for people who have to stand behind what they publish</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Your key, your provider</h3>
+          <p>
+            Use OpenAI (GPT), Anthropic (Claude), Google (Gemini) or xAI (Grok) with your own API key. You pay the
+            provider directly and there's no markup.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Writer profiles</h3>
+          <p>
+            Save voice, tone, expertise and a list of words to avoid, linked to a real WordPress author. AI can propose
+            a profile from a sample.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Rewrite one section</h3>
+          <p>
+            Fix a single section from the block-editor sidebar using its own sources. The rest of the post stays as it
+            is.
+          </p>
+        </div>
+        <div class="card">
+          <h3>SEO suggestions and Rank Math</h3>
+          <p>
+            Get a meta title, description and focus keyword with each draft, and apply them to Rank Math in one click.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Cost ceilings</h3>
+          <p>Usage is recorded per job, and you can set monthly cost limits for the site and for each user.</p>
+        </div>
+        <div class="card">
+          <h3>About 30 languages, multisite</h3>
+          <p>
+            Write in English, Spanish, Portuguese, German, Japanese and more. Activate it per site or across a network.
+          </p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem"><a href="/features/">See all features →</a></p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <p class="eyebrow">Trust</p>
+      <h2>What it will never do</h2>
+      <div class="grid">
+        <div class="card"><h3>Publish without you</h3><p>Every job ends as a draft. You press Publish.</p></div>
+        <div class="card">
+          <h3>Phone home</h3>
+          <p>There are no analytics and no tracking, and nothing is sent to the plugin author.</p>
+        </div>
+        <div class="card">
+          <h3>Expose your key</h3>
+          <p>Keys stay on the server, are encrypted with Sodium, and can live in wp-config.php.</p>
+        </div>
+        <div class="card">
+          <h3>Hold your content hostage</h3>
+          <p>Drafts are core WordPress blocks and are kept if you deactivate or uninstall.</p>
+        </div>
+      </div>
+      <p style="margin-top:1.5rem">
+        Every external request is listed in <a href="/docs/privacy-and-external-services/">Privacy and external services</a>.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Guides</p>
+      <h2>Learn the workflow</h2>
+      <div class="grid">
+        {
+          guides.map((g) => (
+            <a class="card guide" href={`/blog/${g.id}/`}>
+              <h3>{g.data.title}</h3>
+              <p>{g.data.description}</p>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="flush">Start drafting from sources you trust</h2>
+      <p class="lead">
+        Free and GPLv2. Requires WordPress {PLUGIN.requiresWp}+ and PHP {PLUGIN.requiresPhp}+, and an API key from one
+        of {PLUGIN.providers.length} supported AI providers.
+      </p>
+      <InstallCta />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    background: radial-gradient(circle at 85% 10%, #1f2b52 0, transparent 45%), var(--bg-hero);
+    color: var(--text-hero);
+    padding: 3.5rem 0 4rem;
+  }
+  .hero-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1.1fr;
+    }
+  }
+  .kicker {
+    color: var(--accent-hero);
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+  }
+  .hero h1 {
+    color: #fff;
+  }
+  .hero-lead {
+    font-size: 1.2rem;
+    color: var(--text-hero-soft);
+    max-width: 56ch;
+  }
+  .hero-shot img {
+    border-radius: var(--radius);
+    box-shadow: 0 20px 60px rgb(0 0 0 / 0.45);
+    display: block;
+  }
+  .steps {
+    list-style: none;
+    padding: 0;
+  }
+  .split {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .split {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .split h2,
+  .flush {
+    margin-top: 0;
+  }
+  .split img {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    display: block;
+  }
+  .ticks {
+    padding-left: 1.2rem;
+  }
+  .ticks li + li {
+    margin-top: 0.3rem;
+  }
+  .guide {
+    color: inherit;
+    text-decoration: none;
+  }
+  .guide:hover {
+    border-color: var(--accent);
+  }
+  .guide h3 {
+    color: var(--accent);
+  }
+  .guide p {
+    color: var(--text-soft);
+  }
+</style>

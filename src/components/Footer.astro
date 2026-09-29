@@ -1,0 +1,89 @@
+---
+import { SITE, PLUGIN } from '../config';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="container cols">
+    <div>
+      <p class="name">{SITE.productName}</p>
+      <p>
+        Free WordPress plugin, GPLv2 or later. Version {PLUGIN.version}. Built by
+        <a href="/about/">{SITE.author.name}</a>.
+      </p>
+      <p>Generated content can contain errors. Review every draft before publishing.</p>
+    </div>
+    <nav aria-label="Product">
+      <p class="h">Product</p>
+      <ul>
+        <li><a href="/features/">Features</a></li>
+        <li><a href="/changelog/">Changelog</a></li>
+        <li><a href="/faq/">FAQ</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Resources">
+      <p class="h">Resources</p>
+      <ul>
+        <li><a href="/docs/">Documentation</a></li>
+        <li><a href="/blog/">Guides</a></li>
+        <li><a href="/docs/privacy-and-external-services/">Privacy and external services</a></li>
+        <li><a href="/llms.txt">llms.txt</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Company">
+      <p class="h">About</p>
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/privacy/">Website privacy</a></li>
+        <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container legal">
+    <p>
+      © {year} {SITE.author.name}. WordPress is a trademark of the WordPress Foundation. This site and plugin are
+      not affiliated with or endorsed by the WordPress Foundation, OpenAI, Anthropic, Google or xAI.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--border);
+    background: var(--bg-soft);
+    font-size: 0.95rem;
+    color: var(--text-soft);
+  }
+  .cols {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .name,
+  .h {
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 0;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li + li {
+    margin-top: 0.35rem;
+  }
+  a {
+    color: inherit;
+  }
+  .legal {
+    border-top: 1px solid var(--border);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.85rem;
+  }
+</style>

@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+
+const docs = (await getCollection('docs')).sort((a, b) => a.data.order - b.data.order);
+const current = Astro.url.pathname;
+---
+
+<nav class="docs-nav" aria-label="Documentation">
+  <p class="h">Documentation</p>
+  <ol>
+    {
+      docs.map((d) => {
+        const href = `/docs/${d.id}/`;
+        return (
+          <li>
+            <a href={href} aria-current={current === href ? 'page' : undefined}>
+              {d.data.title}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ol>
+</nav>
+
+<style>
+  .docs-nav {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+  }
+  .h {
+    font-weight: 700;
+    margin: 0 0 0.5rem;
+  }
+  ol {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  li + li {
+    margin-top: 0.3rem;
+  }
+  a[aria-current='page'] {
+    font-weight: 700;
+    text-decoration: none;
+  }
+</style>
