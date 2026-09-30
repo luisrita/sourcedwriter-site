@@ -5,6 +5,10 @@ export const FAQ = [
     a: 'A free WordPress plugin that turns a brief and up to eight source URLs you choose into an editable WordPress draft. The draft includes inline citations, warnings about claims to check, SEO suggestions and a provenance record. It uses your own OpenAI, Anthropic, Google or xAI API key.',
   },
   {
+    q: 'How do I install it?',
+    a: 'It is free on WordPress.org at https://wordpress.org/plugins/luis-rita-ai-blog-writer/. In WordPress, go to Plugins → Add New Plugin, search for "Luis Rita AI Blog Writer" (its directory name) and activate it, or run wp plugin install luis-rita-ai-blog-writer --activate. Then add your AI provider key under AI Blog Writer → Settings.',
+  },
+  {
     q: 'Does it publish automatically?',
     a: 'No. Every successful generation creates a WordPress draft. A person must review it and press Publish.',
   },

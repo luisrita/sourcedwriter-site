@@ -1,4 +1,4 @@
-// Single source of truth for names, URLs and launch state.
+// Single source of truth for names, URLs and release facts.
 // Change the brand here and every page, schema block and llms.txt follows.
 
 export const SITE = {
@@ -30,8 +30,9 @@ export const PLUGIN = {
   license: 'GPL-2.0-or-later',
   licenseUrl: 'https://www.gnu.org/licenses/gpl-2.0.html',
   wordpressOrgUrl: 'https://wordpress.org/plugins/luis-rita-ai-blog-writer/',
-  // Flip to true once the plugin is approved and the directory page is live.
-  wordpressOrgLive: false,
+  // Always serves the current stable release.
+  downloadUrl: 'https://downloads.wordpress.org/plugin/luis-rita-ai-blog-writer.zip',
+  released: '2026-09-30',
   providers: ['OpenAI (GPT)', 'Anthropic (Claude)', 'Google (Gemini)', 'xAI (Grok)'],
 };
 

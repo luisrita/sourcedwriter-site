@@ -1,37 +1,19 @@
 ---
-import { PLUGIN, SITE } from '../config';
+import { PLUGIN } from '../config';
 
 interface Props {
   variant?: 'hero' | 'plain';
 }
 
 const { variant = 'plain' } = Astro.props;
-const notify = `mailto:${SITE.contactEmail}?subject=${encodeURIComponent('Tell me when AI Blog Writer is on WordPress.org')}`;
 ---
 
 <div class:list={['cta', variant]}>
-  {
-    PLUGIN.wordpressOrgLive ? (
-      <>
-        <a class="btn" href={PLUGIN.wordpressOrgUrl} rel="external">
-          Get it free on WordPress.org
-        </a>
-        <a class="btn btn--ghost" href="/docs/getting-started/">
-          Setup guide
-        </a>
-      </>
-    ) : (
-      <>
-        <a class="btn" href={notify}>
-          Get notified at launch
-        </a>
-        <a class="btn btn--ghost" href="/docs/getting-started/">
-          Read the setup guide
-        </a>
-        <p class="status">Free plugin, now in WordPress.org review.</p>
-      </>
-    )
-  }
+  <a class="btn" href={PLUGIN.wordpressOrgUrl} rel="external">Get it free on WordPress.org</a>
+  <a class="btn btn--ghost" href="/docs/getting-started/">Setup guide</a>
+  <p class="status">
+    Free · Version {PLUGIN.version} · WordPress {PLUGIN.requiresWp}+ · PHP {PLUGIN.requiresPhp}+
+  </p>
 </div>
 
 <style>

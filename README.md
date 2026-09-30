@@ -12,7 +12,7 @@ npm run build
 
 ## Where things live
 
-- `src/config.ts`: product name, URLs, version and the `wordpressOrgLive` launch flag
+- `src/config.ts`: product name, URLs, plugin version and WordPress.org links
 - `src/content/docs/`: documentation (Markdown, ordered by `order`)
 - `src/content/blog/`: guides and articles
 - `src/lib/faq.ts`: FAQ shared by `/faq/`, JSON-LD and `llms-full.txt`
@@ -26,9 +26,9 @@ npm run build
 - `/robots.txt`: lets search and AI crawlers in and points to the sitemap
 - `/sitemap-index.xml` and `/rss.xml`
 
-## When the plugin goes live on WordPress.org
+## When a new plugin version ships
 
-Set `PLUGIN.wordpressOrgLive = true` in `src/config.ts`. The install buttons, the SoftwareApplication `downloadUrl`/`sameAs` and `llms.txt` all update from that flag.
+Update `PLUGIN.version` and `testedUpTo` in `src/config.ts`, and add an entry to `src/pages/changelog.astro`. Update any docs the release changes.
 
 ## Deploy
 

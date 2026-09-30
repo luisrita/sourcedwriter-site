@@ -58,8 +58,10 @@ export const softwareNode = () => ({
     'Usage tracking with an optional estimated cost ceiling',
     'Never publishes automatically',
   ],
-  ...(PLUGIN.wordpressOrgLive ? { downloadUrl: PLUGIN.wordpressOrgUrl, installUrl: PLUGIN.wordpressOrgUrl } : {}),
-  sameAs: PLUGIN.wordpressOrgLive ? [PLUGIN.wordpressOrgUrl] : [],
+  datePublished: PLUGIN.released,
+  downloadUrl: PLUGIN.downloadUrl,
+  installUrl: PLUGIN.wordpressOrgUrl,
+  sameAs: [PLUGIN.wordpressOrgUrl],
 });
 
 export const breadcrumbNode = (items: { name: string; path: string }[]) => ({

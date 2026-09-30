@@ -2,7 +2,7 @@
 title: Getting started
 description: Install the plugin, connect an AI provider with your own API key, and create your first source-backed WordPress draft in about ten minutes.
 order: 1
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 AI Blog Writer with Sources turns a brief and a short list of sources into a normal WordPress draft. The draft includes citations, warnings and a record of how it was made. It is never published automatically.
@@ -16,7 +16,17 @@ AI Blog Writer with Sources turns a brief and a short list of sources into a nor
 
 ## 1. Install and activate
 
-Once the plugin is live on WordPress.org, search for "AI Blog Writer with Sources" under **Plugins → Add New**. Until then, copy the plugin folder into `/wp-content/plugins/` and activate it.
+The plugin is free on [WordPress.org](https://wordpress.org/plugins/luis-rita-ai-blog-writer/). Install it whichever way you prefer:
+
+- **From your dashboard:** go to **Plugins → Add New Plugin**, search for "Luis Rita AI Blog Writer" (its directory name), then click **Install Now** and **Activate**.
+- **By upload:** download the [plugin zip](https://downloads.wordpress.org/plugin/luis-rita-ai-blog-writer.zip), then go to **Plugins → Add New Plugin → Upload Plugin**.
+- **With WP-CLI:**
+
+```bash
+wp plugin install luis-rita-ai-blog-writer --activate
+```
+
+On multisite you can also network-activate it.
 
 A new **AI Blog Writer** menu appears with these screens: Dashboard, New article, Writer profiles, Usage and cost, Settings and Diagnostics.
 
