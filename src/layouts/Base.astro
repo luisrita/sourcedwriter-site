@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ConsentBanner from '../components/ConsentBanner.astro';
 import { SITE, absolute } from '../config';
 import { graph, websiteNode, personNode } from '../lib/schema';
 
@@ -44,6 +45,71 @@ const jsonLd = JSON.stringify(graph(websiteNode(), personNode(), ...schema));
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) with Consent Mode. Everything is denied by default and gtag.js
+         only loads once the visitor accepts in the consent banner. -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-PN4KGCCFH0');
+
+      window.siteConsent = (function () {
+        var KEY = 'sw-consent';
+        // Ask again after a year, as EU regulators recommend.
+        var MAX_AGE = 365 * 24 * 60 * 60 * 1000;
+        var loaded = false;
+
+        function load() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-PN4KGCCFH0';
+          document.head.appendChild(s);
+        }
+
+        function clearCookies() {
+          document.cookie.split(';').forEach(function (c) {
+            var name = c.split('=')[0].trim();
+            if (name === '_ga' || name.indexOf('_ga_') === 0) {
+              var host = location.hostname.replace(/^www\./, '');
+              document.cookie = name + '=; Max-Age=0; path=/';
+              document.cookie = name + '=; Max-Age=0; path=/; domain=.' + host;
+            }
+          });
+        }
+
+        function get() {
+          try {
+            var v = JSON.parse(localStorage.getItem(KEY));
+            if (v && (v.c === 'granted' || v.c === 'denied') && Date.now() - v.t < MAX_AGE) return v.c;
+          } catch (e) {}
+          return null;
+        }
+
+        function set(choice) {
+          try {
+            localStorage.setItem(KEY, JSON.stringify({ c: choice, t: Date.now() }));
+          } catch (e) {}
+          gtag('consent', 'update', { analytics_storage: choice });
+          if (choice === 'granted') load();
+          else clearCookies();
+        }
+
+        if (get() === 'granted') {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+          load();
+        }
+
+        return { get: get, set: set };
+      })();
+    </script>
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -82,5 +148,6 @@ const jsonLd = JSON.stringify(graph(websiteNode(), personNode(), ...schema));
       <slot />
     </main>
     <Footer />
+    <ConsentBanner />
   </body>
 </html>
