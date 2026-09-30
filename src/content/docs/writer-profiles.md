@@ -2,7 +2,7 @@
 title: Writer profiles
 description: Create reusable writer profiles with voice, tone, expertise and words to avoid, linked to a real WordPress author, or have AI propose one from a sample.
 order: 5
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 
 A writer profile describes a voice so that drafts sound consistent across articles. Every profile is linked to a WordPress author account, and drafts made with it are assigned to that author.
@@ -20,7 +20,9 @@ A writer profile describes a voice so that drafts sound consistent across articl
 
 ## The linked WordPress author
 
-Saving a profile creates or updates a WordPress user with the **Author** role. Creating that user requires permission to create and promote users, so an administrator may need to save the first version. Deleting a profile keeps the WordPress author and the ownership of existing posts.
+Choose the account in **Linked WordPress author**. The list offers users with the **Author** role that no other profile is linked to. When you link an existing Author, the profile takes its author name from that account.
+
+Administrators can also pick **Create a new author account**: saving the profile then creates a WordPress user with the Author role from the profile's author name and job title. Editors can't create users, so they link an existing Author. If the list is empty, ask an administrator to create an Author account first. Deleting a profile keeps the WordPress author and the ownership of existing posts.
 
 ## AI-assisted proposals
 
