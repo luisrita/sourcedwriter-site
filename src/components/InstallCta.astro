@@ -9,7 +9,7 @@ const { variant = 'plain' } = Astro.props;
 ---
 
 <div class:list={['cta', variant]}>
-  <a class="btn" href={PLUGIN.wordpressOrgUrl} rel="external">Get it free on WordPress.org</a>
+  <a class="btn" href={PLUGIN.wordpressOrgUrl} target="_blank" rel="external noopener">Get it free on WordPress.org</a>
   <a class="btn btn--ghost" href="/docs/getting-started/">Setup guide</a>
   <p class="status">
     Free · Version {PLUGIN.version} · WordPress {PLUGIN.requiresWp}+ · PHP {PLUGIN.requiresPhp}+
