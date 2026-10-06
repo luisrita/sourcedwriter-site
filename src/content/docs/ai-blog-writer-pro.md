@@ -10,6 +10,8 @@ AI Blog Writer Pro is a paid add-on for the free plugin. It adds three things:
 - **Find sources automatically.** It searches the web for sources when you start an article, so you don't have to paste URLs.
 - **Claim-to-source check.** After the draft is written, every factual claim is marked as supported, weakly supported or unsupported by the sources.
 - **Citation and link check.** It flags broken links, sources the draft never cites, and citations to pages that aren't sources.
+- **Second-model fact-check (optional).** A second AI model of your choice judges the same claims again and shows where it disagrees.
+- **More SEO plugins.** Apply the draft's SEO title, description and focus keyword to Yoast SEO, All in One SEO or SEOPress, as the free plugin does for Rank Math.
 
 Like the free plugin, it runs on your own AI key. Plans and the free trial are on the [pricing page](/pricing/).
 
@@ -88,6 +90,14 @@ Review weak and unsupported claims before publishing: add a source, soften the w
 
 The check makes one extra request to your AI provider per draft, about the size of the drafting request. It runs only when the article has sources.
 
+### Second-model fact-check
+
+Off until you choose a model in **AI Blog Writer → Settings → Draft checks → Second-model fact-check**. The list shows every model of every AI provider whose key is saved in the free plugin's **Provider connection** settings, so add a second provider's key there first if you want a model from another company.
+
+After the claim-to-source check, the second model judges the same claims against the same sources, without seeing the first verdicts. Checks then shows where the two disagree, with both verdicts and the second model's reason, for example: "Claude Sonnet 5: weak. The source gives £7,000, not £7,500. First check: supported." If the second model rates any claim lower than the first did, the draft's warnings say so.
+
+Agreement between two models doesn't prove a claim, but disagreement is a good signal of where to look first. The fact-check makes one more AI request per draft, about the size of the claim check, on the provider you chose. It's skipped when you pick the article's own model.
+
 ### Citation and link check
 
 - **Citations that aren't sources:** the AI cited a page that isn't one of the article's sources. The free plugin leaves such links out of the post, and this check tells you it happened.
@@ -96,7 +106,11 @@ The check makes one extra request to your AI provider per draft, about the size 
 
 This check doesn't use AI.
 
-You can switch either check off in **AI Blog Writer → Settings → Draft checks**.
+You can switch any check off in **AI Blog Writer → Settings → Draft checks**.
+
+## SEO plugins
+
+The free plugin can apply a draft's SEO title, description and focus keyword to Rank Math. With the add-on, the same **Apply to …** button in the editor sidebar's **SEO suggestions** panel also works with **Yoast SEO**, **All in One SEO** and **SEOPress**, whichever is active. Values you already set in the SEO plugin are kept unless you tick **Replace values already set**. If Rank Math is active too, Rank Math is used.
 
 ## Troubleshooting
 
