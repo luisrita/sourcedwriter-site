@@ -38,6 +38,7 @@ export const PLUGIN = {
 
 export const NAV = [
   { href: '/features/', label: 'Features' },
+  { href: '/pricing/', label: 'Pricing' },
   { href: '/docs/', label: 'Docs' },
   { href: '/blog/', label: 'Guides' },
   { href: '/faq/', label: 'FAQ' },

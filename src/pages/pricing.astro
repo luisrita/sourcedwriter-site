@@ -1,0 +1,202 @@
+---
+import Base from '../layouts/Base.astro';
+import { PLUGIN } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+
+// Freemius hosted checkout (product 40688). Agency covers 5 sites. Prices exclude VAT.
+const checkout = 'https://checkout.freemius.com/product/40688/plan';
+const trialUrl = `${checkout}/70382/currency/eur/?trial=free`;
+const creatorUrl = `${checkout}/70382/currency/eur/?billing_cycle=annual`;
+const agencyUrl = `${checkout}/70384/licenses/5/currency/eur/?billing_cycle=annual`;
+
+const rows = [
+  ['Drafts on your own OpenAI, Anthropic, Google or xAI key', true, true],
+  ['Delegated and Guided workflows, native blocks, never auto-published', true, true],
+  ['Sources from URLs you supply (up to 8)', true, true],
+  ['Writer profiles linked to WordPress authors', 'Unlimited', 'Unlimited'],
+  ['Rank Math integration, internal-link suggestions, overlap warnings', true, true],
+  ['Find sources automatically (web search with your Tavily key)', false, true],
+  ['Claim-to-source check: every factual claim marked supported, weak or unsupported', false, true],
+  ['Citation and link check: broken links, uncited sources, citations that aren’t sources', false, true],
+  ['Support', 'WordPress.org forum', 'Email'],
+];
+---
+
+<Base
+  title="Pricing"
+  description="AI Blog Writer with Sources is free on WordPress.org. AI Blog Writer Pro adds automatic research and claim-to-source checking from €9 a month plus VAT, with a 14-day free trial."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Pricing', path: '/pricing/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Pricing</p>
+      <h1>Free to write. Pro to check.</h1>
+      <p class="lead">
+        The plugin is free and stays free. AI Blog Writer Pro finds the sources for you and checks every factual
+        claim in the draft against them. Both run on your own AI key, so you pay your AI provider directly.
+      </p>
+
+      <div class="grid plans">
+        <article class="card plan">
+          <h2>Free</h2>
+          <p class="price">€0</p>
+          <p class="sites">Unlimited sites</p>
+          <p>Source-backed drafts from the URLs you supply, with writer profiles, Guided review and Rank Math.</p>
+          <a class="btn btn--ghost" href={PLUGIN.wordpressOrgUrl} target="_blank" rel="external noopener">Get it on WordPress.org</a>
+        </article>
+
+        <article class="card plan featured">
+          <h2>Creator</h2>
+          <p class="price">€9<span>/month</span></p>
+          <p class="alt">or €90/year (2 months free) · <strong>plus VAT</strong></p>
+          <p class="sites">1 site</p>
+          <p>Everything in Free, plus automatic research, the claim-to-source check, and the citation and link check.</p>
+          <a class="btn" href={trialUrl} target="_blank" rel="noopener">Start the 14-day free trial</a>
+          <p class="small">No card needed. <a href={creatorUrl} target="_blank" rel="noopener">Buy Creator</a></p>
+        </article>
+
+        <article class="card plan">
+          <h2>Agency</h2>
+          <p class="price">€24<span>/month</span></p>
+          <p class="alt">or €240/year (2 months free) · <strong>plus VAT</strong></p>
+          <p class="sites">5 sites</p>
+          <p>Everything in Creator, on up to five sites, with priority email support. Cheaper than Creator from three sites.</p>
+          <a class="btn btn--ghost" href={agencyUrl} target="_blank" rel="noopener">Buy Agency</a>
+        </article>
+      </div>
+
+      <p class="vat">
+        <strong>Prices exclude VAT.</strong> VAT is added at checkout where it applies (for example 23% in Portugal), and
+        businesses with a valid EU VAT number aren't charged it. Checkout, VAT and invoices are handled by Freemius, our
+        reseller.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2>Free and Pro compared</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Pro (Creator and Agency)</th></tr>
+          </thead>
+          <tbody>
+            {
+              rows.map(([label, free, pro]) => (
+                <tr>
+                  <th scope="row">{label}</th>
+                  {[free, pro].map((value) => (
+                    <td>{value === true ? '✓' : value === false ? '—' : value}</td>
+                  ))}
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <h2>Questions</h2>
+      <h3>What else will I pay for?</h3>
+      <p>
+        Your AI provider bills you for the drafts, as with the free plugin. Automatic research uses your own Tavily
+        account: its free plan includes 1,000 credits a month, and an article uses about 3. The claim-to-source check
+        makes one extra AI request per draft, roughly half again the cost of writing it.
+      </p>
+      <h3>Can I get a refund?</h3>
+      <p>Yes. Every purchase has a 14-day money-back guarantee.</p>
+      <h3>I have two or three sites. Which plan?</h3>
+      <p>Two Creator licenses cost less than Agency. From three sites, Agency is cheaper and covers up to five.</p>
+      <h3>What happens if I cancel?</h3>
+      <p>
+        Pro stops finding sources and checking drafts at the end of the period you paid for. Everything in the free
+        plugin, and every draft you created, keeps working.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .plans {
+    margin-top: 2rem;
+    align-items: stretch;
+  }
+  .plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .plan h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  .plan .btn {
+    margin-top: auto;
+    align-self: flex-start;
+  }
+  .featured {
+    border: 2px solid var(--accent);
+  }
+  .price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0;
+  }
+  .price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-soft);
+  }
+  .alt,
+  .sites,
+  .small {
+    margin: 0;
+    color: var(--text-soft);
+  }
+  .alt strong {
+    white-space: nowrap;
+  }
+  .sites {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .small {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+  .vat {
+    margin-top: 1.5rem;
+    color: var(--text-soft);
+    max-width: 80ch;
+  }
+  .table-wrap {
+    overflow-x: auto;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    background: var(--bg);
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--border);
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  td {
+    text-align: center;
+    white-space: nowrap;
+  }
+  thead th:not(:first-child) {
+    text-align: center;
+  }
+  tbody th {
+    font-weight: 500;
+  }
+</style>
