@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import InstallCta from '../components/InstallCta.astro';
-import { SITE, PLUGIN } from '../config';
+import { SITE, PLUGIN, PRO } from '../config';
 import { softwareNode } from '../lib/schema';
 
 const guides = (await getCollection('blog', ({ data }) => !data.draft))
@@ -26,6 +26,10 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
           source, with warnings about anything to check. It never publishes on its own.
         </p>
         <InstallCta variant="hero" />
+        <p class="pro-nudge">
+          Want it to find the sources and check every claim?
+          <a href="#pro">Try {PRO.name} free for {PRO.trialDays} days →</a>
+        </p>
       </div>
       <figure class="hero-shot">
         <img
@@ -66,6 +70,34 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
           </p>
         </li>
       </ol>
+    </div>
+  </section>
+
+
+  <section class="pro" id="pro" aria-labelledby="pro-title">
+    <div class="container pro-grid">
+      <div>
+        <p class="pro-kicker">{PRO.name}</p>
+        <h2 id="pro-title">Let it find the sources and check every claim</h2>
+        <p class="pro-lead">
+          The free plugin writes from the pages you give it. Pro does the research for you, then checks the finished
+          draft against its sources so you know exactly what to fix before you publish.
+        </p>
+        <ul class="pro-list">
+          <li><strong>Automatic research.</strong> Finds and fetches sources for your brief with web search, on your own Tavily key.</li>
+          <li><strong>Claim-to-source check.</strong> Marks every factual claim as supported, weak or unsupported.</li>
+          <li><strong>Citation and link check.</strong> Flags broken links, uncited sources and citations that aren't sources.</li>
+          <li><strong>Second-model fact-check.</strong> Optionally has another AI model re-judge every claim.</li>
+          <li><strong>More SEO plugins.</strong> Yoast SEO, All in One SEO and SEOPress, as well as Rank Math.</li>
+        </ul>
+      </div>
+      <div class="pro-card">
+        <p class="pro-price">From {PRO.fromPrice}<span>/month</span></p>
+        <p class="pro-meta">plus VAT · cancel any time · 14-day money-back guarantee</p>
+        <a class="btn pro-btn" href={PRO.trialUrl} target="_blank" rel="noopener">Start the {PRO.trialDays}-day free trial</a>
+        <p class="pro-meta">No card needed.</p>
+        <a class="pro-compare" href="/pricing/">Compare Free, Creator and Agency →</a>
+      </div>
     </div>
   </section>
 
@@ -197,6 +229,10 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
         of {PLUGIN.providers.length} supported AI providers.
       </p>
       <InstallCta />
+      <p class="pro-footnote">
+        Want the research and fact-checking done for you? <a href="/pricing/">See {PRO.name}</a>, from
+        {PRO.fromPrice} a month plus VAT.
+      </p>
     </div>
   </section>
 </Base>
@@ -263,6 +299,111 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
   }
   .ticks li + li {
     margin-top: 0.3rem;
+  }
+  .pro-nudge {
+    margin: 1.25rem 0 0;
+    color: var(--text-hero-soft);
+  }
+  .pro-nudge a {
+    color: var(--accent-hero);
+    font-weight: 600;
+  }
+  .pro {
+    background: radial-gradient(circle at 10% 90%, #1f2b52 0, transparent 50%), var(--bg-hero);
+    color: var(--text-hero);
+    padding: 4rem 0;
+  }
+  .pro-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
+  }
+  @media (min-width: 960px) {
+    .pro-grid {
+      grid-template-columns: 1.4fr 1fr;
+    }
+  }
+  .pro-kicker {
+    color: var(--accent-hero);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem;
+  }
+  .pro h2 {
+    color: #fff;
+    margin-top: 0;
+  }
+  .pro-lead {
+    font-size: 1.15rem;
+    color: var(--text-hero-soft);
+    max-width: 60ch;
+  }
+  .pro-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0;
+  }
+  .pro-list li {
+    position: relative;
+    padding-left: 1.75rem;
+    color: var(--text-hero-soft);
+  }
+  .pro-list li + li {
+    margin-top: 0.6rem;
+  }
+  .pro-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent-hero);
+    font-weight: 700;
+  }
+  .pro-list strong {
+    color: var(--text-hero);
+  }
+  .pro-card {
+    border: 1px solid rgb(143 163 247 / 0.35);
+    border-radius: var(--radius);
+    background: rgb(255 255 255 / 0.04);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .pro-price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+  }
+  .pro-price span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-hero-soft);
+  }
+  .pro-meta {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-hero-soft);
+  }
+  .pro-btn {
+    margin-top: 1rem;
+    background: #3656e0;
+    border-color: #3656e0;
+    color: #fff;
+  }
+  .pro-compare {
+    margin-top: 0.75rem;
+    color: var(--accent-hero);
+    font-weight: 600;
+  }
+  .pro-footnote {
+    margin: 1.5rem 0 0;
+    color: var(--text-soft);
   }
   .guide {
     color: inherit;

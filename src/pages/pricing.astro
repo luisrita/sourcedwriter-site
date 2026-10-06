@@ -1,13 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
-import { PLUGIN } from '../config';
+import { PLUGIN, PRO } from '../config';
 import { breadcrumbNode } from '../lib/schema';
 
-// Freemius hosted checkout (product 40688). Agency covers 5 sites. Prices exclude VAT.
-const checkout = 'https://checkout.freemius.com/product/40688/plan';
-const trialUrl = `${checkout}/70382/currency/eur/?trial=free`;
-const creatorUrl = `${checkout}/70382/currency/eur/?billing_cycle=annual`;
-const agencyUrl = `${checkout}/70384/licenses/5/currency/eur/?billing_cycle=annual`;
+const { trialUrl, creatorUrl, agencyUrl } = PRO;
 
 const rows = [
   ['Drafts on your own OpenAI, Anthropic, Google or xAI key', true, true],

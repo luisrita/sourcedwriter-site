@@ -36,6 +36,18 @@ export const PLUGIN = {
   providers: ['OpenAI (GPT)', 'Anthropic (Claude)', 'Google (Gemini)', 'xAI (Grok)'],
 };
 
+// Freemius hosted checkout (product 40688). Agency covers 5 sites. Prices exclude VAT.
+const checkout = 'https://checkout.freemius.com/product/40688/plan';
+
+export const PRO = {
+  name: 'AI Blog Writer Pro',
+  fromPrice: '€9',
+  trialDays: 14,
+  trialUrl: `${checkout}/70382/currency/eur/?trial=free`,
+  creatorUrl: `${checkout}/70382/currency/eur/?billing_cycle=annual`,
+  agencyUrl: `${checkout}/70384/licenses/5/currency/eur/?billing_cycle=annual`,
+};
+
 export const NAV = [
   { href: '/features/', label: 'Features' },
   { href: '/pricing/', label: 'Pricing' },
