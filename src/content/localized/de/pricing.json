@@ -1,0 +1,26 @@
+{
+  "locale": "de",
+  "route": "pricing",
+  "title": "Preise",
+  "description": "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und…",
+  "sections": [
+    {
+      "title": "Kostenlos",
+      "paragraphs": [
+        "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und Rank-Math-Integration.",
+        "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch veröffentlicht."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Creator kostet {creatormonthly}/Monat oder {creatoryearly}/Jahr für eine Website. Agency kostet {agencymonthly}/Monat oder {agencyyearly}/Jahr für fünf. Preise ohne MwSt. Freemius übernimmt Kauf, Steuern und Rechnungen. 14 Tage Test ohne Karte; Käufe mit 14 Tagen Geld-zurück-Garantie.",
+        "Pro neben dem kostenlosen Plugin installieren, Lizenz aktivieren und Tavily-Schlüssel hinzufügen. Creator und Agency bieten dieselben Prüfungen. Pro ergänzt Yoast SEO, All in One SEO und SEOPress. Bei Kündigung bleiben Entwürfe und kostenlose Funktionen erhalten.",
+        "KI-Nutzung und Tavily-Credits werden separat von den Anbietern berechnet. Prüfungen erkennen Probleme, garantieren aber weder sachliche Richtigkeit noch Suchplatzierungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

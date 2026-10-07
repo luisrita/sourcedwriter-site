@@ -1,0 +1,90 @@
+{
+  "locale": "pt-BR",
+  "route": "faq",
+  "title": "Perguntas frequentes",
+  "description": "O plugin gratuito inclui rascunhos com fontes, perfis de autor, revisão Guiada, blocos WordPress, reescrita de seções e integração Rank Math.…",
+  "sections": [
+    {
+      "title": "O que é {product}?",
+      "paragraphs": [
+        "O plugin gratuito inclui rascunhos com fontes, perfis de autor, revisão Guiada, blocos WordPress, reescrita de seções e integração Rank Math."
+      ]
+    },
+    {
+      "title": "Como instalar?",
+      "paragraphs": [
+        "Instale e ative em Plugins → Adicionar novo plugin. Escolha o provedor nas Configurações e salve, adicione a chave de API, salve novamente e teste a conexão."
+      ]
+    },
+    {
+      "title": "Publica automaticamente?",
+      "paragraphs": [
+        "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o Delegado continua automaticamente. O post sempre permanece rascunho."
+      ]
+    },
+    {
+      "title": "Pesquisa a web automaticamente?",
+      "paragraphs": [
+        "Forneça fontes públicas recentes em HTML ou texto, uma URL por linha. Redes privadas são bloqueadas. Confira notas extraídas e fontes selecionadas; citações usam apenas suas URLs. Ter fontes não garante todas as afirmações.",
+        "AI Blog Writer Pro pesquisa fontes na web e verifica cada afirmação factual do rascunho com elas."
+      ]
+    },
+    {
+      "title": "Quais modelos de IA aceita?",
+      "paragraphs": [
+        "Use sua chave de API OpenAI, Claude, Gemini ou Grok. O provedor cobra diretamente de você. Rascunhos nunca são publicados automaticamente."
+      ]
+    },
+    {
+      "title": "Preciso de conta ou assinatura com o autor do plugin?",
+      "paragraphs": [
+        "O plugin gratuito não exige conta nem assinatura com o autor. Usa sua conta e chave do provedor. Pro exige licença separada gerenciada pela Freemius."
+      ]
+    },
+    {
+      "title": "Quanto custa gerar um artigo?",
+      "paragraphs": [
+        "Limites mensais do site e por usuário bloqueiam novas solicitações quando atingidos. Estimativas dependem das tarifas configuradas, não são cobranças oficiais. Rascunhos concluídos continuam editáveis. A cota reinicia no próximo mês."
+      ]
+    },
+    {
+      "title": "Minha chave de API está segura?",
+      "paragraphs": [
+        "Para maior proteção, defina a constante AIBCG_*_API_KEY do provedor selecionado no wp-config.php. Chaves salvas usam criptografia Sodium com AIBCG_ENCRYPTION_KEY ou AUTH_KEY do WordPress."
+      ]
+    },
+    {
+      "title": "O que acontece com os posts ao desativar ou desinstalar o plugin?",
+      "paragraphs": [
+        "Tarefas, fontes, roteiros, rascunhos, perfis e chaves criptografadas ficam no banco WordPress. O material privado de tarefas concluídas é mantido por 90 dias por padrão; posts permanecem. Exportação e exclusão de dados pessoais do WordPress incluem tarefas e perfis. Desinstalar mantém posts e autores; AIBCG_REMOVE_DATA_ON_UNINSTALL ativa a remoção adicional dos dados do plugin."
+      ]
+    },
+    {
+      "title": "Funciona com Rank Math?",
+      "paragraphs": [
+        "A barra lateral mostra fontes, avisos, origem e sugestões SEO. Gere e revise a prévia antes de confirmar a substituição de uma seção. Salve ou descarte edições pendentes primeiro. Versões anteriores ficam em Revisões. Valores SEO são mantidos salvo se escolher substituir."
+      ]
+    },
+    {
+      "title": "Aceita multisite e outros idiomas?",
+      "paragraphs": [
+        "Multisite é compatível, com configurações separadas por site e chaves de API opcionais da rede. O idioma do artigo é independente da interface WordPress."
+      ]
+    },
+    {
+      "title": "Funciona em sites com poucas visitas ou WP-Cron desativado?",
+      "paragraphs": [
+        "WP-Cron normalmente executa quando alguém visita o site. Sites com poucas visitas podem precisar de um agendador que chame wp-cron.php. Se uma tarefa ficar na fila, verifique cron, loopback e HTTPS de saída antes de repetir a etapa."
+      ]
+    },
+    {
+      "title": "O conteúdo de IA é preciso o bastante para publicar sem revisão?",
+      "paragraphs": [
+        "O conteúdo gerado pode conter erros ou afirmações sem respaldo. Revise antes de publicar."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

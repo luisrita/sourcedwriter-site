@@ -1,0 +1,18 @@
+{
+  "locale": "fr",
+  "route": "docs",
+  "title": "Documentation",
+  "description": "Nécessite WordPress {wp} ou ultérieur et PHP {php} ou ultérieur. Activez Sodium pour chiffrer les clés et maintenez WP-Cron actif.",
+  "sections": [
+    {
+      "title": "Premiers pas",
+      "paragraphs": [
+        "Nécessite WordPress {wp} ou ultérieur et PHP {php} ou ultérieur. Activez Sodium pour chiffrer les clés et maintenez WP-Cron actif.",
+        "L’interface suit la langue du profil WordPress. La langue de l’article et le pays ou marché sont des réglages indépendants."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

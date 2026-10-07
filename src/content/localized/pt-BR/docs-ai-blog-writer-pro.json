@@ -1,0 +1,22 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/ai-blog-writer-pro",
+  "title": "{pro}",
+  "description": "Instale Pro junto do plugin gratuito, ative a licença e adicione uma chave Tavily. Creator e Agency têm as mesmas verificações. Pro adiciona…",
+  "sections": [
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Instale Pro junto do plugin gratuito, ative a licença e adicione uma chave Tavily. Creator e Agency têm as mesmas verificações. Pro adiciona Yoast SEO, All in One SEO e SEOPress. Cancelar mantém rascunhos e recursos gratuitos.",
+        "AI Blog Writer Pro pesquisa fontes na web e verifica cada afirmação factual do rascunho com elas.",
+        "Faz uma solicitação extra ao provedor por rascunho, de tamanho próximo à de redação (custo de IA cerca de 40–50% maior). Só executa se o artigo tiver fontes.",
+        "Após a verificação nas fontes, um segundo modelo avalia as mesmas afirmações sem ver os primeiros resultados. Verificações lista as divergências. Usa a chave desse provedor em Conexão com o provedor e custa aproximadamente o mesmo que a primeira verificação. Não executa se for o modelo usado no artigo.",
+        "Sem custo de IA. Seu site solicita cada página vinculada uma vez.",
+        "Uso de IA e créditos Tavily são cobrados separadamente pelos provedores. As verificações identificam problemas, mas não garantem exatidão factual nem posições nas buscas."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

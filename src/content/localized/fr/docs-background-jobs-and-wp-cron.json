@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/background-jobs-and-wp-cron",
+  "title": "Tâches en arrière-plan et WP-Cron",
+  "description": "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du…",
+  "sections": [
+    {
+      "title": "Tâches en arrière-plan et WP-Cron",
+      "paragraphs": [
+        "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du plan ; le mode Délégué poursuit automatiquement. L’article reste un brouillon.",
+        "WP-Cron s’exécute généralement lors des visites. Un site peu visité peut nécessiter un ordonnanceur appelant wp-cron.php. Si une tâche reste en attente, vérifiez cron, requêtes loopback et HTTPS sortant avant de réessayer.",
+        "Cette tâche attend depuis plus de deux minutes. WP-Cron ne fonctionne peut-être pas sur ce site."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,23 @@
+{
+  "locale": "pt-BR",
+  "route": "about",
+  "title": "Sobre",
+  "description": "Plugin independente criado e mantido por {author}. Uma pessoa continua responsável pela publicação, com fontes, avisos e origem da geração visíveis.",
+  "sections": [
+    {
+      "title": "Sobre",
+      "paragraphs": [
+        "Plugin independente criado e mantido por {author}. Uma pessoa continua responsável pela publicação, com fontes, avisos e origem da geração visíveis."
+      ]
+    },
+    {
+      "title": "Contato",
+      "paragraphs": [
+        "Para suporte ou relatos de segurança, envie email a {email}. Para erros, anexe o relatório JSON do Diagnóstico, que exclui chaves de API e conteúdo."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

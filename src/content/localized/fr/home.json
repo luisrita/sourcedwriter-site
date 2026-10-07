@@ -1,0 +1,32 @@
+{
+  "locale": "fr",
+  "route": "",
+  "title": "Brouillons WordPress avec sources à vérifier avant publication",
+  "description": "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement.",
+  "sections": [
+    {
+      "title": "Premiers pas",
+      "paragraphs": [
+        "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement.",
+        "Créez des consignes avec sujet, public, points et jusqu’à huit URL. Commencez en mode Guidé, validez sources et plan, puis relisez le brouillon dans l’éditeur avant publication."
+      ]
+    },
+    {
+      "title": "Fonctionnalités",
+      "paragraphs": [
+        "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et intégration Rank Math.",
+        "L’interface suit la langue du profil WordPress. La langue de l’article et le pays ou marché sont des réglages indépendants."
+      ]
+    },
+    {
+      "title": "Tarifs",
+      "paragraphs": [
+        "AI Blog Writer Pro recherche des sources sur le Web et vérifie chaque affirmation factuelle du brouillon à partir d’elles.",
+        "L’utilisation IA et les crédits Tavily sont facturés séparément par ces fournisseurs. Les vérifications détectent des problèmes, sans garantir l’exactitude ou le classement dans les recherches."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

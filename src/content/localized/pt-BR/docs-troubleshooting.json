@@ -1,0 +1,87 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/troubleshooting",
+  "title": "Solução de problemas",
+  "description": "Se a chave falhar, teste nas Configurações e confira conta, cobrança e acesso ao modelo. Para limites de solicitações, aguarde e repita; para…",
+  "sections": [
+    {
+      "title": "Provedores de IA e chaves de API",
+      "anchors": [
+        "missing-api-key",
+        "invalid-api-key",
+        "constant-api-key",
+        "credential-storage-unavailable",
+        "model-unavailable",
+        "provider-unreachable",
+        "provider-refusal",
+        "invalid-provider-response",
+        "rate-limit",
+        "provider-unavailable",
+        "provider-rejected"
+      ],
+      "paragraphs": [
+        "Se a chave falhar, teste nas Configurações e confira conta, cobrança e acesso ao modelo. Para limites de solicitações, aguarde e repita; para erros de fonte, use URL acessível. Baixe o Diagnóstico para suporte. Nunca inclua a chave no relato.",
+        "Instale e ative em Plugins → Adicionar novo plugin. Escolha o provedor nas Configurações e salve, adicione a chave de API, salve novamente e teste a conexão.",
+        "Para maior proteção, defina a constante AIBCG_*_API_KEY do provedor selecionado no wp-config.php. Chaves salvas usam criptografia Sodium com AIBCG_ENCRYPTION_KEY ou AUTH_KEY do WordPress."
+      ]
+    },
+    {
+      "title": "Tarefas em segundo plano e WP-Cron",
+      "anchors": [
+        "jobs-stay-queued",
+        "duplicate-job",
+        "stage-failed",
+        "extension-error",
+        "invalid-outline"
+      ],
+      "paragraphs": [
+        "WP-Cron normalmente executa quando alguém visita o site. Sites com poucas visitas podem precisar de um agendador que chame wp-cron.php. Se uma tarefa ficar na fila, verifique cron, loopback e HTTPS de saída antes de repetir a etapa.",
+        "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o Delegado continua automaticamente. O post sempre permanece rascunho."
+      ]
+    },
+    {
+      "title": "Fontes e citações",
+      "anchors": [
+        "source-urls-fail"
+      ],
+      "paragraphs": [
+        "Forneça fontes públicas recentes em HTML ou texto, uma URL por linha. Redes privadas são bloqueadas. Confira notas extraídas e fontes selecionadas; citações usam apenas suas URLs. Ter fontes não garante todas as afirmações.",
+        "Não foi possível obter a fonte. Verifique restrições de acesso ou use outra URL.",
+        "Nenhuma fonte utilizável informada. Afirmações precisas sem respaldo devem ser omitidas ou sinalizadas."
+      ]
+    },
+    {
+      "title": "Uso e limites de custo",
+      "anchors": [
+        "cost-limit-reached"
+      ],
+      "paragraphs": [
+        "Limites mensais do site e por usuário bloqueiam novas solicitações quando atingidos. Estimativas dependem das tarifas configuradas, não são cobranças oficiais. Rascunhos concluídos continuam editáveis. A cota reinicia no próximo mês.",
+        "Tokens do provedor são unidades internas de contabilização. Os valores exatos vêm da fatura do provedor, não desta estimativa."
+      ]
+    },
+    {
+      "title": "Perfis de autor",
+      "anchors": [
+        "writer-profile-author"
+      ],
+      "paragraphs": [
+        "O perfil controla voz, público, especialidade, vocabulário, estrutura e palavras a evitar. Vincule a um Autor WordPress ou peça a um administrador para criar a conta. Visualize o estilo antes de salvar. Excluir o perfil mantém autor e posts."
+      ]
+    },
+    {
+      "title": "Barra lateral do editor e Rank Math",
+      "anchors": [
+        "section-rewrite",
+        "seo-plugin-unavailable"
+      ],
+      "paragraphs": [
+        "A barra lateral mostra fontes, avisos, origem e sugestões SEO. Gere e revise a prévia antes de confirmar a substituição de uma seção. Salve ou descarte edições pendentes primeiro. Versões anteriores ficam em Revisões. Valores SEO são mantidos salvo se escolher substituir.",
+        "Os fatos da seção são reconstruídos com estas fontes e citados; afirmações sem respaldo são removidas e listadas como avisos."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

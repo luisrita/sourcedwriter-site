@@ -1,0 +1,22 @@
+{
+  "locale": "ja",
+  "route": "docs/ai-blog-writer-pro",
+  "title": "{pro}",
+  "description": "無料プラグインと一緒に Pro をインストールし、ライセンスを有効にして Tavily キーを追加します。Creator と Agency のチェック機能は同じです。Pro は Yoast SEO、All in One SEO、SEOPress…",
+  "sections": [
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "無料プラグインと一緒に Pro をインストールし、ライセンスを有効にして Tavily キーを追加します。Creator と Agency のチェック機能は同じです。Pro は Yoast SEO、All in One SEO、SEOPress にも対応します。解約後も下書きと無料機能を使用できます。",
+        "AI Blog Writer Pro はウェブで出典を探し、下書きの事実の主張を出典と照合します。",
+        "下書きごとに執筆時と同程度の追加 AI リクエストを1回送信します（AI 費用は約40〜50%増加）。出典のある記事でのみ実行します。",
+        "出典照合後、別モデルが最初の判定を見ずに同じ主張を再評価し、「チェック」に不一致を表示します。「プロバイダー接続」のキーを使用し、費用は最初の照合と同程度です。記事に使ったモデルと同じ場合はスキップします。",
+        "AI 費用はかかりません。サイトから各リンク先に1回アクセスします。",
+        "AI 使用料と Tavily クレジットは各プロバイダーから別途請求されます。チェックは問題の発見を助けますが、事実の正確性や検索順位を保証するものではありません。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

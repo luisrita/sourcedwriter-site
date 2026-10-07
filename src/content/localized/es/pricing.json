@@ -1,0 +1,26 @@
+{
+  "locale": "es",
+  "route": "pricing",
+  "title": "Precios",
+  "description": "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración…",
+  "sections": [
+    {
+      "title": "Gratis",
+      "paragraphs": [
+        "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración Rank Math.",
+        "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Creator cuesta {creatormonthly}/mes o {creatoryearly}/año para un sitio. Agency cuesta {agencymonthly}/mes o {agencyyearly}/año para cinco. Precios sin IVA. Freemius gestiona compra, impuestos y facturas. Prueba de 14 días sin tarjeta; compras con garantía de devolución de 14 días.",
+        "Instala Pro junto al plugin gratuito, activa la licencia y añade una clave Tavily. Creator y Agency incluyen las mismas comprobaciones. Pro añade Yoast SEO, All in One SEO y SEOPress. Al cancelar, conservas borradores y funciones gratuitas.",
+        "El uso de IA y los créditos Tavily se cobran aparte por sus proveedores. Las comprobaciones detectan problemas, pero no garantizan exactitud ni posiciones en buscadores."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

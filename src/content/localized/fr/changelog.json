@@ -1,0 +1,17 @@
+{
+  "locale": "fr",
+  "route": "changelog",
+  "title": "Historique des versions",
+  "description": "Version {version} : brouillons avec sources, profils d’auteur, fournisseurs et outils d’éditeur. L’historique complet en anglais détaille chaque…",
+  "sections": [
+    {
+      "title": "Historique des versions",
+      "paragraphs": [
+        "Version {version} : brouillons avec sources, profils d’auteur, fournisseurs et outils d’éditeur. L’historique complet en anglais détaille chaque version."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

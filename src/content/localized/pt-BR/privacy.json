@@ -1,0 +1,33 @@
+{
+  "locale": "pt-BR",
+  "route": "privacy",
+  "title": "Privacidade do site",
+  "description": "Este site não tem formulários nem anúncios. Google Analytics só carrega após aceitar cookies. Sua escolha fica no armazenamento local por até um…",
+  "sections": [
+    {
+      "title": "Privacidade do site",
+      "paragraphs": [
+        "Este site não tem formulários nem anúncios. Google Analytics só carrega após aceitar cookies. Sua escolha fica no armazenamento local por até um ano. Configurações de cookies permite retirar o consentimento e excluir cookies de análise quando quiser.",
+        "Com consentimento, Google processa páginas vistas, referências, localização aproximada, dispositivo e navegador em nosso nome. Você pode bloquear análises no navegador. GitHub Pages hospeda o site; GitHub pode registrar IP e dados técnicos para operar e proteger o serviço."
+      ]
+    },
+    {
+      "title": "Dados de uso",
+      "paragraphs": [
+        "Dados de uso são opcionais e desativados por padrão. Com consentimento, envia contagens e configurações anônimas diariamente e na desativação a telemetry.sourcedwriter.com. Exclui URLs, nomes, chaves, conteúdo e mensagens de erro. Diagnóstico mostra fila e ID; você pode desativar ou excluir dados no servidor. AIBCG_DISABLE_TELEMETRY mantém desligado.",
+        "A telemetria opcional usa ID aleatório e nunca é vendida, compartilhada ou combinada com análises do site. Cloudflare processa o IP em trânsito; nosso Worker e banco D1 não armazenam IPs ou cabeçalhos, e logs estão desativados. Eventos são mantidos por 24 meses; totais sem IDs podem ficar por mais tempo.",
+        "Desative a telemetria nas Configurações ou exclua em Diagnóstico → Dados de uso → Excluir dados no servidor. Você pode enviar o ID a {email} para exclusão. Emails e endereços servem apenas para responder ou anunciar lançamentos se solicitado; não são vendidos nem compartilhados e podem ser excluídos a pedido. Responsável: {author}."
+      ]
+    },
+    {
+      "title": "Privacidade e serviços externos",
+      "paragraphs": [
+        "Solicitações de fontes identificam o servidor com versão do plugin e URL do site. O provedor de IA recebe instruções, perfil, notas e roteiro; sugestões podem incluir até 50 títulos recentes. Chaves ficam no servidor. Pro envia consultas ao Tavily e usa os provedores escolhidos nas verificações. Os termos de privacidade deles se aplicam.",
+        "Tarefas, fontes, roteiros, rascunhos, perfis e chaves criptografadas ficam no banco WordPress. O material privado de tarefas concluídas é mantido por 90 dias por padrão; posts permanecem. Exportação e exclusão de dados pessoais do WordPress incluem tarefas e perfis. Desinstalar mantém posts e autores; AIBCG_REMOVE_DATA_ON_UNINSTALL ativa a remoção adicional dos dados do plugin."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

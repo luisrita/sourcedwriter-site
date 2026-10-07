@@ -1,0 +1,19 @@
+{
+  "locale": "es",
+  "route": "docs/sources-and-citations",
+  "title": "Fuentes y citas",
+  "description": "Indica fuentes públicas recientes HTML o texto, una URL por línea. Las redes privadas se bloquean. Revisa notas y fuentes seleccionadas; las…",
+  "sections": [
+    {
+      "title": "Fuentes y citas",
+      "paragraphs": [
+        "Indica fuentes públicas recientes HTML o texto, una URL por línea. Las redes privadas se bloquean. Revisa notas y fuentes seleccionadas; las citas usan solo sus URL. Tener fuentes no garantiza todas las afirmaciones.",
+        "Sin fuentes, el artículo depende del conocimiento general de la IA, que puede estar desactualizado, sobre todo para productos nuevos, precios o el próximo año. Añade 3–5 páginas recientes que citarías: reseñas, anuncios oficiales o datos.",
+        "Las peticiones de fuentes identifican tu servidor con versión y URL del sitio. El proveedor de IA recibe instrucciones, perfil, notas y esquema; las sugerencias pueden incluir hasta 50 títulos recientes. Las claves quedan en el servidor. Pro envía consultas a Tavily y usa los proveedores elegidos para comprobaciones. Se aplican sus condiciones de privacidad."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

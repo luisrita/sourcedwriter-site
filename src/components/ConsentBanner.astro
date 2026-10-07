@@ -1,18 +1,20 @@
 ---
-// Cookie consent for Google Analytics. The consent state and GA loading live in
-// window.siteConsent, set up in the <head> of Base.astro.
+import { localeFromPath, localizedPath } from '../i18n/locales.mjs';
+import { translate } from '../i18n/ui.mjs';
+const locale = localeFromPath(Astro.url.pathname);
+const t = (key: string) => translate(key, locale);
 ---
 
 <section class="consent" id="consent" aria-labelledby="consent-title" hidden>
   <div class="inner">
-    <p class="title" id="consent-title">Cookies</p>
+    <p class="title" id="consent-title">{t("Cookies")}</p>
     <p class="text">
-      Can this site use Google Analytics cookies to count visits and see which pages are useful? Nothing is loaded
-      unless you accept. <a href="/privacy/">Website privacy</a>
+      {t("Can this site use Google Analytics cookies to count visits and see which pages are useful? Nothing is loaded unless you accept.")}
+      {' '}<a href={localizedPath("/privacy/", locale)}>{t("Website privacy")}</a>
     </p>
     <div class="actions">
-      <button type="button" class="btn" data-consent="denied">Reject</button>
-      <button type="button" class="btn" data-consent="granted">Accept</button>
+      <button type="button" class="btn" data-consent="denied">{t("Reject")}</button>
+      <button type="button" class="btn" data-consent="granted">{t("Accept")}</button>
     </div>
   </div>
 </section>

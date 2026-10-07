@@ -1,0 +1,23 @@
+{
+  "locale": "fr",
+  "route": "about",
+  "title": "À propos",
+  "description": "Extension indépendante conçue et maintenue par {author}. Une personne reste responsable de la publication ; sources, avertissements et…",
+  "sections": [
+    {
+      "title": "À propos",
+      "paragraphs": [
+        "Extension indépendante conçue et maintenue par {author}. Une personne reste responsable de la publication ; sources, avertissements et provenance sont visibles."
+      ]
+    },
+    {
+      "title": "Contact",
+      "paragraphs": [
+        "Pour l’assistance ou la sécurité, écrivez à {email}. Pour les bugs, joignez le rapport JSON de Diagnostic, sans clés API ni contenu."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

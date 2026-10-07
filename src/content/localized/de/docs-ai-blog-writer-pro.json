@@ -1,0 +1,22 @@
+{
+  "locale": "de",
+  "route": "docs/ai-blog-writer-pro",
+  "title": "{pro}",
+  "description": "Pro neben dem kostenlosen Plugin installieren, Lizenz aktivieren und Tavily-Schlüssel hinzufügen. Creator und Agency bieten dieselben Prüfungen.…",
+  "sections": [
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Pro neben dem kostenlosen Plugin installieren, Lizenz aktivieren und Tavily-Schlüssel hinzufügen. Creator und Agency bieten dieselben Prüfungen. Pro ergänzt Yoast SEO, All in One SEO und SEOPress. Bei Kündigung bleiben Entwürfe und kostenlose Funktionen erhalten.",
+        "AI Blog Writer Pro sucht Quellen im Web und gleicht jede Tatsachenaussage des Entwurfs damit ab.",
+        "Eine zusätzliche KI-Anfrage je Entwurf, etwa so groß wie die Schreibanfrage (ca. 40–50 % höhere KI-Kosten). Läuft nur bei Artikeln mit Quellen.",
+        "Nach dem Quellenabgleich bewertet ein zweites Modell dieselben Aussagen ohne die ersten Urteile zu sehen. Prüfungen zeigt Abweichungen. Verwendet den Schlüssel aus Anbieterverbindung; Kosten etwa wie beim ersten Abgleich. Wird übersprungen, wenn es das Artikelmodell ist.",
+        "Keine KI-Kosten. Ihre Website ruft jede verlinkte Seite einmal ab.",
+        "KI-Nutzung und Tavily-Credits werden separat von den Anbietern berechnet. Prüfungen erkennen Probleme, garantieren aber weder sachliche Richtigkeit noch Suchplatzierungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

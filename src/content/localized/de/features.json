@@ -1,0 +1,34 @@
+{
+  "locale": "de",
+  "route": "features",
+  "title": "Funktionen",
+  "description": "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und…",
+  "sections": [
+    {
+      "title": "Kostenlos",
+      "paragraphs": [
+        "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und Rank-Math-Integration.",
+        "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe; delegiert geht automatisch weiter. Der Beitrag bleibt immer ein Entwurf.",
+        "Ein Profil steuert Stimme, Zielgruppe, Fachwissen, Wortwahl, Struktur und zu vermeidende Wörter. Verknüpfen Sie einen WordPress-Autor oder lassen Sie ein Konto vom Administrator erstellen. Stil vor dem Speichern ansehen. Löschen behält Autor und Beiträge.",
+        "Die Seitenleiste zeigt Quellen, Warnungen, Herkunft und SEO-Vorschläge. Abschnittsüberarbeitung erst ansehen, prüfen und bestätigen. Ungespeicherte Änderungen vorher speichern oder verwerfen. Alte Versionen bleiben in Revisionen. SEO-Werte bleiben erhalten, sofern Sie sie nicht ersetzen."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "AI Blog Writer Pro sucht Quellen im Web und gleicht jede Tatsachenaussage des Entwurfs damit ab.",
+        "AI Blog Writer Pro kennzeichnet jede Tatsachenaussage als belegt, teilweise belegt oder unbelegt und findet defekte Links.",
+        "Pro neben dem kostenlosen Plugin installieren, Lizenz aktivieren und Tavily-Schlüssel hinzufügen. Creator und Agency bieten dieselben Prüfungen. Pro ergänzt Yoast SEO, All in One SEO und SEOPress. Bei Kündigung bleiben Entwürfe und kostenlose Funktionen erhalten."
+      ]
+    },
+    {
+      "title": "Artikelsprache",
+      "paragraphs": [
+        "Die Oberfläche folgt der WordPress-Profilsprache. Artikelsprache und Land oder Markt sind unabhängige Einstellungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

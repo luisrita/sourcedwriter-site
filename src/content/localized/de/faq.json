@@ -1,0 +1,90 @@
+{
+  "locale": "de",
+  "route": "faq",
+  "title": "Häufige Fragen",
+  "description": "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und Rank-Math-Integration.…",
+  "sections": [
+    {
+      "title": "Was ist {product}?",
+      "paragraphs": [
+        "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und Rank-Math-Integration."
+      ]
+    },
+    {
+      "title": "Wie installiere ich es?",
+      "paragraphs": [
+        "Unter Plugins → Neues Plugin hinzufügen installieren und aktivieren. Anbieter in Einstellungen wählen und speichern, API-Schlüssel hinzufügen, erneut speichern und Verbindung testen."
+      ]
+    },
+    {
+      "title": "Veröffentlicht es automatisch?",
+      "paragraphs": [
+        "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe; delegiert geht automatisch weiter. Der Beitrag bleibt immer ein Entwurf."
+      ]
+    },
+    {
+      "title": "Durchsucht es das Web automatisch?",
+      "paragraphs": [
+        "Geben Sie aktuelle öffentliche HTML- oder Textquellen an, eine URL pro Zeile. Private Netze sind gesperrt. Prüfen Sie Notizen und Quellenwahl; Zitate nutzen nur gewählte URLs. Quellen garantieren nicht die Richtigkeit jeder Aussage.",
+        "AI Blog Writer Pro sucht Quellen im Web und gleicht jede Tatsachenaussage des Entwurfs damit ab."
+      ]
+    },
+    {
+      "title": "Welche KI-Modelle werden unterstützt?",
+      "paragraphs": [
+        "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch veröffentlicht."
+      ]
+    },
+    {
+      "title": "Brauche ich ein Konto oder Abo beim Plugin-Autor?",
+      "paragraphs": [
+        "Das kostenlose Plugin benötigt kein Konto oder Abo beim Autor. Es nutzt Ihr Anbieterkonto und Ihren API-Schlüssel. Pro benötigt eine separate, von Freemius verwaltete Lizenz."
+      ]
+    },
+    {
+      "title": "Was kostet die Erstellung eines Artikels?",
+      "paragraphs": [
+        "Monatliche Website- und Benutzergrenzen blockieren weitere Anfragen bei Erreichen. Schätzungen basieren auf eingestellten Preisen, nicht auf verbindlicher Abrechnung. Fertige Entwürfe bleiben bearbeitbar. Im nächsten Monat beginnt das Kontingent erneut."
+      ]
+    },
+    {
+      "title": "Ist mein API-Schlüssel sicher?",
+      "paragraphs": [
+        "Für stärkste Geheimnistrennung definieren Sie die AIBCG_*_API_KEY-Konstante des Anbieters in wp-config.php. Gespeicherte Schlüssel werden mit Sodium und AIBCG_ENCRYPTION_KEY oder WordPress AUTH_KEY verschlüsselt."
+      ]
+    },
+    {
+      "title": "Was passiert mit meinen Beiträgen bei Deaktivierung oder Deinstallation?",
+      "paragraphs": [
+        "Aufträge, Quellen, Gliederungen, Entwürfe, Profile und verschlüsselte Schlüssel liegen in WordPress. Private Daten fertiger Aufträge werden standardmäßig 90 Tage behalten; Beiträge bleiben. WordPress-Datenexport und -löschung unterstützen Aufträge und Profile. Deinstallation behält Beiträge und Autoren; AIBCG_REMOVE_DATA_ON_UNINSTALL ermöglicht zusätzliche Plugin-Datenlöschung."
+      ]
+    },
+    {
+      "title": "Funktioniert es mit Rank Math?",
+      "paragraphs": [
+        "Die Seitenleiste zeigt Quellen, Warnungen, Herkunft und SEO-Vorschläge. Abschnittsüberarbeitung erst ansehen, prüfen und bestätigen. Ungespeicherte Änderungen vorher speichern oder verwerfen. Alte Versionen bleiben in Revisionen. SEO-Werte bleiben erhalten, sofern Sie sie nicht ersetzen."
+      ]
+    },
+    {
+      "title": "Unterstützt es Multisite und andere Sprachen?",
+      "paragraphs": [
+        "Multisite wird mit getrennten Einstellungen je Website und optionalen Netzwerk-API-Schlüsseln unterstützt. Die Artikelsprache ist unabhängig von der WordPress-Oberfläche."
+      ]
+    },
+    {
+      "title": "Funktioniert es bei wenig Traffic oder deaktiviertem WP-Cron?",
+      "paragraphs": [
+        "WP-Cron läuft normalerweise bei Website-Besuchen. Bei wenig Traffic kann ein Serverplaner für wp-cron.php nötig sein. Bei wartenden Aufträgen prüfen Sie Cron, Loopback-Anfragen und ausgehendes HTTPS vor der Wiederholung."
+      ]
+    },
+    {
+      "title": "Ist KI-Inhalt genau genug, um ihn ungeprüft zu veröffentlichen?",
+      "paragraphs": [
+        "Generierte Inhalte können Fehler oder unbelegte Aussagen enthalten. Prüfen Sie sie vor dem Veröffentlichen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/editor-sidebar-and-rank-math",
+  "title": "Barre latérale de l’éditeur et Rank Math",
+  "description": "La barre latérale affiche sources, avertissements, provenance et suggestions SEO. Prévisualisez et vérifiez la réécriture avant de confirmer.…",
+  "sections": [
+    {
+      "title": "Barre latérale de l’éditeur et Rank Math",
+      "paragraphs": [
+        "La barre latérale affiche sources, avertissements, provenance et suggestions SEO. Prévisualisez et vérifiez la réécriture avant de confirmer. Enregistrez ou abandonnez d’abord les modifications. Les versions restent dans les révisions. Les valeurs SEO sont conservées sauf remplacement choisi.",
+        "Les faits de la section sont reconstruits à partir de ces sources et cités ; les affirmations non étayées sont supprimées et signalées.",
+        "Le contenu généré peut contenir des erreurs ou affirmations non étayées. Relisez avant publication."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

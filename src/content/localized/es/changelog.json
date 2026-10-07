@@ -1,0 +1,17 @@
+{
+  "locale": "es",
+  "route": "changelog",
+  "title": "Historial de cambios",
+  "description": "Versión {version}: borradores con fuentes, perfiles de autor, proveedores y herramientas del editor. Consulta el historial completo en inglés…",
+  "sections": [
+    {
+      "title": "Historial de cambios",
+      "paragraphs": [
+        "Versión {version}: borradores con fuentes, perfiles de autor, proveedores y herramientas del editor. Consulta el historial completo en inglés para detalles por versión."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

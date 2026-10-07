@@ -1,90 +1,44 @@
 ---
 import { SITE, PLUGIN } from '../config';
-
-const year = new Date().getFullYear();
+import { localeFromPath, localizedPath } from '../i18n/locales.mjs';
+import { translate } from '../i18n/ui.mjs';
+const locale = localeFromPath(Astro.url.pathname);
+const t = (key: string) => translate(key, locale, { version: PLUGIN.version, author: SITE.author.name });
+const path = (english: string) => localizedPath(english, locale);
+const groups = [
+  { title: 'Product', links: [['Features', '/features/'], ['Pricing', '/pricing/'], ['Changelog', '/changelog/'], ['FAQ', '/faq/']] },
+  { title: 'Resources', links: [['Docs', '/docs/'], ['Privacy and external services', '/docs/privacy-and-external-services/']] },
+  { title: 'Company', links: [['About', '/about/'], ['Website privacy', '/privacy/']] },
+];
 ---
-
 <footer class="site-footer">
   <div class="container cols">
     <div>
       <p class="name">{SITE.productName}</p>
-      <p>
-        Free WordPress plugin, GPLv2 or later. Version {PLUGIN.version}. Built by
-        <a href="/about/">{SITE.author.name}</a>.
-      </p>
-      <p>Generated content can contain errors. Review every draft before publishing.</p>
+      <p>{t('Free WordPress plugin, GPLv2 or later. Version {version}. Built by {author}.')}</p>
+      <p>{t('Generated content can contain errors or unsupported claims. Review before publishing.')}</p>
     </div>
-    <nav aria-label="Product">
-      <p class="h">Product</p>
-      <ul>
-        <li><a href="/features/">Features</a></li>
-        <li><a href="/changelog/">Changelog</a></li>
-        <li><a href="/faq/">FAQ</a></li>
-      </ul>
-    </nav>
-    <nav aria-label="Resources">
-      <p class="h">Resources</p>
-      <ul>
-        <li><a href="/docs/">Documentation</a></li>
-        <li><a href="/blog/">Guides</a></li>
-        <li><a href="/docs/privacy-and-external-services/">Privacy and external services</a></li>
-        <li><a href="/llms.txt">llms.txt</a></li>
-      </ul>
-    </nav>
-    <nav aria-label="Company">
-      <p class="h">About</p>
-      <ul>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/privacy/">Website privacy</a></li>
-        <li><a href="/privacy/#cookies" data-consent-open>Cookie settings</a></li>
-        <li><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></li>
-      </ul>
-    </nav>
+    {groups.map((group) => <nav aria-label={t(group.title)}>
+      <p class="h">{t(group.title)}</p>
+      <ul>{group.links.map(([label, href]) => <li><a href={path(href)}>{t(label)}</a></li>)}</ul>
+    </nav>)}
+    <div>
+      <p><a href={path('/privacy/#cookies')} data-consent-open>{t('Cookie settings')}</a></p>
+      <p><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></p>
+      <p><a href={locale === 'en' ? '/llms.txt' : path('/llms.txt')}>llms.txt</a></p>
+    </div>
   </div>
   <div class="container legal">
-    <p>
-      © {year} {SITE.author.name}. WordPress is a trademark of the WordPress Foundation. This site and plugin are
-      not affiliated with or endorsed by the WordPress Foundation, OpenAI, Anthropic, Google or xAI.
-    </p>
+    <p>© {new Date().getFullYear()} {SITE.author.name}.</p>
+    <p>{t('WordPress is a trademark of the WordPress Foundation. This site and plugin are not affiliated with or endorsed by the WordPress Foundation, OpenAI, Anthropic, Google or xAI.')}</p>
   </div>
 </footer>
-
 <style>
-  .site-footer {
-    margin-top: 4rem;
-    border-top: 1px solid var(--border);
-    background: var(--bg-soft);
-    font-size: 0.95rem;
-    color: var(--text-soft);
-  }
-  .cols {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
-    padding-top: 2.5rem;
-    padding-bottom: 1.5rem;
-  }
-  .name,
-  .h {
-    font-weight: 700;
-    color: var(--text);
-    margin-top: 0;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  li + li {
-    margin-top: 0.35rem;
-  }
-  a {
-    color: inherit;
-  }
-  .legal {
-    border-top: 1px solid var(--border);
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    font-size: 0.85rem;
-  }
+  .site-footer { margin-top: 4rem; border-top: 1px solid var(--border); background: var(--bg-soft); color: var(--text-soft); font-size: 0.95rem; }
+  .cols { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); padding-block: 2.5rem 1.5rem; }
+  .name, .h { font-weight: 700; color: var(--text); margin-top: 0; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li + li { margin-top: 0.35rem; }
+  a { color: inherit; overflow-wrap: anywhere; }
+  .legal { border-top: 1px solid var(--border); padding-block: 1rem 2rem; font-size: 0.85rem; }
 </style>

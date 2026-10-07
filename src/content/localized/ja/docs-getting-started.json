@@ -1,0 +1,20 @@
+{
+  "locale": "ja",
+  "route": "docs/getting-started",
+  "title": "はじめに",
+  "description": "WordPress {wp} 以降と PHP {php} 以降が必要です。保存するキーを暗号化するため Sodium を有効にし、WP-Cron を動作させてください。",
+  "sections": [
+    {
+      "title": "はじめに",
+      "paragraphs": [
+        "WordPress {wp} 以降と PHP {php} 以降が必要です。保存するキーを暗号化するため Sodium を有効にし、WP-Cron を動作させてください。",
+        "「プラグイン → 新規プラグインを追加」でインストールして有効化します。設定でプロバイダーを選んで保存し、API キーを追加して再保存した後、接続をテストしてください。",
+        "テーマ、読者層、取り上げるポイント、最大8件の出典 URL を指示として入力します。ガイド付きモードで出典と構成案を確認し、公開前にブロックエディターで下書きを確認してください。",
+        "画面の表示言語は WordPress プロフィールの言語に従います。記事の言語と国または市場はそれぞれ独立した設定です。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

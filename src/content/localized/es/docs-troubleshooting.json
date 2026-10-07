@@ -1,0 +1,87 @@
+{
+  "locale": "es",
+  "route": "docs/troubleshooting",
+  "title": "Solución de problemas",
+  "description": "Si falla una clave, pruébala en Ajustes y verifica cuenta, facturación y acceso al modelo. Para límites de solicitudes espera y reintenta; para…",
+  "sections": [
+    {
+      "title": "Proveedores de IA y claves de API",
+      "anchors": [
+        "missing-api-key",
+        "invalid-api-key",
+        "constant-api-key",
+        "credential-storage-unavailable",
+        "model-unavailable",
+        "provider-unreachable",
+        "provider-refusal",
+        "invalid-provider-response",
+        "rate-limit",
+        "provider-unavailable",
+        "provider-rejected"
+      ],
+      "paragraphs": [
+        "Si falla una clave, pruébala en Ajustes y verifica cuenta, facturación y acceso al modelo. Para límites de solicitudes espera y reintenta; para fuentes usa una URL accesible. Descarga Diagnóstico para soporte. Nunca incluyas tu clave en un informe.",
+        "Instala y activa en Plugins → Añadir nuevo plugin. Elige el proveedor en Ajustes y guarda, añade su clave, guarda otra vez y prueba la conexión.",
+        "Para mayor protección, define la constante AIBCG_*_API_KEY del proveedor en wp-config.php. Las claves guardadas usan cifrado Sodium con AIBCG_ENCRYPTION_KEY o AUTH_KEY de WordPress."
+      ]
+    },
+    {
+      "title": "Tareas en segundo plano y WP-Cron",
+      "anchors": [
+        "jobs-stay-queued",
+        "duplicate-job",
+        "stage-failed",
+        "extension-error",
+        "invalid-outline"
+      ],
+      "paragraphs": [
+        "WP-Cron suele ejecutarse cuando alguien visita el sitio. Los sitios con poco tráfico pueden necesitar un programador que llame a wp-cron.php. Si una tarea queda en cola, comprueba cron, peticiones loopback y HTTPS saliente antes de reintentar.",
+        "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del esquema; el Delegado continúa automáticamente. La entrada siempre queda como borrador."
+      ]
+    },
+    {
+      "title": "Fuentes y citas",
+      "anchors": [
+        "source-urls-fail"
+      ],
+      "paragraphs": [
+        "Indica fuentes públicas recientes HTML o texto, una URL por línea. Las redes privadas se bloquean. Revisa notas y fuentes seleccionadas; las citas usan solo sus URL. Tener fuentes no garantiza todas las afirmaciones.",
+        "No se pudo obtener la fuente. Comprueba las restricciones o usa otra URL.",
+        "No se proporcionaron fuentes utilizables. Las afirmaciones precisas sin respaldo deben omitirse o señalarse."
+      ]
+    },
+    {
+      "title": "Uso y límites de coste",
+      "anchors": [
+        "cost-limit-reached"
+      ],
+      "paragraphs": [
+        "Los límites mensuales del sitio y por usuario bloquean nuevas solicitudes al alcanzarse. Las estimaciones dependen de tarifas configuradas, no son facturación oficial. Los borradores completados siguen editables. La cuota se reinicia el mes siguiente.",
+        "Los tokens son unidades internas de cálculo. Los cargos exactos proceden de la facturación del proveedor, no de esta estimación."
+      ]
+    },
+    {
+      "title": "Perfiles de autor",
+      "anchors": [
+        "writer-profile-author"
+      ],
+      "paragraphs": [
+        "El perfil controla voz, público, especialidad, vocabulario, estructura y palabras que evitar. Vincúlalo a un Autor WordPress o pide a un administrador que cree la cuenta. Previsualiza antes de guardar. Eliminar el perfil conserva autor y entradas."
+      ]
+    },
+    {
+      "title": "Barra lateral del editor y Rank Math",
+      "anchors": [
+        "section-rewrite",
+        "seo-plugin-unavailable"
+      ],
+      "paragraphs": [
+        "La barra lateral muestra fuentes, advertencias, procedencia y sugerencias SEO. Previsualiza y revisa una reescritura antes de sustituir la sección. Guarda o descarta cambios pendientes primero. Las versiones anteriores quedan en Revisiones. Los valores SEO se conservan salvo que elijas sustituirlos.",
+        "Los hechos de la sección se reconstruyen con estas fuentes y se citan; las afirmaciones sin respaldo se eliminan y aparecen como advertencias."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/delegated-and-guided-workflows",
+  "title": "Fluxos Delegado e Guiado",
+  "description": "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o…",
+  "sections": [
+    {
+      "title": "Fluxos Delegado e Guiado",
+      "paragraphs": [
+        "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o Delegado continua automaticamente. O post sempre permanece rascunho.",
+        "Crie instruções com tema, público, pontos a abordar e até oito URLs. Comece no modo Guiado, revise fontes e roteiro, depois revise o rascunho no editor antes de publicar.",
+        "Edite o JSON para reordenar, adicionar, remover ou reescrever seções."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

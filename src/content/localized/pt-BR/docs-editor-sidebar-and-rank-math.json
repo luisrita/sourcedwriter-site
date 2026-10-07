@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/editor-sidebar-and-rank-math",
+  "title": "Barra lateral do editor e Rank Math",
+  "description": "A barra lateral mostra fontes, avisos, origem e sugestões SEO. Gere e revise a prévia antes de confirmar a substituição de uma seção. Salve ou…",
+  "sections": [
+    {
+      "title": "Barra lateral do editor e Rank Math",
+      "paragraphs": [
+        "A barra lateral mostra fontes, avisos, origem e sugestões SEO. Gere e revise a prévia antes de confirmar a substituição de uma seção. Salve ou descarte edições pendentes primeiro. Versões anteriores ficam em Revisões. Valores SEO são mantidos salvo se escolher substituir.",
+        "Os fatos da seção são reconstruídos com estas fontes e citados; afirmações sem respaldo são removidas e listadas como avisos.",
+        "O conteúdo gerado pode conter erros ou afirmações sem respaldo. Revise antes de publicar."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,34 @@
+{
+  "locale": "fr",
+  "route": "features",
+  "title": "Fonctionnalités",
+  "description": "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et…",
+  "sections": [
+    {
+      "title": "Gratuit",
+      "paragraphs": [
+        "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et intégration Rank Math.",
+        "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du plan ; le mode Délégué poursuit automatiquement. L’article reste un brouillon.",
+        "Un profil règle voix, public, expertise, vocabulaire, structure et mots à éviter. Associez un Auteur WordPress ou faites créer un compte par un administrateur. Prévisualisez avant d’enregistrer. Supprimer le profil conserve auteur et articles.",
+        "La barre latérale affiche sources, avertissements, provenance et suggestions SEO. Prévisualisez et vérifiez la réécriture avant de confirmer. Enregistrez ou abandonnez d’abord les modifications. Les versions restent dans les révisions. Les valeurs SEO sont conservées sauf remplacement choisi."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "AI Blog Writer Pro recherche des sources sur le Web et vérifie chaque affirmation factuelle du brouillon à partir d’elles.",
+        "AI Blog Writer Pro classe chaque affirmation factuelle comme étayée, partiellement étayée ou non étayée, et détecte les liens inaccessibles.",
+        "Installez Pro avec l’extension gratuite, activez la licence et ajoutez une clé Tavily. Creator et Agency incluent les mêmes vérifications. Pro ajoute Yoast SEO, All in One SEO et SEOPress. Résilier conserve vos brouillons et les fonctions gratuites."
+      ]
+    },
+    {
+      "title": "Langue de l’article",
+      "paragraphs": [
+        "L’interface suit la langue du profil WordPress. La langue de l’article et le pays ou marché sont des réglages indépendants."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

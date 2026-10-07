@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/usage-and-cost-ceilings",
+  "title": "Utilisation et plafonds de coût",
+  "description": "Les plafonds mensuels du site et par utilisateur bloquent les nouvelles demandes une fois atteints. Les estimations reposent sur vos tarifs…",
+  "sections": [
+    {
+      "title": "Utilisation et plafonds de coût",
+      "paragraphs": [
+        "Les plafonds mensuels du site et par utilisateur bloquent les nouvelles demandes une fois atteints. Les estimations reposent sur vos tarifs configurés, pas sur la facture officielle. Les brouillons restent modifiables. Le quota repart le mois suivant.",
+        "Les jetons restent des unités de comptabilité internes. Les montants exacts proviennent de la facturation du fournisseur, pas de cette estimation.",
+        "L’utilisation IA et les crédits Tavily sont facturés séparément par ces fournisseurs. Les vérifications détectent des problèmes, sans garantir l’exactitude ou le classement dans les recherches."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

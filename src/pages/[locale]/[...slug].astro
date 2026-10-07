@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { PLUGIN, PRO, SITE } from '../../config';
+import { localeConfig, localizedPath } from '../../i18n/locales.mjs';
+import { checkoutUrl } from '../../i18n/checkout.mjs';
+import { localizedValues } from '../../lib/localized';
+import { translate, interpolate } from '../../i18n/ui.mjs';
+import { breadcrumbNode, faqNode } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  return (await getCollection('localized')).map((entry) => ({
+    params: { locale: localeConfig(entry.data.locale).path, slug: entry.data.route || undefined },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { locale, route, sections } = entry.data;
+const values = localizedValues(locale);
+const t = (key: string) => translate(key, locale, values);
+const copy = (text: string) => interpolate(text, values);
+const title = copy(entry.data.title);
+const docs = (await getCollection('localized', (doc) => doc.data.locale === locale && doc.data.route.startsWith('docs/')));
+const path = (english: string) => localizedPath(english, locale);
+const englishPath = route ? `/${route}/` : '/';
+const schemas: object[] = [breadcrumbNode([{ name: t('Home'), path: path('/') }, { name: title, path: Astro.url.pathname }])];
+if (route === 'faq') schemas.push({ ...faqNode(sections.map((section) => ({ q: copy(section.title), a: section.paragraphs.map(copy).join(' ') }))), inLanguage: locale });
+const markdownPath = path(route ? `/${route}.md` : '/index.md');
+---
+
+<Base title={title} description={copy(entry.data.description)} markdownPath={markdownPath}
+  schema={schemas}>
+  <section class="section">
+    <div class="container prose">
+      <h1>{title}</h1>
+      {sections.map((section, index) => <section aria-labelledby={`section-${index}`}>
+        {section.anchors?.map((anchor) => <span id={anchor} aria-hidden="true" />)}
+        <h2 id={`section-${index}`}>{copy(section.title)}</h2>
+        {section.paragraphs.map((paragraph) => <p>{copy(paragraph)}</p>)}
+      </section>)}
+
+      {route === 'pricing' && <div class="plans">
+        <a class="btn" href={checkoutUrl(PRO.trialUrl, locale)} rel="external noopener">{t('Start the 14-day free trial')}</a>
+        <a class="btn btn--ghost" href={checkoutUrl(PRO.creatorUrl, locale)} rel="external noopener">{t('Buy Creator')}</a>
+        <a class="btn btn--ghost" href={checkoutUrl(PRO.agencyUrl, locale)} rel="external noopener">{t('Buy Agency')}</a>
+      </div>}
+
+      {route === 'privacy' && <p id="cookies">
+        <a href="#cookies" data-consent-open>{t('Cookie settings')}</a> ·
+        <a href="https://policies.google.com/technologies/partner-sites">Google</a> ·
+        <a href="https://tools.google.com/dlpage/gaoptout">Google Analytics</a> ·
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> ·
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>
+      </p>}
+
+      {route === 'docs/privacy-and-external-services' && <p id="usage-data">
+        <a href={path('/privacy/')}>{t('Website privacy')}</a> ·
+        <a href="https://openai.com/policies/privacy-policy/">OpenAI</a> ·
+        <a href="https://www.anthropic.com/legal/privacy">Anthropic</a> ·
+        <a href="https://ai.google.dev/gemini-api/terms">Google</a> ·
+        <a href="https://x.ai/legal/privacy-policy">xAI</a> ·
+        <a href="https://www.tavily.com/privacy">Tavily</a>
+      </p>}
+
+      {(route === '' || route === 'features' || route === 'docs/getting-started') && <div class="plans">
+        <a class="btn" href={PLUGIN.wordpressOrgUrl} rel="external noopener">{t('Get it free on WordPress.org')}</a>
+        <a class="btn btn--ghost" href={path('/docs/getting-started/')}>{t('Setup guide')}</a>
+      </div>}
+
+      {(route === 'docs' || route.startsWith('docs/')) && <nav aria-label={t('Docs')}>
+        <ul>{docs.map((doc) => <li><a href={path(`/${doc.data.route}/`)}
+          aria-current={doc.data.route === route ? 'page' : undefined}>{copy(doc.data.title)}</a></li>)}</ul>
+      </nav>}
+      <p><a href={englishPath} lang="en">{t('Read the full English guide')}</a></p>
+      <p><a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a></p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .plans { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-block: 1.5rem; }
+  nav { border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 2rem; }
+  h1, h2, p, a { overflow-wrap: anywhere; }
+</style>

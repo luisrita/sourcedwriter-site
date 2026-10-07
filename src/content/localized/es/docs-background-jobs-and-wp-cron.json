@@ -1,0 +1,19 @@
+{
+  "locale": "es",
+  "route": "docs/background-jobs-and-wp-cron",
+  "title": "Tareas en segundo plano y WP-Cron",
+  "description": "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del…",
+  "sections": [
+    {
+      "title": "Tareas en segundo plano y WP-Cron",
+      "paragraphs": [
+        "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del esquema; el Delegado continúa automáticamente. La entrada siempre queda como borrador.",
+        "WP-Cron suele ejecutarse cuando alguien visita el sitio. Los sitios con poco tráfico pueden necesitar un programador que llame a wp-cron.php. Si una tarea queda en cola, comprueba cron, peticiones loopback y HTTPS saliente antes de reintentar.",
+        "Esta tarea lleva más de dos minutos esperando. Puede que WP-Cron no funcione en este sitio."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

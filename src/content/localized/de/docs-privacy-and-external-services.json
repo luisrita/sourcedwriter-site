@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/privacy-and-external-services",
+  "title": "Datenschutz und externe Dienste",
+  "description": "Quellenanfragen identifizieren den Server mit Plugin-Version und Website-URL. Der KI-Anbieter erhält Briefing, Profil, Notizen und Gliederung;…",
+  "sections": [
+    {
+      "title": "Datenschutz und externe Dienste",
+      "paragraphs": [
+        "Quellenanfragen identifizieren den Server mit Plugin-Version und Website-URL. Der KI-Anbieter erhält Briefing, Profil, Notizen und Gliederung; Vorschläge können bis zu 50 aktuelle Beitragstitel enthalten. Schlüssel bleiben serverseitig. Pro sendet Suchanfragen an Tavily und nutzt gewählte Anbieter für Prüfungen. Deren Datenschutzbedingungen gelten.",
+        "Aufträge, Quellen, Gliederungen, Entwürfe, Profile und verschlüsselte Schlüssel liegen in WordPress. Private Daten fertiger Aufträge werden standardmäßig 90 Tage behalten; Beiträge bleiben. WordPress-Datenexport und -löschung unterstützen Aufträge und Profile. Deinstallation behält Beiträge und Autoren; AIBCG_REMOVE_DATA_ON_UNINSTALL ermöglicht zusätzliche Plugin-Datenlöschung.",
+        "Nutzungsdaten sind optional und standardmäßig aus. Mit Zustimmung werden anonyme Zähler und Einstellungen täglich und bei Deaktivierung an telemetry.sourcedwriter.com gesendet. Keine URLs, Namen, Schlüssel, Inhalte oder Fehlermeldungen. Diagnose zeigt Warteschlange und ID; Versand lässt sich stoppen und Serverdaten löschen. AIBCG_DISABLE_TELEMETRY hält es aus."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

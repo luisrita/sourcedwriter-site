@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/delegated-and-guided-workflows",
+  "title": "Processus Délégué et Guidé",
+  "description": "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du…",
+  "sections": [
+    {
+      "title": "Processus Délégué et Guidé",
+      "paragraphs": [
+        "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du plan ; le mode Délégué poursuit automatiquement. L’article reste un brouillon.",
+        "Créez des consignes avec sujet, public, points et jusqu’à huit URL. Commencez en mode Guidé, validez sources et plan, puis relisez le brouillon dans l’éditeur avant publication.",
+        "Modifiez le JSON pour réordonner, ajouter, supprimer ou réécrire des sections."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

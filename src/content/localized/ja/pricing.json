@@ -1,0 +1,26 @@
+{
+  "locale": "ja",
+  "route": "pricing",
+  "title": "料金",
+  "description": "無料プラグインには出典付き下書き、執筆者プロフィール、ガイド付きの確認、WordPress ブロック、セクションの書き直し、Rank Math 連携が含まれます。",
+  "sections": [
+    {
+      "title": "無料",
+      "paragraphs": [
+        "無料プラグインには出典付き下書き、執筆者プロフィール、ガイド付きの確認、WordPress ブロック、セクションの書き直し、Rank Math 連携が含まれます。",
+        "自分の OpenAI、Claude、Gemini、Grok の API キーを使用します。費用はプロバイダーから直接請求され、下書きが自動で公開されることはありません。"
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Creator は1サイトで月{creatormonthly}または年{creatoryearly}、Agency は5サイトで月{agencymonthly}または年{agencyyearly}です。VAT 別途。決済、税金、請求書は Freemius が処理します。14日間の無料体験はカード不要で、購入には14日間の返金保証があります。",
+        "無料プラグインと一緒に Pro をインストールし、ライセンスを有効にして Tavily キーを追加します。Creator と Agency のチェック機能は同じです。Pro は Yoast SEO、All in One SEO、SEOPress にも対応します。解約後も下書きと無料機能を使用できます。",
+        "AI 使用料と Tavily クレジットは各プロバイダーから別途請求されます。チェックは問題の発見を助けますが、事実の正確性や検索順位を保証するものではありません。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

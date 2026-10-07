@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/editor-sidebar-and-rank-math",
+  "title": "Editor-Seitenleiste und Rank Math",
+  "description": "Die Seitenleiste zeigt Quellen, Warnungen, Herkunft und SEO-Vorschläge. Abschnittsüberarbeitung erst ansehen, prüfen und bestätigen.…",
+  "sections": [
+    {
+      "title": "Editor-Seitenleiste und Rank Math",
+      "paragraphs": [
+        "Die Seitenleiste zeigt Quellen, Warnungen, Herkunft und SEO-Vorschläge. Abschnittsüberarbeitung erst ansehen, prüfen und bestätigen. Ungespeicherte Änderungen vorher speichern oder verwerfen. Alte Versionen bleiben in Revisionen. SEO-Werte bleiben erhalten, sofern Sie sie nicht ersetzen.",
+        "Fakten im Abschnitt werden aus diesen Quellen neu aufgebaut und zitiert. Unbelegte Aussagen werden entfernt und als Warnungen aufgeführt.",
+        "Generierte Inhalte können Fehler oder unbelegte Aussagen enthalten. Prüfen Sie sie vor dem Veröffentlichen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

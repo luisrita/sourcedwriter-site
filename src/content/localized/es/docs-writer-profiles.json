@@ -1,0 +1,19 @@
+{
+  "locale": "es",
+  "route": "docs/writer-profiles",
+  "title": "Perfiles de autor",
+  "description": "El perfil controla voz, público, especialidad, vocabulario, estructura y palabras que evitar. Vincúlalo a un Autor WordPress o pide a un…",
+  "sections": [
+    {
+      "title": "Perfiles de autor",
+      "paragraphs": [
+        "El perfil controla voz, público, especialidad, vocabulario, estructura y palabras que evitar. Vincúlalo a un Autor WordPress o pide a un administrador que cree la cuenta. Previsualiza antes de guardar. Eliminar el perfil conserva autor y entradas.",
+        "Las respuestas específicas hacen que el texto suene humano.",
+        "Rasgos vagos como \"amable y profesional\" cambian poco. Describe al autor, sus opiniones y palabras que usa o evita. El punto de vista, vocabulario preferido, palabras que evitar y una muestra tienen más efecto."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

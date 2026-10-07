@@ -42,6 +42,7 @@ const checkout = 'https://checkout.freemius.com/product/40688/plan';
 export const PRO = {
   name: 'AI Blog Writer Pro',
   fromPrice: '€9',
+  prices: { creatorMonthly: 9, creatorYearly: 90, agencyMonthly: 24, agencyYearly: 240, currency: 'EUR' },
   trialDays: 14,
   trialUrl: `${checkout}/70382/currency/eur/?trial=free`,
   creatorUrl: `${checkout}/70382/currency/eur/?billing_cycle=annual`,

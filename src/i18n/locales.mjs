@@ -1,5 +1,5 @@
 // Website locales are separate from WordPress interface and article preferences.
-// English keeps its existing unprefixed URLs. Other routes are reserved until reviewed.
+// English keeps its existing unprefixed URLs. Five editions are available in the development branch.
 export const LOCALES = Object.freeze({
   en: Object.freeze({ path: '', lang: 'en', og: 'en_GB', wordpress: 'en_US', label: 'English' }),
   ja: Object.freeze({ path: 'ja', lang: 'ja', og: 'ja_JP', wordpress: 'ja', label: '日本語' }),

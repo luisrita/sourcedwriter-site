@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/sources-and-citations",
+  "title": "Quellen und Zitate",
+  "description": "Geben Sie aktuelle öffentliche HTML- oder Textquellen an, eine URL pro Zeile. Private Netze sind gesperrt. Prüfen Sie Notizen und Quellenwahl;…",
+  "sections": [
+    {
+      "title": "Quellen und Zitate",
+      "paragraphs": [
+        "Geben Sie aktuelle öffentliche HTML- oder Textquellen an, eine URL pro Zeile. Private Netze sind gesperrt. Prüfen Sie Notizen und Quellenwahl; Zitate nutzen nur gewählte URLs. Quellen garantieren nicht die Richtigkeit jeder Aussage.",
+        "Ohne Quellen nutzt der Artikel allgemeines KI-Wissen, das bei neuen Produkten, Preisen oder dem kommenden Jahr veraltet sein kann. Ergänzen Sie 3–5 aktuelle Seiten, die Sie selbst zitieren würden: Bewertungen, offizielle Mitteilungen oder Daten.",
+        "Quellenanfragen identifizieren den Server mit Plugin-Version und Website-URL. Der KI-Anbieter erhält Briefing, Profil, Notizen und Gliederung; Vorschläge können bis zu 50 aktuelle Beitragstitel enthalten. Schlüssel bleiben serverseitig. Pro sendet Suchanfragen an Tavily und nutzt gewählte Anbieter für Prüfungen. Deren Datenschutzbedingungen gelten."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

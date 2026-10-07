@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/delegated-and-guided-workflows",
+  "title": "Delegierte und geführte Abläufe",
+  "description": "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe;…",
+  "sections": [
+    {
+      "title": "Delegierte und geführte Abläufe",
+      "paragraphs": [
+        "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe; delegiert geht automatisch weiter. Der Beitrag bleibt immer ein Entwurf.",
+        "Erstellen Sie ein Briefing mit Thema, Zielgruppe, Schwerpunkten und bis zu acht Quellen-URLs. Beginnen Sie geführt, prüfen Sie Quellen und Gliederung und dann den Entwurf im Editor vor Veröffentlichung.",
+        "Bearbeiten Sie das JSON, um Abschnitte umzuordnen, hinzuzufügen, zu entfernen oder umzuschreiben."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,32 @@
+{
+  "locale": "de",
+  "route": "",
+  "title": "WordPress-Entwürfe mit Quellen zur Prüfung vor der Veröffentlichung",
+  "description": "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch…",
+  "sections": [
+    {
+      "title": "Erste Schritte",
+      "paragraphs": [
+        "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch veröffentlicht.",
+        "Erstellen Sie ein Briefing mit Thema, Zielgruppe, Schwerpunkten und bis zu acht Quellen-URLs. Beginnen Sie geführt, prüfen Sie Quellen und Gliederung und dann den Entwurf im Editor vor Veröffentlichung."
+      ]
+    },
+    {
+      "title": "Funktionen",
+      "paragraphs": [
+        "Das kostenlose Plugin bietet Entwürfe mit Quellen, Autorenprofile, geführte Prüfung, WordPress-Blöcke, Abschnittsüberarbeitung und Rank-Math-Integration.",
+        "Die Oberfläche folgt der WordPress-Profilsprache. Artikelsprache und Land oder Markt sind unabhängige Einstellungen."
+      ]
+    },
+    {
+      "title": "Preise",
+      "paragraphs": [
+        "AI Blog Writer Pro sucht Quellen im Web und gleicht jede Tatsachenaussage des Entwurfs damit ab.",
+        "KI-Nutzung und Tavily-Credits werden separat von den Anbietern berechnet. Prüfungen erkennen Probleme, garantieren aber weder sachliche Richtigkeit noch Suchplatzierungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

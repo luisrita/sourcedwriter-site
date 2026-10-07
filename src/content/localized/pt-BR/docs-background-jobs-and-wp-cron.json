@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/background-jobs-and-wp-cron",
+  "title": "Tarefas em segundo plano e WP-Cron",
+  "description": "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o…",
+  "sections": [
+    {
+      "title": "Tarefas em segundo plano e WP-Cron",
+      "paragraphs": [
+        "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o Delegado continua automaticamente. O post sempre permanece rascunho.",
+        "WP-Cron normalmente executa quando alguém visita o site. Sites com poucas visitas podem precisar de um agendador que chame wp-cron.php. Se uma tarefa ficar na fila, verifique cron, loopback e HTTPS de saída antes de repetir a etapa.",
+        "Esta tarefa aguarda há mais de dois minutos. O WP-Cron pode não estar funcionando neste site."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,18 @@
+{
+  "locale": "pt-BR",
+  "route": "docs",
+  "title": "Documentação",
+  "description": "Exige WordPress {wp} ou posterior e PHP {php} ou posterior. Ative Sodium para criptografar chaves e mantenha WP-Cron em execução.",
+  "sections": [
+    {
+      "title": "Primeiros passos",
+      "paragraphs": [
+        "Exige WordPress {wp} ou posterior e PHP {php} ou posterior. Ative Sodium para criptografar chaves e mantenha WP-Cron em execução.",
+        "A interface segue o idioma do perfil WordPress. Idioma do artigo e país ou mercado são configurações independentes."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

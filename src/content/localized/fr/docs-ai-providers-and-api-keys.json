@@ -1,0 +1,20 @@
+{
+  "locale": "fr",
+  "route": "docs/ai-providers-and-api-keys",
+  "title": "Fournisseurs d’IA et clés API",
+  "description": "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement.",
+  "sections": [
+    {
+      "title": "Fournisseurs d’IA et clés API",
+      "paragraphs": [
+        "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement.",
+        "Installez et activez dans Extensions → Ajouter une extension. Choisissez le fournisseur dans les réglages, enregistrez, ajoutez sa clé API, enregistrez à nouveau et testez la connexion.",
+        "Pour mieux isoler les secrets, définissez la constante AIBCG_*_API_KEY du fournisseur dans wp-config.php. Les clés enregistrées sont chiffrées par Sodium avec AIBCG_ENCRYPTION_KEY ou AUTH_KEY de WordPress.",
+        "Langue par défaut du contenu généré. L’interface suit la langue de votre profil WordPress."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

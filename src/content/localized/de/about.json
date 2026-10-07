@@ -1,0 +1,23 @@
+{
+  "locale": "de",
+  "route": "about",
+  "title": "Über uns",
+  "description": "Ein unabhängiges Plugin, entwickelt und betreut von {author}. Ein Mensch bleibt für Veröffentlichungen verantwortlich; Quellen, Warnungen und…",
+  "sections": [
+    {
+      "title": "Über uns",
+      "paragraphs": [
+        "Ein unabhängiges Plugin, entwickelt und betreut von {author}. Ein Mensch bleibt für Veröffentlichungen verantwortlich; Quellen, Warnungen und Herkunft sind sichtbar."
+      ]
+    },
+    {
+      "title": "Kontakt",
+      "paragraphs": [
+        "Für Support oder Sicherheitsmeldungen schreiben Sie an {email}. Bei Fehlern den JSON-Diagnosebericht beifügen; er enthält keine Schlüssel oder Inhalte."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

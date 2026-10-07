@@ -3,14 +3,15 @@ interface Props {
   alternatives: { code: string; lang: string; label: string; href: string }[];
   current: string;
 }
+import { translate } from '../i18n/ui.mjs';
 const { alternatives, current } = Astro.props;
 ---
 
 {alternatives.length > 1 && (
-  <nav class="language-switcher" aria-label="Language">
+  <nav class="language-switcher" aria-label={translate("Language", current)}>
     <ul>
       {alternatives.map((locale) => (
-        <li><a href={locale.href} lang={locale.lang} hreflang={locale.lang}
+        <li><a href={locale.href} data-language-target={locale.href} data-language-code={locale.code} lang={locale.lang} hreflang={locale.lang}
           aria-current={locale.code === current ? 'page' : undefined}>{locale.label}</a></li>
       ))}
     </ul>
@@ -22,3 +23,20 @@ const { alternatives, current } = Astro.props;
   a { font-size: 0.9rem; }
   a[aria-current='page'] { font-weight: 700; }
 </style>
+
+<script>
+  // Metadata stays canonical; navigation carries campaign parameters and help anchors.
+  function updateLanguageLinks() {
+    document.querySelectorAll<HTMLAnchorElement>('[data-language-target]').forEach((link) => {
+      link.href = `${link.dataset.languageTarget}${window.location.search}${window.location.hash}`;
+    });
+  }
+  document.querySelectorAll<HTMLAnchorElement>('[data-language-code]').forEach((link) => {
+    link.addEventListener('click', () => {
+      try { localStorage.setItem('sourcedwriter-language', link.dataset.languageCode!); } catch { /* Storage may be unavailable. */ }
+    });
+  });
+  updateLanguageLinks();
+  window.addEventListener('hashchange', updateLanguageLinks);
+  document.addEventListener('astro:page-load', updateLanguageLinks);
+</script>

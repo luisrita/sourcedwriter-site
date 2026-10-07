@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/writer-profiles",
+  "title": "Profils d’auteur",
+  "description": "Un profil règle voix, public, expertise, vocabulaire, structure et mots à éviter. Associez un Auteur WordPress ou faites créer un compte par un…",
+  "sections": [
+    {
+      "title": "Profils d’auteur",
+      "paragraphs": [
+        "Un profil règle voix, public, expertise, vocabulaire, structure et mots à éviter. Associez un Auteur WordPress ou faites créer un compte par un administrateur. Prévisualisez avant d’enregistrer. Supprimer le profil conserve auteur et articles.",
+        "Des réponses précises rendent l’écriture plus humaine.",
+        "Des traits vagues comme « sympathique et professionnel » changent peu. Décrivez l’auteur, ses opinions et les mots qu’il utilise ou évite. Point de vue, vocabulaire, mots à éviter et exemple de rédaction ont le plus d’effet."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

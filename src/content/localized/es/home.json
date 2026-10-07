@@ -1,0 +1,32 @@
+{
+  "locale": "es",
+  "route": "",
+  "title": "Borradores WordPress con fuentes que puedes revisar antes de publicar",
+  "description": "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente.",
+  "sections": [
+    {
+      "title": "Primeros pasos",
+      "paragraphs": [
+        "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente.",
+        "Crea instrucciones con tema, público, puntos y hasta ocho URL. Empieza en modo Guiado, revisa fuentes y esquema y después el borrador en el editor antes de publicar."
+      ]
+    },
+    {
+      "title": "Funciones",
+      "paragraphs": [
+        "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración Rank Math.",
+        "La interfaz usa el idioma del perfil WordPress. El idioma del artículo y el país o mercado son ajustes independientes."
+      ]
+    },
+    {
+      "title": "Precios",
+      "paragraphs": [
+        "AI Blog Writer Pro busca fuentes en la web y comprueba cada afirmación factual del borrador con ellas.",
+        "El uso de IA y los créditos Tavily se cobran aparte por sus proveedores. Las comprobaciones detectan problemas, pero no garantizan exactitud ni posiciones en buscadores."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

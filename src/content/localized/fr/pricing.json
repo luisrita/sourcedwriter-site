@@ -1,0 +1,26 @@
+{
+  "locale": "fr",
+  "route": "pricing",
+  "title": "Tarifs",
+  "description": "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et…",
+  "sections": [
+    {
+      "title": "Gratuit",
+      "paragraphs": [
+        "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et intégration Rank Math.",
+        "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Creator coûte {creatormonthly}/mois ou {creatoryearly}/an pour un site. Agency coûte {agencymonthly}/mois ou {agencyyearly}/an pour cinq. Prix hors TVA. Freemius gère paiement, taxes et factures. Essai de 14 jours sans carte ; achats garantis remboursables sous 14 jours.",
+        "Installez Pro avec l’extension gratuite, activez la licence et ajoutez une clé Tavily. Creator et Agency incluent les mêmes vérifications. Pro ajoute Yoast SEO, All in One SEO et SEOPress. Résilier conserve vos brouillons et les fonctions gratuites.",
+        "L’utilisation IA et les crédits Tavily sont facturés séparément par ces fournisseurs. Les vérifications détectent des problèmes, sans garantir l’exactitude ou le classement dans les recherches."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

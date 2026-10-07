@@ -1,0 +1,87 @@
+{
+  "locale": "fr",
+  "route": "docs/troubleshooting",
+  "title": "Dépannage",
+  "description": "Si une clé échoue, testez-la dans les réglages et vérifiez compte, facturation et accès au modèle. Pour les limites, attendez et réessayez ;…",
+  "sections": [
+    {
+      "title": "Fournisseurs d’IA et clés API",
+      "anchors": [
+        "missing-api-key",
+        "invalid-api-key",
+        "constant-api-key",
+        "credential-storage-unavailable",
+        "model-unavailable",
+        "provider-unreachable",
+        "provider-refusal",
+        "invalid-provider-response",
+        "rate-limit",
+        "provider-unavailable",
+        "provider-rejected"
+      ],
+      "paragraphs": [
+        "Si une clé échoue, testez-la dans les réglages et vérifiez compte, facturation et accès au modèle. Pour les limites, attendez et réessayez ; pour les sources, utilisez une URL accessible. Téléchargez Diagnostic pour l’assistance. Ne joignez jamais votre clé.",
+        "Installez et activez dans Extensions → Ajouter une extension. Choisissez le fournisseur dans les réglages, enregistrez, ajoutez sa clé API, enregistrez à nouveau et testez la connexion.",
+        "Pour mieux isoler les secrets, définissez la constante AIBCG_*_API_KEY du fournisseur dans wp-config.php. Les clés enregistrées sont chiffrées par Sodium avec AIBCG_ENCRYPTION_KEY ou AUTH_KEY de WordPress."
+      ]
+    },
+    {
+      "title": "Tâches en arrière-plan et WP-Cron",
+      "anchors": [
+        "jobs-stay-queued",
+        "duplicate-job",
+        "stage-failed",
+        "extension-error",
+        "invalid-outline"
+      ],
+      "paragraphs": [
+        "WP-Cron s’exécute généralement lors des visites. Un site peu visité peut nécessiter un ordonnanceur appelant wp-cron.php. Si une tâche reste en attente, vérifiez cron, requêtes loopback et HTTPS sortant avant de réessayer.",
+        "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du plan ; le mode Délégué poursuit automatiquement. L’article reste un brouillon."
+      ]
+    },
+    {
+      "title": "Sources et citations",
+      "anchors": [
+        "source-urls-fail"
+      ],
+      "paragraphs": [
+        "Fournissez des sources publiques récentes HTML ou texte, une URL par ligne. Les réseaux privés sont bloqués. Vérifiez notes et sélection ; les citations utilisent uniquement les URL retenues. Les sources ne garantissent pas toutes les affirmations.",
+        "Impossible de récupérer la source. Vérifiez les restrictions ou utilisez une autre URL.",
+        "Aucune source utilisable fournie. Les affirmations précises non étayées doivent être omises ou signalées."
+      ]
+    },
+    {
+      "title": "Utilisation et plafonds de coût",
+      "anchors": [
+        "cost-limit-reached"
+      ],
+      "paragraphs": [
+        "Les plafonds mensuels du site et par utilisateur bloquent les nouvelles demandes une fois atteints. Les estimations reposent sur vos tarifs configurés, pas sur la facture officielle. Les brouillons restent modifiables. Le quota repart le mois suivant.",
+        "Les jetons restent des unités de comptabilité internes. Les montants exacts proviennent de la facturation du fournisseur, pas de cette estimation."
+      ]
+    },
+    {
+      "title": "Profils d’auteur",
+      "anchors": [
+        "writer-profile-author"
+      ],
+      "paragraphs": [
+        "Un profil règle voix, public, expertise, vocabulaire, structure et mots à éviter. Associez un Auteur WordPress ou faites créer un compte par un administrateur. Prévisualisez avant d’enregistrer. Supprimer le profil conserve auteur et articles."
+      ]
+    },
+    {
+      "title": "Barre latérale de l’éditeur et Rank Math",
+      "anchors": [
+        "section-rewrite",
+        "seo-plugin-unavailable"
+      ],
+      "paragraphs": [
+        "La barre latérale affiche sources, avertissements, provenance et suggestions SEO. Prévisualisez et vérifiez la réécriture avant de confirmer. Enregistrez ou abandonnez d’abord les modifications. Les versions restent dans les révisions. Les valeurs SEO sont conservées sauf remplacement choisi.",
+        "Les faits de la section sont reconstruits à partir de ces sources et cités ; les affirmations non étayées sont supprimées et signalées."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

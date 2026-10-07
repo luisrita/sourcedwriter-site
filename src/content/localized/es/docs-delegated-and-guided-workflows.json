@@ -1,0 +1,19 @@
+{
+  "locale": "es",
+  "route": "docs/delegated-and-guided-workflows",
+  "title": "Flujos Delegado y Guiado",
+  "description": "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del…",
+  "sections": [
+    {
+      "title": "Flujos Delegado y Guiado",
+      "paragraphs": [
+        "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del esquema; el Delegado continúa automáticamente. La entrada siempre queda como borrador.",
+        "Crea instrucciones con tema, público, puntos y hasta ocho URL. Empieza en modo Guiado, revisa fuentes y esquema y después el borrador en el editor antes de publicar.",
+        "Edita el JSON para reordenar, añadir, eliminar o reescribir secciones."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

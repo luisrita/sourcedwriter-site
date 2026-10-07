@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/writer-profiles",
+  "title": "Perfis de autor",
+  "description": "O perfil controla voz, público, especialidade, vocabulário, estrutura e palavras a evitar. Vincule a um Autor WordPress ou peça a um…",
+  "sections": [
+    {
+      "title": "Perfis de autor",
+      "paragraphs": [
+        "O perfil controla voz, público, especialidade, vocabulário, estrutura e palavras a evitar. Vincule a um Autor WordPress ou peça a um administrador para criar a conta. Visualize o estilo antes de salvar. Excluir o perfil mantém autor e posts.",
+        "Respostas específicas tornam a escrita mais humana.",
+        "Características vagas como \"amigável e profissional\" mudam pouco. Diga quem é o autor, suas opiniões e palavras que usa ou evita. Ponto de vista, vocabulário preferido, palavras a evitar e uma amostra têm maior efeito."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

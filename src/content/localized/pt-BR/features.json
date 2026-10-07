@@ -1,0 +1,34 @@
+{
+  "locale": "pt-BR",
+  "route": "features",
+  "title": "Recursos",
+  "description": "O plugin gratuito inclui rascunhos com fontes, perfis de autor, revisão Guiada, blocos WordPress, reescrita de seções e integração Rank Math.",
+  "sections": [
+    {
+      "title": "Gratuito",
+      "paragraphs": [
+        "O plugin gratuito inclui rascunhos com fontes, perfis de autor, revisão Guiada, blocos WordPress, reescrita de seções e integração Rank Math.",
+        "A tarefa executa pesquisa, roteiro, rascunho e verificações em segundo plano. O modo Guiado aguarda seleção de fontes e aprovação do roteiro; o Delegado continua automaticamente. O post sempre permanece rascunho.",
+        "O perfil controla voz, público, especialidade, vocabulário, estrutura e palavras a evitar. Vincule a um Autor WordPress ou peça a um administrador para criar a conta. Visualize o estilo antes de salvar. Excluir o perfil mantém autor e posts.",
+        "A barra lateral mostra fontes, avisos, origem e sugestões SEO. Gere e revise a prévia antes de confirmar a substituição de uma seção. Salve ou descarte edições pendentes primeiro. Versões anteriores ficam em Revisões. Valores SEO são mantidos salvo se escolher substituir."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "AI Blog Writer Pro pesquisa fontes na web e verifica cada afirmação factual do rascunho com elas.",
+        "AI Blog Writer Pro classifica cada afirmação factual como respaldada, parcial ou sem respaldo, e encontra links quebrados.",
+        "Instale Pro junto do plugin gratuito, ative a licença e adicione uma chave Tavily. Creator e Agency têm as mesmas verificações. Pro adiciona Yoast SEO, All in One SEO e SEOPress. Cancelar mantém rascunhos e recursos gratuitos."
+      ]
+    },
+    {
+      "title": "Idioma do artigo",
+      "paragraphs": [
+        "A interface segue o idioma do perfil WordPress. Idioma do artigo e país ou mercado são configurações independentes."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

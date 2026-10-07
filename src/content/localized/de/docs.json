@@ -1,0 +1,18 @@
+{
+  "locale": "de",
+  "route": "docs",
+  "title": "Dokumentation",
+  "description": "Benötigt WordPress ab {wp} und PHP ab {php}. Aktivieren Sie Sodium für verschlüsselte Schlüssel und halten Sie WP-Cron aktiv.",
+  "sections": [
+    {
+      "title": "Erste Schritte",
+      "paragraphs": [
+        "Benötigt WordPress ab {wp} und PHP ab {php}. Aktivieren Sie Sodium für verschlüsselte Schlüssel und halten Sie WP-Cron aktiv.",
+        "Die Oberfläche folgt der WordPress-Profilsprache. Artikelsprache und Land oder Markt sind unabhängige Einstellungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

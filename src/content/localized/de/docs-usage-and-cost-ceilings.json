@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/usage-and-cost-ceilings",
+  "title": "Nutzung und Kostengrenzen",
+  "description": "Monatliche Website- und Benutzergrenzen blockieren weitere Anfragen bei Erreichen. Schätzungen basieren auf eingestellten Preisen, nicht auf…",
+  "sections": [
+    {
+      "title": "Nutzung und Kostengrenzen",
+      "paragraphs": [
+        "Monatliche Website- und Benutzergrenzen blockieren weitere Anfragen bei Erreichen. Schätzungen basieren auf eingestellten Preisen, nicht auf verbindlicher Abrechnung. Fertige Entwürfe bleiben bearbeitbar. Im nächsten Monat beginnt das Kontingent erneut.",
+        "Anbieter-Token bleiben interne Rechnungseinheiten. Genaue Kosten entnehmen Sie der Anbieterabrechnung, nicht dieser Schätzung.",
+        "KI-Nutzung und Tavily-Credits werden separat von den Anbietern berechnet. Prüfungen erkennen Probleme, garantieren aber weder sachliche Richtigkeit noch Suchplatzierungen."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

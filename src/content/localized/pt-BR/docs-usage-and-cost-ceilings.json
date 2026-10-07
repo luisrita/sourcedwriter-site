@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/usage-and-cost-ceilings",
+  "title": "Uso e limites de custo",
+  "description": "Limites mensais do site e por usuário bloqueiam novas solicitações quando atingidos. Estimativas dependem das tarifas configuradas, não são…",
+  "sections": [
+    {
+      "title": "Uso e limites de custo",
+      "paragraphs": [
+        "Limites mensais do site e por usuário bloqueiam novas solicitações quando atingidos. Estimativas dependem das tarifas configuradas, não são cobranças oficiais. Rascunhos concluídos continuam editáveis. A cota reinicia no próximo mês.",
+        "Tokens do provedor são unidades internas de contabilização. Os valores exatos vêm da fatura do provedor, não desta estimativa.",
+        "Uso de IA e créditos Tavily são cobrados separadamente pelos provedores. As verificações identificam problemas, mas não garantem exatidão factual nem posições nas buscas."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

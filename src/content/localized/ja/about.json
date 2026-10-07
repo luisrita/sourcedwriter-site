@@ -1,0 +1,23 @@
+{
+  "locale": "ja",
+  "route": "about",
+  "title": "概要",
+  "description": "{author} が設計、開発、サポートする独立したプラグインです。公開の判断は人が行い、出典、警告、生成情報を確認できます。",
+  "sections": [
+    {
+      "title": "概要",
+      "paragraphs": [
+        "{author} が設計、開発、サポートする独立したプラグインです。公開の判断は人が行い、出典、警告、生成情報を確認できます。"
+      ]
+    },
+    {
+      "title": "お問い合わせ",
+      "paragraphs": [
+        "サポートやセキュリティに関する報告は {email} へご連絡ください。不具合には診断の JSON レポートを添付してください。API キーやコンテンツは含まれません。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

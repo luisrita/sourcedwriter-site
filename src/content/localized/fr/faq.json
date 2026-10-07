@@ -1,0 +1,90 @@
+{
+  "locale": "fr",
+  "route": "faq",
+  "title": "Questions fréquentes",
+  "description": "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et intégration Rank Mat…",
+  "sections": [
+    {
+      "title": "Qu’est-ce que {product} ?",
+      "paragraphs": [
+        "L’extension gratuite inclut les brouillons avec sources, profils d’auteur, validation Guidée, blocs WordPress, réécriture de sections et intégration Rank Math."
+      ]
+    },
+    {
+      "title": "Comment l’installer ?",
+      "paragraphs": [
+        "Installez et activez dans Extensions → Ajouter une extension. Choisissez le fournisseur dans les réglages, enregistrez, ajoutez sa clé API, enregistrez à nouveau et testez la connexion."
+      ]
+    },
+    {
+      "title": "Publie-t-elle automatiquement ?",
+      "paragraphs": [
+        "La tâche exécute recherche, plan, brouillon et vérifications en arrière-plan. Le mode Guidé attend la sélection des sources et la validation du plan ; le mode Délégué poursuit automatiquement. L’article reste un brouillon."
+      ]
+    },
+    {
+      "title": "Recherche-t-elle automatiquement sur le Web ?",
+      "paragraphs": [
+        "Fournissez des sources publiques récentes HTML ou texte, une URL par ligne. Les réseaux privés sont bloqués. Vérifiez notes et sélection ; les citations utilisent uniquement les URL retenues. Les sources ne garantissent pas toutes les affirmations.",
+        "AI Blog Writer Pro recherche des sources sur le Web et vérifie chaque affirmation factuelle du brouillon à partir d’elles."
+      ]
+    },
+    {
+      "title": "Quels modèles d’IA sont pris en charge ?",
+      "paragraphs": [
+        "Utilisez votre clé API OpenAI, Claude, Gemini ou Grok. Le fournisseur vous facture directement. Les brouillons ne sont jamais publiés automatiquement."
+      ]
+    },
+    {
+      "title": "Faut-il un compte ou un abonnement auprès de l’auteur ?",
+      "paragraphs": [
+        "L’extension gratuite ne nécessite aucun compte ni abonnement auprès de l’auteur. Elle utilise votre compte et clé du fournisseur. Pro nécessite une licence distincte gérée par Freemius."
+      ]
+    },
+    {
+      "title": "Combien coûte la génération d’un article ?",
+      "paragraphs": [
+        "Les plafonds mensuels du site et par utilisateur bloquent les nouvelles demandes une fois atteints. Les estimations reposent sur vos tarifs configurés, pas sur la facture officielle. Les brouillons restent modifiables. Le quota repart le mois suivant."
+      ]
+    },
+    {
+      "title": "Ma clé API est-elle protégée ?",
+      "paragraphs": [
+        "Pour mieux isoler les secrets, définissez la constante AIBCG_*_API_KEY du fournisseur dans wp-config.php. Les clés enregistrées sont chiffrées par Sodium avec AIBCG_ENCRYPTION_KEY ou AUTH_KEY de WordPress."
+      ]
+    },
+    {
+      "title": "Que deviennent mes articles si je désactive ou désinstalle l’extension ?",
+      "paragraphs": [
+        "Tâches, sources, plans, brouillons, profils et clés chiffrées sont stockés dans WordPress. Les données privées des tâches terminées sont conservées 90 jours par défaut ; les articles restent. Les outils d’export et d’effacement personnels couvrent tâches et profils. Désinstaller conserve articles et auteurs ; AIBCG_REMOVE_DATA_ON_UNINSTALL active la suppression supplémentaire des données d’extension."
+      ]
+    },
+    {
+      "title": "Fonctionne-t-elle avec Rank Math ?",
+      "paragraphs": [
+        "La barre latérale affiche sources, avertissements, provenance et suggestions SEO. Prévisualisez et vérifiez la réécriture avant de confirmer. Enregistrez ou abandonnez d’abord les modifications. Les versions restent dans les révisions. Les valeurs SEO sont conservées sauf remplacement choisi."
+      ]
+    },
+    {
+      "title": "Prend-elle en charge le multisite et d’autres langues ?",
+      "paragraphs": [
+        "Le multisite est pris en charge avec des réglages par site et des clés API réseau facultatives. La langue des articles est indépendante de l’interface WordPress."
+      ]
+    },
+    {
+      "title": "Fonctionne-t-elle avec peu de visites ou WP-Cron désactivé ?",
+      "paragraphs": [
+        "WP-Cron s’exécute généralement lors des visites. Un site peu visité peut nécessiter un ordonnanceur appelant wp-cron.php. Si une tâche reste en attente, vérifiez cron, requêtes loopback et HTTPS sortant avant de réessayer."
+      ]
+    },
+    {
+      "title": "Le contenu IA est-il assez exact pour être publié sans relecture ?",
+      "paragraphs": [
+        "Le contenu généré peut contenir des erreurs ou affirmations non étayées. Relisez avant publication."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

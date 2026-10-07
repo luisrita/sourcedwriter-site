@@ -1,0 +1,19 @@
+{
+  "locale": "es",
+  "route": "docs/privacy-and-external-services",
+  "title": "Privacidad y servicios externos",
+  "description": "Las peticiones de fuentes identifican tu servidor con versión y URL del sitio. El proveedor de IA recibe instrucciones, perfil, notas y esquema;…",
+  "sections": [
+    {
+      "title": "Privacidad y servicios externos",
+      "paragraphs": [
+        "Las peticiones de fuentes identifican tu servidor con versión y URL del sitio. El proveedor de IA recibe instrucciones, perfil, notas y esquema; las sugerencias pueden incluir hasta 50 títulos recientes. Las claves quedan en el servidor. Pro envía consultas a Tavily y usa los proveedores elegidos para comprobaciones. Se aplican sus condiciones de privacidad.",
+        "Tareas, fuentes, esquemas, borradores, perfiles y claves cifradas se guardan en WordPress. El material privado de tareas terminadas se conserva 90 días por defecto; las entradas permanecen. Las herramientas de exportación y borrado personal incluyen tareas y perfiles. Desinstalar conserva entradas y autores; AIBCG_REMOVE_DATA_ON_UNINSTALL permite eliminar más datos del plugin.",
+        "Los datos de uso son opcionales y desactivados por defecto. Con consentimiento, envía recuentos y ajustes anónimos diariamente y al desactivar a telemetry.sourcedwriter.com. Excluye URL, nombres, claves, contenido y mensajes de error. Diagnóstico muestra cola e ID; puedes desactivar o borrar datos del servidor. AIBCG_DISABLE_TELEMETRY lo mantiene apagado."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

@@ -1,0 +1,32 @@
+{
+  "locale": "pt-BR",
+  "route": "",
+  "title": "Rascunhos WordPress com fontes para revisar antes de publicar",
+  "description": "Use sua chave de API OpenAI, Claude, Gemini ou Grok. O provedor cobra diretamente de você. Rascunhos nunca são publicados automaticamente.",
+  "sections": [
+    {
+      "title": "Primeiros passos",
+      "paragraphs": [
+        "Use sua chave de API OpenAI, Claude, Gemini ou Grok. O provedor cobra diretamente de você. Rascunhos nunca são publicados automaticamente.",
+        "Crie instruções com tema, público, pontos a abordar e até oito URLs. Comece no modo Guiado, revise fontes e roteiro, depois revise o rascunho no editor antes de publicar."
+      ]
+    },
+    {
+      "title": "Recursos",
+      "paragraphs": [
+        "O plugin gratuito inclui rascunhos com fontes, perfis de autor, revisão Guiada, blocos WordPress, reescrita de seções e integração Rank Math.",
+        "A interface segue o idioma do perfil WordPress. Idioma do artigo e país ou mercado são configurações independentes."
+      ]
+    },
+    {
+      "title": "Preços",
+      "paragraphs": [
+        "AI Blog Writer Pro pesquisa fontes na web e verifica cada afirmação factual do rascunho com elas.",
+        "Uso de IA e créditos Tavily são cobrados separadamente pelos provedores. As verificações identificam problemas, mas não garantem exatidão factual nem posições nas buscas."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

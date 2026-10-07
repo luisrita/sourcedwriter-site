@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/writer-profiles",
+  "title": "Autorenprofile",
+  "description": "Ein Profil steuert Stimme, Zielgruppe, Fachwissen, Wortwahl, Struktur und zu vermeidende Wörter. Verknüpfen Sie einen WordPress-Autor oder…",
+  "sections": [
+    {
+      "title": "Autorenprofile",
+      "paragraphs": [
+        "Ein Profil steuert Stimme, Zielgruppe, Fachwissen, Wortwahl, Struktur und zu vermeidende Wörter. Verknüpfen Sie einen WordPress-Autor oder lassen Sie ein Konto vom Administrator erstellen. Stil vor dem Speichern ansehen. Löschen behält Autor und Beiträge.",
+        "Konkrete Antworten machen den Text menschlicher.",
+        "Vage Eigenschaften wie „freundlich und professionell“ ändern wenig. Beschreiben Sie Autor, Meinungen und verwendete oder vermiedene Wörter. Standpunkt, Vokabular, zu vermeidende Wörter und Schreibprobe wirken am stärksten."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

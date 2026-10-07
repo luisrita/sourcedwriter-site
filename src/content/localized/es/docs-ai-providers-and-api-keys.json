@@ -1,0 +1,20 @@
+{
+  "locale": "es",
+  "route": "docs/ai-providers-and-api-keys",
+  "title": "Proveedores de IA y claves de API",
+  "description": "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente.",
+  "sections": [
+    {
+      "title": "Proveedores de IA y claves de API",
+      "paragraphs": [
+        "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente.",
+        "Instala y activa en Plugins → Añadir nuevo plugin. Elige el proveedor en Ajustes y guarda, añade su clave, guarda otra vez y prueba la conexión.",
+        "Para mayor protección, define la constante AIBCG_*_API_KEY del proveedor en wp-config.php. Las claves guardadas usan cifrado Sodium con AIBCG_ENCRYPTION_KEY o AUTH_KEY de WordPress.",
+        "Idioma predeterminado del contenido generado. La interfaz usa el idioma de tu perfil WordPress."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

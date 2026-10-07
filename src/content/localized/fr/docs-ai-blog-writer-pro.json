@@ -1,0 +1,22 @@
+{
+  "locale": "fr",
+  "route": "docs/ai-blog-writer-pro",
+  "title": "{pro}",
+  "description": "Installez Pro avec l’extension gratuite, activez la licence et ajoutez une clé Tavily. Creator et Agency incluent les mêmes vérifications. Pro…",
+  "sections": [
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "Installez Pro avec l’extension gratuite, activez la licence et ajoutez une clé Tavily. Creator et Agency incluent les mêmes vérifications. Pro ajoute Yoast SEO, All in One SEO et SEOPress. Résilier conserve vos brouillons et les fonctions gratuites.",
+        "AI Blog Writer Pro recherche des sources sur le Web et vérifie chaque affirmation factuelle du brouillon à partir d’elles.",
+        "Une requête IA supplémentaire par brouillon, de taille proche de celle de rédaction (coût IA accru d’environ 40–50 %). S’exécute uniquement si l’article a des sources.",
+        "Après la vérification par les sources, un second modèle évalue les mêmes affirmations sans voir les premiers verdicts. Vérifications liste les désaccords. Utilise sa clé dans Connexion au fournisseur, à un coût proche de la première vérification. Ignoré s’il s’agit du modèle de l’article.",
+        "Aucun coût IA. Votre site consulte chaque page liée une fois.",
+        "L’utilisation IA et les crédits Tavily sont facturés séparément par ces fournisseurs. Les vérifications détectent des problèmes, sans garantir l’exactitude ou le classement dans les recherches."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

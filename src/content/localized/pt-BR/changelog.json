@@ -1,0 +1,17 @@
+{
+  "locale": "pt-BR",
+  "route": "changelog",
+  "title": "Histórico de alterações",
+  "description": "Versão {version}: rascunhos com fontes, perfis de autor, provedores e ferramentas do editor. Veja o histórico completo em inglês para detalhes…",
+  "sections": [
+    {
+      "title": "Histórico de alterações",
+      "paragraphs": [
+        "Versão {version}: rascunhos com fontes, perfis de autor, provedores e ferramentas do editor. Veja o histórico completo em inglês para detalhes por versão."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

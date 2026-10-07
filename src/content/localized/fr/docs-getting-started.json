@@ -1,0 +1,20 @@
+{
+  "locale": "fr",
+  "route": "docs/getting-started",
+  "title": "Premiers pas",
+  "description": "Nécessite WordPress {wp} ou ultérieur et PHP {php} ou ultérieur. Activez Sodium pour chiffrer les clés et maintenez WP-Cron actif.",
+  "sections": [
+    {
+      "title": "Premiers pas",
+      "paragraphs": [
+        "Nécessite WordPress {wp} ou ultérieur et PHP {php} ou ultérieur. Activez Sodium pour chiffrer les clés et maintenez WP-Cron actif.",
+        "Installez et activez dans Extensions → Ajouter une extension. Choisissez le fournisseur dans les réglages, enregistrez, ajoutez sa clé API, enregistrez à nouveau et testez la connexion.",
+        "Créez des consignes avec sujet, public, points et jusqu’à huit URL. Commencez en mode Guidé, validez sources et plan, puis relisez le brouillon dans l’éditeur avant publication.",
+        "L’interface suit la langue du profil WordPress. La langue de l’article et le pays ou marché sont des réglages indépendants."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

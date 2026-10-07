@@ -1,0 +1,20 @@
+{
+  "locale": "ja",
+  "route": "docs/ai-providers-and-api-keys",
+  "title": "AI プロバイダーと API キー",
+  "description": "自分の OpenAI、Claude、Gemini、Grok の API キーを使用します。費用はプロバイダーから直接請求され、下書きが自動で公開されることはありません。",
+  "sections": [
+    {
+      "title": "AI プロバイダーと API キー",
+      "paragraphs": [
+        "自分の OpenAI、Claude、Gemini、Grok の API キーを使用します。費用はプロバイダーから直接請求され、下書きが自動で公開されることはありません。",
+        "「プラグイン → 新規プラグインを追加」でインストールして有効化します。設定でプロバイダーを選んで保存し、API キーを追加して再保存した後、接続をテストしてください。",
+        "キーをより安全に分離するには、wp-config.php で選択したプロバイダーの AIBCG_*_API_KEY 定数を定義してください。保存するキーは AIBCG_ENCRYPTION_KEY または WordPress の AUTH_KEY を使って Sodium で暗号化します。",
+        "生成する内容の既定の言語です。画面の表示言語は WordPress プロフィールの言語に従います。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

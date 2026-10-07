@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/sources-and-citations",
+  "title": "Sources et citations",
+  "description": "Fournissez des sources publiques récentes HTML ou texte, une URL par ligne. Les réseaux privés sont bloqués. Vérifiez notes et sélection ; les…",
+  "sections": [
+    {
+      "title": "Sources et citations",
+      "paragraphs": [
+        "Fournissez des sources publiques récentes HTML ou texte, une URL par ligne. Les réseaux privés sont bloqués. Vérifiez notes et sélection ; les citations utilisent uniquement les URL retenues. Les sources ne garantissent pas toutes les affirmations.",
+        "Sans sources, l’article repose sur les connaissances générales de l’IA, parfois obsolètes pour les nouveaux produits, prix ou l’année à venir. Ajoutez 3–5 pages récentes que vous citeriez : avis, annonces officielles ou données.",
+        "Les requêtes de sources identifient votre serveur par la version et l’URL du site. Le fournisseur IA reçoit consignes, profil, notes et plan ; les suggestions peuvent inclure jusqu’à 50 titres récents. Les clés restent côté serveur. Pro envoie les recherches à Tavily et utilise vos fournisseurs pour les vérifications. Leurs conditions de confidentialité s’appliquent."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

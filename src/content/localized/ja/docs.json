@@ -1,0 +1,18 @@
+{
+  "locale": "ja",
+  "route": "docs",
+  "title": "ドキュメント",
+  "description": "WordPress {wp} 以降と PHP {php} 以降が必要です。保存するキーを暗号化するため Sodium を有効にし、WP-Cron を動作させてください。",
+  "sections": [
+    {
+      "title": "はじめに",
+      "paragraphs": [
+        "WordPress {wp} 以降と PHP {php} 以降が必要です。保存するキーを暗号化するため Sodium を有効にし、WP-Cron を動作させてください。",
+        "画面の表示言語は WordPress プロフィールの言語に従います。記事の言語と国または市場はそれぞれ独立した設定です。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

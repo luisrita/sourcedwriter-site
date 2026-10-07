@@ -1,0 +1,34 @@
+{
+  "locale": "es",
+  "route": "features",
+  "title": "Funciones",
+  "description": "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración…",
+  "sections": [
+    {
+      "title": "Gratis",
+      "paragraphs": [
+        "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración Rank Math.",
+        "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del esquema; el Delegado continúa automáticamente. La entrada siempre queda como borrador.",
+        "El perfil controla voz, público, especialidad, vocabulario, estructura y palabras que evitar. Vincúlalo a un Autor WordPress o pide a un administrador que cree la cuenta. Previsualiza antes de guardar. Eliminar el perfil conserva autor y entradas.",
+        "La barra lateral muestra fuentes, advertencias, procedencia y sugerencias SEO. Previsualiza y revisa una reescritura antes de sustituir la sección. Guarda o descarta cambios pendientes primero. Las versiones anteriores quedan en Revisiones. Los valores SEO se conservan salvo que elijas sustituirlos."
+      ]
+    },
+    {
+      "title": "{pro}",
+      "paragraphs": [
+        "AI Blog Writer Pro busca fuentes en la web y comprueba cada afirmación factual del borrador con ellas.",
+        "AI Blog Writer Pro clasifica cada afirmación factual como respaldada, parcial o sin respaldo, y detecta enlaces rotos.",
+        "Instala Pro junto al plugin gratuito, activa la licencia y añade una clave Tavily. Creator y Agency incluyen las mismas comprobaciones. Pro añade Yoast SEO, All in One SEO y SEOPress. Al cancelar, conservas borradores y funciones gratuitas."
+      ]
+    },
+    {
+      "title": "Idioma del artículo",
+      "paragraphs": [
+        "La interfaz usa el idioma del perfil WordPress. El idioma del artículo y el país o mercado son ajustes independientes."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

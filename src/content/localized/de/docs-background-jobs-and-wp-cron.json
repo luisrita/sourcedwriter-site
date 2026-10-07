@@ -1,0 +1,19 @@
+{
+  "locale": "de",
+  "route": "docs/background-jobs-and-wp-cron",
+  "title": "Hintergrundaufträge und WP-Cron",
+  "description": "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe;…",
+  "sections": [
+    {
+      "title": "Hintergrundaufträge und WP-Cron",
+      "paragraphs": [
+        "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe; delegiert geht automatisch weiter. Der Beitrag bleibt immer ein Entwurf.",
+        "WP-Cron läuft normalerweise bei Website-Besuchen. Bei wenig Traffic kann ein Serverplaner für wp-cron.php nötig sein. Bei wartenden Aufträgen prüfen Sie Cron, Loopback-Anfragen und ausgehendes HTTPS vor der Wiederholung.",
+        "Dieser Auftrag wartet seit über zwei Minuten. WP-Cron läuft möglicherweise nicht auf dieser Website."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

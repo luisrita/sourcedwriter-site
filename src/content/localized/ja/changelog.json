@@ -1,0 +1,17 @@
+{
+  "locale": "ja",
+  "route": "changelog",
+  "title": "変更履歴",
+  "description": "バージョン {version}: 出典付き下書き、執筆者プロフィール、プロバイダー対応、エディターツール。バージョンごとの詳細は英語の完全な変更履歴をご覧ください。",
+  "sections": [
+    {
+      "title": "変更履歴",
+      "paragraphs": [
+        "バージョン {version}: 出典付き下書き、執筆者プロフィール、プロバイダー対応、エディターツール。バージョンごとの詳細は英語の完全な変更履歴をご覧ください。"
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

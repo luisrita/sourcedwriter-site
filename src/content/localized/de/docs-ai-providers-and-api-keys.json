@@ -1,0 +1,20 @@
+{
+  "locale": "de",
+  "route": "docs/ai-providers-and-api-keys",
+  "title": "KI-Anbieter und API-Schlüssel",
+  "description": "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch…",
+  "sections": [
+    {
+      "title": "KI-Anbieter und API-Schlüssel",
+      "paragraphs": [
+        "Nutzen Sie Ihren eigenen API-Schlüssel für OpenAI, Claude, Gemini oder Grok. Der Anbieter rechnet direkt ab. Entwürfe werden nie automatisch veröffentlicht.",
+        "Unter Plugins → Neues Plugin hinzufügen installieren und aktivieren. Anbieter in Einstellungen wählen und speichern, API-Schlüssel hinzufügen, erneut speichern und Verbindung testen.",
+        "Für stärkste Geheimnistrennung definieren Sie die AIBCG_*_API_KEY-Konstante des Anbieters in wp-config.php. Gespeicherte Schlüssel werden mit Sodium und AIBCG_ENCRYPTION_KEY oder WordPress AUTH_KEY verschlüsselt.",
+        "Standardsprache für generierte Inhalte. Die Oberfläche folgt Ihrer WordPress-Profilsprache."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

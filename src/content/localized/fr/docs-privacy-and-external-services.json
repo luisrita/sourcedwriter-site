@@ -1,0 +1,19 @@
+{
+  "locale": "fr",
+  "route": "docs/privacy-and-external-services",
+  "title": "Confidentialité et services externes",
+  "description": "Les requêtes de sources identifient votre serveur par la version et l’URL du site. Le fournisseur IA reçoit consignes, profil, notes et plan ;…",
+  "sections": [
+    {
+      "title": "Confidentialité et services externes",
+      "paragraphs": [
+        "Les requêtes de sources identifient votre serveur par la version et l’URL du site. Le fournisseur IA reçoit consignes, profil, notes et plan ; les suggestions peuvent inclure jusqu’à 50 titres récents. Les clés restent côté serveur. Pro envoie les recherches à Tavily et utilise vos fournisseurs pour les vérifications. Leurs conditions de confidentialité s’appliquent.",
+        "Tâches, sources, plans, brouillons, profils et clés chiffrées sont stockés dans WordPress. Les données privées des tâches terminées sont conservées 90 jours par défaut ; les articles restent. Les outils d’export et d’effacement personnels couvrent tâches et profils. Désinstaller conserve articles et auteurs ; AIBCG_REMOVE_DATA_ON_UNINSTALL active la suppression supplémentaire des données d’extension.",
+        "Les données d’utilisation sont facultatives et désactivées par défaut. Avec accord, compteurs et réglages anonymes sont envoyés quotidiennement et à la désactivation à telemetry.sourcedwriter.com. Sans URL, noms, clés, contenu ou messages d’erreur. Diagnostic affiche file et ID ; vous pouvez désactiver ou effacer les données serveur. AIBCG_DISABLE_TELEMETRY les bloque."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

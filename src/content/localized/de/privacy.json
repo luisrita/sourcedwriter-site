@@ -1,0 +1,33 @@
+{
+  "locale": "de",
+  "route": "privacy",
+  "title": "Website-Datenschutz",
+  "description": "Diese Website hat keine Formulare oder Werbung. Google Analytics lädt erst nach Cookie-Zustimmung. Ihre Wahl bleibt bis zu einem Jahr lokal…",
+  "sections": [
+    {
+      "title": "Website-Datenschutz",
+      "paragraphs": [
+        "Diese Website hat keine Formulare oder Werbung. Google Analytics lädt erst nach Cookie-Zustimmung. Ihre Wahl bleibt bis zu einem Jahr lokal gespeichert. Über Cookie-Einstellungen können Sie jederzeit widerrufen und Analyse-Cookies löschen.",
+        "Mit Zustimmung verarbeitet Google Seitenaufrufe, Verweise, ungefähren Standort, Gerät und Browser in unserem Auftrag. Sie können Analyse im Browser oder per Inhaltsblocker sperren. GitHub Pages hostet die Website; GitHub kann IP-Adressen und technische Daten für Betrieb und Sicherheit protokollieren."
+      ]
+    },
+    {
+      "title": "Nutzungsdaten",
+      "paragraphs": [
+        "Nutzungsdaten sind optional und standardmäßig aus. Mit Zustimmung werden anonyme Zähler und Einstellungen täglich und bei Deaktivierung an telemetry.sourcedwriter.com gesendet. Keine URLs, Namen, Schlüssel, Inhalte oder Fehlermeldungen. Diagnose zeigt Warteschlange und ID; Versand lässt sich stoppen und Serverdaten löschen. AIBCG_DISABLE_TELEMETRY hält es aus.",
+        "Optionale Telemetrie nutzt eine zufällige Installations-ID und wird nie verkauft, geteilt oder mit Website-Analysen kombiniert. Cloudflare verarbeitet die Server-IP beim Transport; Worker und D1 speichern weder IPs noch Header, Anfragelogs sind aus. Ereignisse bleiben 24 Monate; Summen ohne IDs können länger bleiben.",
+        "Telemetrie in Einstellungen ausschalten oder unter Diagnose → Nutzungsdaten → Daten auf Server löschen entfernen. Löschung auch per ID an {email}. E-Mails und Adressen dienen nur Antworten oder gewünschten Startankündigungen; kein Verkauf oder Teilen, Löschung auf Anfrage. Verantwortlicher: {author}."
+      ]
+    },
+    {
+      "title": "Datenschutz und externe Dienste",
+      "paragraphs": [
+        "Quellenanfragen identifizieren den Server mit Plugin-Version und Website-URL. Der KI-Anbieter erhält Briefing, Profil, Notizen und Gliederung; Vorschläge können bis zu 50 aktuelle Beitragstitel enthalten. Schlüssel bleiben serverseitig. Pro sendet Suchanfragen an Tavily und nutzt gewählte Anbieter für Prüfungen. Deren Datenschutzbedingungen gelten.",
+        "Aufträge, Quellen, Gliederungen, Entwürfe, Profile und verschlüsselte Schlüssel liegen in WordPress. Private Daten fertiger Aufträge werden standardmäßig 90 Tage behalten; Beiträge bleiben. WordPress-Datenexport und -löschung unterstützen Aufträge und Profile. Deinstallation behält Beiträge und Autoren; AIBCG_REMOVE_DATA_ON_UNINSTALL ermöglicht zusätzliche Plugin-Datenlöschung."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

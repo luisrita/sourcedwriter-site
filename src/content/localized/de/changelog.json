@@ -1,0 +1,17 @@
+{
+  "locale": "de",
+  "route": "changelog",
+  "title": "Änderungsprotokoll",
+  "description": "Version {version}: Entwürfe mit Quellen, Autorenprofile, Anbieterunterstützung und Editorwerkzeuge. Das vollständige englische Protokoll enthält…",
+  "sections": [
+    {
+      "title": "Änderungsprotokoll",
+      "paragraphs": [
+        "Version {version}: Entwürfe mit Quellen, Autorenprofile, Anbieterunterstützung und Editorwerkzeuge. Das vollständige englische Protokoll enthält Details je Version."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

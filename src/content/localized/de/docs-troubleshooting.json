@@ -1,0 +1,87 @@
+{
+  "locale": "de",
+  "route": "docs/troubleshooting",
+  "title": "Fehlerbehebung",
+  "description": "Bei Schlüsselfehlern in Einstellungen testen und Konto, Abrechnung sowie Modellzugriff prüfen. Bei Anfragelimits warten und erneut versuchen;…",
+  "sections": [
+    {
+      "title": "KI-Anbieter und API-Schlüssel",
+      "anchors": [
+        "missing-api-key",
+        "invalid-api-key",
+        "constant-api-key",
+        "credential-storage-unavailable",
+        "model-unavailable",
+        "provider-unreachable",
+        "provider-refusal",
+        "invalid-provider-response",
+        "rate-limit",
+        "provider-unavailable",
+        "provider-rejected"
+      ],
+      "paragraphs": [
+        "Bei Schlüsselfehlern in Einstellungen testen und Konto, Abrechnung sowie Modellzugriff prüfen. Bei Anfragelimits warten und erneut versuchen; bei Quellenfehlern erreichbare URL nutzen. Diagnose für Support herunterladen. Niemals API-Schlüssel im Bericht senden.",
+        "Unter Plugins → Neues Plugin hinzufügen installieren und aktivieren. Anbieter in Einstellungen wählen und speichern, API-Schlüssel hinzufügen, erneut speichern und Verbindung testen.",
+        "Für stärkste Geheimnistrennung definieren Sie die AIBCG_*_API_KEY-Konstante des Anbieters in wp-config.php. Gespeicherte Schlüssel werden mit Sodium und AIBCG_ENCRYPTION_KEY oder WordPress AUTH_KEY verschlüsselt."
+      ]
+    },
+    {
+      "title": "Hintergrundaufträge und WP-Cron",
+      "anchors": [
+        "jobs-stay-queued",
+        "duplicate-job",
+        "stage-failed",
+        "extension-error",
+        "invalid-outline"
+      ],
+      "paragraphs": [
+        "WP-Cron läuft normalerweise bei Website-Besuchen. Bei wenig Traffic kann ein Serverplaner für wp-cron.php nötig sein. Bei wartenden Aufträgen prüfen Sie Cron, Loopback-Anfragen und ausgehendes HTTPS vor der Wiederholung.",
+        "Der Auftrag führt Recherche, Gliederung, Entwurf und Prüfungen im Hintergrund aus. Geführt wartet auf Quellenwahl und Gliederungsfreigabe; delegiert geht automatisch weiter. Der Beitrag bleibt immer ein Entwurf."
+      ]
+    },
+    {
+      "title": "Quellen und Zitate",
+      "anchors": [
+        "source-urls-fail"
+      ],
+      "paragraphs": [
+        "Geben Sie aktuelle öffentliche HTML- oder Textquellen an, eine URL pro Zeile. Private Netze sind gesperrt. Prüfen Sie Notizen und Quellenwahl; Zitate nutzen nur gewählte URLs. Quellen garantieren nicht die Richtigkeit jeder Aussage.",
+        "Quelle konnte nicht abgerufen werden. Prüfen Sie Zugriffsbeschränkungen oder verwenden Sie eine andere URL.",
+        "Keine verwendbaren Quellen angegeben. Präzise unbelegte Aussagen müssen entfallen oder markiert werden."
+      ]
+    },
+    {
+      "title": "Nutzung und Kostengrenzen",
+      "anchors": [
+        "cost-limit-reached"
+      ],
+      "paragraphs": [
+        "Monatliche Website- und Benutzergrenzen blockieren weitere Anfragen bei Erreichen. Schätzungen basieren auf eingestellten Preisen, nicht auf verbindlicher Abrechnung. Fertige Entwürfe bleiben bearbeitbar. Im nächsten Monat beginnt das Kontingent erneut.",
+        "Anbieter-Token bleiben interne Rechnungseinheiten. Genaue Kosten entnehmen Sie der Anbieterabrechnung, nicht dieser Schätzung."
+      ]
+    },
+    {
+      "title": "Autorenprofile",
+      "anchors": [
+        "writer-profile-author"
+      ],
+      "paragraphs": [
+        "Ein Profil steuert Stimme, Zielgruppe, Fachwissen, Wortwahl, Struktur und zu vermeidende Wörter. Verknüpfen Sie einen WordPress-Autor oder lassen Sie ein Konto vom Administrator erstellen. Stil vor dem Speichern ansehen. Löschen behält Autor und Beiträge."
+      ]
+    },
+    {
+      "title": "Editor-Seitenleiste und Rank Math",
+      "anchors": [
+        "section-rewrite",
+        "seo-plugin-unavailable"
+      ],
+      "paragraphs": [
+        "Die Seitenleiste zeigt Quellen, Warnungen, Herkunft und SEO-Vorschläge. Abschnittsüberarbeitung erst ansehen, prüfen und bestätigen. Ungespeicherte Änderungen vorher speichern oder verwerfen. Alte Versionen bleiben in Revisionen. SEO-Werte bleiben erhalten, sofern Sie sie nicht ersetzen.",
+        "Fakten im Abschnitt werden aus diesen Quellen neu aufgebaut und zitiert. Unbelegte Aussagen werden entfernt und als Warnungen aufgeführt."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

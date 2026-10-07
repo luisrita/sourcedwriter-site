@@ -1,0 +1,19 @@
+{
+  "locale": "pt-BR",
+  "route": "docs/sources-and-citations",
+  "title": "Fontes e citações",
+  "description": "Forneça fontes públicas recentes em HTML ou texto, uma URL por linha. Redes privadas são bloqueadas. Confira notas extraídas e fontes…",
+  "sections": [
+    {
+      "title": "Fontes e citações",
+      "paragraphs": [
+        "Forneça fontes públicas recentes em HTML ou texto, uma URL por linha. Redes privadas são bloqueadas. Confira notas extraídas e fontes selecionadas; citações usam apenas suas URLs. Ter fontes não garante todas as afirmações.",
+        "Sem fontes, o artigo depende do conhecimento geral da IA, que pode estar desatualizado, sobretudo para produtos novos, preços ou o próximo ano. Adicione 3–5 páginas recentes que você citaria: avaliações, anúncios oficiais ou dados.",
+        "Solicitações de fontes identificam o servidor com versão do plugin e URL do site. O provedor de IA recebe instruções, perfil, notas e roteiro; sugestões podem incluir até 50 títulos recentes. Chaves ficam no servidor. Pro envia consultas ao Tavily e usa os provedores escolhidos nas verificações. Os termos de privacidade deles se aplicam."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

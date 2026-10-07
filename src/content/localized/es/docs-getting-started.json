@@ -1,0 +1,20 @@
+{
+  "locale": "es",
+  "route": "docs/getting-started",
+  "title": "Primeros pasos",
+  "description": "Requiere WordPress {wp} o posterior y PHP {php} o posterior. Activa Sodium para cifrar claves y mantén WP-Cron funcionando.",
+  "sections": [
+    {
+      "title": "Primeros pasos",
+      "paragraphs": [
+        "Requiere WordPress {wp} o posterior y PHP {php} o posterior. Activa Sodium para cifrar claves y mantén WP-Cron funcionando.",
+        "Instala y activa en Plugins → Añadir nuevo plugin. Elige el proveedor en Ajustes y guarda, añade su clave, guarda otra vez y prueba la conexión.",
+        "Crea instrucciones con tema, público, puntos y hasta ocho URL. Empieza en modo Guiado, revisa fuentes y esquema y después el borrador en el editor antes de publicar.",
+        "La interfaz usa el idioma del perfil WordPress. El idioma del artículo y el país o mercado son ajustes independientes."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}

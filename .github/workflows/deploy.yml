@@ -22,6 +22,8 @@ jobs:
       - uses: withastro/action@v4
         with:
           node-version: 24
+      - name: Verify multilingual content and production output
+        run: npm run test:i18n && npm run test:i18n:build
 
   deploy:
     needs: build

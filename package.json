@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test:i18n": "node --test tests/i18n.test.mjs"
+    "test:i18n": "node --test tests/i18n.test.mjs",
+    "test:i18n:build": "node --test tests/i18n-build.test.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

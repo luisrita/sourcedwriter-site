@@ -1,0 +1,90 @@
+{
+  "locale": "es",
+  "route": "faq",
+  "title": "Preguntas frecuentes",
+  "description": "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración Rank Math.…",
+  "sections": [
+    {
+      "title": "¿Qué es {product}?",
+      "paragraphs": [
+        "El plugin gratuito incluye borradores con fuentes, perfiles de autor, revisión Guiada, bloques WordPress, reescritura de secciones e integración Rank Math."
+      ]
+    },
+    {
+      "title": "¿Cómo se instala?",
+      "paragraphs": [
+        "Instala y activa en Plugins → Añadir nuevo plugin. Elige el proveedor en Ajustes y guarda, añade su clave, guarda otra vez y prueba la conexión."
+      ]
+    },
+    {
+      "title": "¿Publica automáticamente?",
+      "paragraphs": [
+        "La tarea ejecuta investigación, esquema, borrador y comprobaciones en segundo plano. El modo Guiado espera selección de fuentes y aprobación del esquema; el Delegado continúa automáticamente. La entrada siempre queda como borrador."
+      ]
+    },
+    {
+      "title": "¿Busca en la web automáticamente?",
+      "paragraphs": [
+        "Indica fuentes públicas recientes HTML o texto, una URL por línea. Las redes privadas se bloquean. Revisa notas y fuentes seleccionadas; las citas usan solo sus URL. Tener fuentes no garantiza todas las afirmaciones.",
+        "AI Blog Writer Pro busca fuentes en la web y comprueba cada afirmación factual del borrador con ellas."
+      ]
+    },
+    {
+      "title": "¿Qué modelos de IA admite?",
+      "paragraphs": [
+        "Usa tu clave de API OpenAI, Claude, Gemini o Grok. El proveedor te factura directamente. Los borradores nunca se publican automáticamente."
+      ]
+    },
+    {
+      "title": "¿Necesito una cuenta o suscripción con el autor del plugin?",
+      "paragraphs": [
+        "El plugin gratuito no requiere cuenta ni suscripción con el autor. Usa tu cuenta y clave del proveedor. Pro requiere una licencia aparte gestionada por Freemius."
+      ]
+    },
+    {
+      "title": "¿Cuánto cuesta generar un artículo?",
+      "paragraphs": [
+        "Los límites mensuales del sitio y por usuario bloquean nuevas solicitudes al alcanzarse. Las estimaciones dependen de tarifas configuradas, no son facturación oficial. Los borradores completados siguen editables. La cuota se reinicia el mes siguiente."
+      ]
+    },
+    {
+      "title": "¿Está protegida mi clave de API?",
+      "paragraphs": [
+        "Para mayor protección, define la constante AIBCG_*_API_KEY del proveedor en wp-config.php. Las claves guardadas usan cifrado Sodium con AIBCG_ENCRYPTION_KEY o AUTH_KEY de WordPress."
+      ]
+    },
+    {
+      "title": "¿Qué ocurre con mis entradas si desactivo o desinstalo el plugin?",
+      "paragraphs": [
+        "Tareas, fuentes, esquemas, borradores, perfiles y claves cifradas se guardan en WordPress. El material privado de tareas terminadas se conserva 90 días por defecto; las entradas permanecen. Las herramientas de exportación y borrado personal incluyen tareas y perfiles. Desinstalar conserva entradas y autores; AIBCG_REMOVE_DATA_ON_UNINSTALL permite eliminar más datos del plugin."
+      ]
+    },
+    {
+      "title": "¿Funciona con Rank Math?",
+      "paragraphs": [
+        "La barra lateral muestra fuentes, advertencias, procedencia y sugerencias SEO. Previsualiza y revisa una reescritura antes de sustituir la sección. Guarda o descarta cambios pendientes primero. Las versiones anteriores quedan en Revisiones. Los valores SEO se conservan salvo que elijas sustituirlos."
+      ]
+    },
+    {
+      "title": "¿Admite multisitio y otros idiomas?",
+      "paragraphs": [
+        "Admite multisitio, con ajustes independientes por sitio y claves de API de red opcionales. El idioma del artículo es independiente de la interfaz WordPress."
+      ]
+    },
+    {
+      "title": "¿Funciona en sitios con poco tráfico o WP-Cron desactivado?",
+      "paragraphs": [
+        "WP-Cron suele ejecutarse cuando alguien visita el sitio. Los sitios con poco tráfico pueden necesitar un programador que llame a wp-cron.php. Si una tarea queda en cola, comprueba cron, peticiones loopback y HTTPS saliente antes de reintentar."
+      ]
+    },
+    {
+      "title": "¿Es suficientemente preciso el contenido de IA para publicarlo sin revisar?",
+      "paragraphs": [
+        "El contenido generado puede contener errores o afirmaciones sin respaldo. Revísalo antes de publicar."
+      ]
+    }
+  ],
+  "sourceRevision": "971bea0",
+  "reviewStatus": "needs-review",
+  "reviewer": null
+}
