@@ -1,10 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { ASTRO_I18N } from './src/i18n/locales.mjs';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://sourcedwriter.com',
+  i18n: ASTRO_I18N,
   // GitHub Pages serves /path/ and redirects /path to it, so canonical URLs end in a slash.
   trailingSlash: 'always',
   build: { format: 'directory' },

@@ -33,3 +33,7 @@ Update `PLUGIN.version` and `testedUpTo` in `src/config.ts`, and add an entry to
 ## Deploy
 
 Pushing to `main` runs `.github/workflows/deploy.yml`. In the repository settings, set **Pages → Source** to **GitHub Actions**. `public/CNAME` holds the custom domain.
+
+## Localization
+
+See [docs/I18N.md](docs/I18N.md) for the locale registry, reviewed-page publication gates, and `npm run test:i18n`. English root URLs remain unchanged.

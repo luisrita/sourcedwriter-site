@@ -1,6 +1,11 @@
 ---
 import { NAV, SITE } from '../config';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { localeFromPath } from '../i18n/locales.mjs';
+import { pageAlternates } from '../i18n/pages.mjs';
 
+interface Props { alternatives?: ReturnType<typeof pageAlternates>; }
+const { alternatives = [] } = Astro.props;
 const current = Astro.url.pathname;
 const isActive = (href: string) => current === href || (href !== '/' && current.startsWith(href));
 ---
@@ -24,6 +29,7 @@ const isActive = (href: string) => current === href || (href !== '/' && current.
         }
       </ul>
     </nav>
+    <LanguageSwitcher alternatives={alternatives} current={localeFromPath(current)} />
   </div>
 </header>
 

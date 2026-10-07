@@ -1,0 +1,24 @@
+---
+interface Props {
+  alternatives: { code: string; lang: string; label: string; href: string }[];
+  current: string;
+}
+const { alternatives, current } = Astro.props;
+---
+
+{alternatives.length > 1 && (
+  <nav class="language-switcher" aria-label="Language">
+    <ul>
+      {alternatives.map((locale) => (
+        <li><a href={locale.href} lang={locale.lang} hreflang={locale.lang}
+          aria-current={locale.code === current ? 'page' : undefined}>{locale.label}</a></li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<style>
+  ul { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; list-style: none; margin: 0; padding: 0; }
+  a { font-size: 0.9rem; }
+  a[aria-current='page'] { font-weight: 700; }
+</style>
