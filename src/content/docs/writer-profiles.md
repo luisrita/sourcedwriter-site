@@ -2,7 +2,7 @@
 title: Writer profiles
 description: Create reusable writer profiles with voice, tone, expertise and words to avoid, linked to a real WordPress author, or have AI propose one from a sample.
 order: 5
-updated: 2026-09-30
+updated: 2026-10-07
 ---
 
 A writer profile describes a voice so that drafts sound consistent across articles. Every profile is linked to a WordPress author account, and drafts made with it are assigned to that author.
@@ -27,6 +27,10 @@ Administrators can also pick **Create a new author account**: saving the profile
 ## AI-assisted proposals
 
 On the right of the Writer profiles screen, describe the voice you want, paste a sample, or both, then click **Propose editable profile**. The proposal fills the form for you to edit and save. It includes a fictional author name and job title. If you ask for the style of a named living author, you get high-level style traits, not an imitation.
+
+## Preview the style
+
+From version 1.5, **Preview this style** under the profile fields writes a short opening, about 150 words, with the fields as they are in the form, saved or not. Give it a sample topic, or leave it empty to use the profile's expertise areas. It uses the same voice rules as real drafts, so it shows whether the point of view, vocabulary and words to avoid come through before you spend a whole article on them. The sample is not saved.
 
 ## Tips
 

@@ -66,9 +66,10 @@ These are all the events the plugin can send, generated from the plugin's own li
 | `job_completed` | A draft post is created. | `job_ref` (job reference); `mode` (delegated / guided); `provider` (openai / anthropic / google / xai); `model` (model ID); `duration` (range: <1m, 1-5m, 5-15m, 15-60m, 1-24h, 24h+); `input_units` (range: <10k, 10-50k, 50-200k, 200k+); `output_units` (range: <10k, 10-50k, 50-200k, 200k+); `estimated_cost_usd` (USD, to the cent); `sections` (count, 0–30); `sources_used` (count, 0–20); `word_count` (range: 0-799, 800-1500, 1501-2500, 2501+) |
 | `job_failed` | A job stage fails. | `job_ref` (job reference); `stage` (research / outline / draft / checks / queue / other); `error` (error code from the list below); `provider` (openai / anthropic / google / xai); `model` (model ID) |
 | `job_cancelled` | A job is cancelled. | `job_ref` (job reference); `stage` (research / outline / draft / checks / queue / other) |
-| `section_rewritten` | A section rewrite is previewed or applied in the post editor. | `outcome` (previewed / applied / expired / conflict); `result` (error code from the list below) |
+| `section_rewritten` | A section rewrite is previewed or applied in the post editor. | `outcome` (previewed / applied / expired / conflict); `result` (error code from the list below); `from_sources` (yes/no) |
 | `seo_applied` | SEO suggestions are applied to an SEO plugin. | `fields_applied` (count, 0–10); `fields_skipped` (count, 0–10); `overwrite` (yes/no) |
 | `profile_saved` | A writer profile is saved. | `is_new` (yes/no); `author` (linked_existing / created_new / unchanged); `from_proposal` (yes/no) |
+| `profile_previewed` | A writer profile style preview is requested. | `result` (error code from the list below) |
 | `profile_proposed` | An AI writer profile proposal is requested. | `result` (error code from the list below); `had_sample` (yes/no) |
 | `cost_limit_reached` | A monthly cost ceiling stops a job or request. | `scope` (site / user) |
 

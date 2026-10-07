@@ -2,7 +2,7 @@
 title: Editor sidebar and Rank Math
 description: Use the AI Blog Writer panel in the block editor to check provenance, warnings and sources, rewrite one section, and apply SEO metadata to Rank Math.
 order: 6
-updated: 2026-09-29
+updated: 2026-10-07
 ---
 
 Generated drafts are ordinary WordPress posts made of core blocks. They keep working if you deactivate the plugin. While it is active, the block editor shows an **AI Blog Writer Details** sidebar.
@@ -19,7 +19,11 @@ A reminder at the bottom of the sidebar says that generated content can contain 
 
 ## Rewrite one section
 
-Select a section, write an instruction such as "shorter, and lead with the price", and send it. Only that section's content, your instruction and the source notes attached to that section go to the provider. The rest of the post stays as it is.
+Choose a section and an action (**Rewrite for clarity**, **Shorten**, **Expand**, **Change tone**, **Add supporting detail** or **Remove unsupported detail**), then click **Generate preview**. Only that section's content, the action and the draft's source notes go to the provider. The preview lists any warnings; nothing changes until you confirm, and the previous version stays in Revisions. The rest of the post stays as it is.
+
+### Regenerate using selected sources
+
+From version 1.5, when the draft has sources, the action list also offers **Regenerate using selected sources**. Tick the sources the section should rest on, including ones you left out in Guided mode, and generate a preview. The section is rebuilt from those sources only: claims they support are kept and cited, claims they don't support are removed and listed as warnings, and relevant facts from the sources are added. Use it after you find a better source, or when a section leans on general knowledge you would rather back up.
 
 ## Rank Math integration
 
