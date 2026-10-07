@@ -2,7 +2,7 @@
 title: Getting started
 description: Install the plugin, connect an AI provider with your own API key, and create your first source-backed WordPress draft in about ten minutes.
 order: 1
-updated: 2026-09-30
+updated: 2026-10-07
 ---
 
 AI Blog Writer with Sources turns a brief and a short list of sources into a normal WordPress draft. The draft includes citations, warnings and a record of how it was made. It is never published automatically.
@@ -47,6 +47,8 @@ On the same screen, set the default language, approximate length and other conte
 
 1. Open **AI Blog Writer → New article**.
 2. Enter a topic or working title. Add talking points, audience, search intent, a primary phrase and supporting terms if you have them.
+   - No topic yet? Open **Need a topic? Get ideas**, describe what your blog covers, and click **Suggest topics**. You get six specific topics your recent posts don't already cover; **Use this topic** fills in the topic, reader goal and primary phrase.
+   - **Suggest keywords for this topic** proposes a primary phrase, supporting terms, the search intent and reader questions. They come from your AI model, not from search-volume data, so treat them as a starting point.
 3. Paste up to eight **source URLs**, one per line. Only these pages are fetched.
 4. Choose a workflow. **Guided** pauses so you can check the sources and the outline. **Delegated** runs straight through to the draft. Start with Guided.
 5. Optionally pick a [writer profile](/docs/writer-profiles/).

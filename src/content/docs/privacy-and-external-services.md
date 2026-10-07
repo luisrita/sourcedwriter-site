@@ -14,6 +14,8 @@ The plugin sends data to the AI provider you configure and the source URLs you s
 | Test connection, and once when an administrator submits a new brief | The API key and a request for the model list. No content. |
 | Outline stage | Key, model, brief fields (topic, talking points, audience, search intent, keyword phrases, tone, length, language, market, call to action, include/avoid notes), today's date, the writer profile, and the extracted notes, titles and URLs of the selected sources |
 | Draft stage | The same as the outline stage, plus the approved outline |
+| Topic ideas (New article → Need a topic?) | Key, the subject you type, the brief's audience, language and market, today's date, and the titles of up to 50 recent posts (published, scheduled, pending and drafts) so the ideas avoid them |
+| Keyword ideas (New article → Suggest keywords) | Key, the topic, the brief's audience, language and market, and today's date |
 | Propose writer profile | Key, your prompt text and any writing sample you paste |
 | Rewrite section | Key, the section content, your instruction and that section's source notes |
 
@@ -58,6 +60,7 @@ These are all the events the plugin can send, generated from the plugin's own li
 | `connection_tested` | The AI provider connection is tested. | `provider` (openai / anthropic / google / xai); `result` (error code from the list below) |
 | `settings_saved` | Settings are saved with a change. | `provider` (openai / anthropic / google / xai); `model` (model ID); `provider_changed` (yes/no); `model_changed` (yes/no) |
 | `job_created` | A new article job is created. | `job_ref` (job reference); `mode` (delegated / guided); `sources` (count, 0–8); `profile_used` (yes/no); `length` (range: 0-800, 801-1500, 1501-2500, 2501+); `has_primary_phrase` (yes/no); `first_job` (yes/no) |
+| `brief_suggested` | Topic or keyword ideas are requested on New article. | `kind` (topics / keywords); `result` (error code from the list below) |
 | `sources_reviewed` | Sources are confirmed in Guided mode. | `job_ref` (job reference); `kept` (count, 0–20); `removed` (count, 0–20) |
 | `outline_approved` | An outline is approved in Guided mode. | `job_ref` (job reference); `edited` (yes/no); `sections` (count, 0–30) |
 | `job_completed` | A draft post is created. | `job_ref` (job reference); `mode` (delegated / guided); `provider` (openai / anthropic / google / xai); `model` (model ID); `duration` (range: <1m, 1-5m, 5-15m, 15-60m, 1-24h, 24h+); `input_units` (range: <10k, 10-50k, 50-200k, 200k+); `output_units` (range: <10k, 10-50k, 50-200k, 200k+); `estimated_cost_usd` (USD, to the cent); `sections` (count, 0–30); `sources_used` (count, 0–20); `word_count` (range: 0-799, 800-1500, 1501-2500, 2501+) |
