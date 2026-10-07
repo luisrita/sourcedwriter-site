@@ -6,17 +6,18 @@ import { breadcrumbNode } from '../lib/schema';
 
 <Base
   title="Website privacy policy"
-  description="Privacy policy for sourcedwriter.com: Google Analytics only with your consent, no forms or ads. For what the WordPress plugin sends and stores, see the plugin privacy documentation."
+  description="Privacy policy for sourcedwriter.com and the plugin's optional usage data: analytics only with your consent, no forms or ads."
   schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Website privacy', path: '/privacy/' }])]}
 >
   <section class="section">
     <div class="container prose">
       <p class="eyebrow">Legal</p>
       <h1>Website privacy policy</h1>
-      <p class="meta">Last updated 30 September 2026</p>
+      <p class="meta">Last updated 7 October 2026</p>
 
       <p>
-        This policy covers the website {SITE.domain}. For what the WordPress plugin sends and stores, see
+        This policy covers the website {SITE.domain} and the optional usage data the WordPress plugin can send to it. For
+        everything else the plugin sends and stores, see
         <a href="/docs/privacy-and-external-services/">Privacy and external services</a>.
       </p>
 
@@ -46,6 +47,31 @@ import { breadcrumbNode } from '../lib/schema';
         The site is hosted on GitHub Pages. GitHub may log technical data such as visitor IP addresses for security and
         to run the service. See the
         <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.
+      </p>
+
+      <h2 id="plugin-usage-data">Plugin usage data</h2>
+      <p>
+        From version 1.5, an administrator of a site running the plugin can choose to share anonymous usage data. It is off
+        by default. When it is on, the site sends a daily batch of events to telemetry.{SITE.domain}, such as which AI provider
+        is used, whether drafts finish, and which errors occur, as described in
+        <a href="/docs/privacy-and-external-services/#usage-data">the full list of events</a>.
+      </p>
+      <p>
+        The data contains no site address, names, email addresses, user or post IDs, API keys, or anything written in the
+        plugin. Each site is identified only by a random install ID created when usage data is turned on. It is used only to
+        improve the plugin, never sold or shared, and never combined with this website's analytics.
+      </p>
+      <p>
+        It is received by a Cloudflare Worker and stored in a Cloudflare D1 database. Cloudflare processes the request,
+        including the sending server's IP address, in transit; the service does not store IP addresses or request headers,
+        and request logs are off. See the
+        <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>. Events are kept for 24 months,
+        then deleted; totals that contain no install IDs may be kept longer.
+      </p>
+      <p>
+        The site's administrator can turn usage data off at any time in Settings → Usage data, and delete everything sent
+        from their site with Diagnostics → Usage data → Delete data on server. You can also email the install ID shown there
+        to {SITE.contactEmail} to have it deleted.
       </p>
 
       <h2>Email</h2>
