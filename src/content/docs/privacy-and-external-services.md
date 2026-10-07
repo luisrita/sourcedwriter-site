@@ -12,7 +12,7 @@ The plugin sends data to only two kinds of destination: the AI provider you conf
 | Action | What is sent |
 | --- | --- |
 | Test connection, and once when an administrator submits a new brief | The API key and a request for the model list. No content. |
-| Outline stage | Key, model, brief fields (topic, talking points, audience, search intent, keyword phrases, tone, length, language, market, call to action, include/avoid notes), the writer profile, and the extracted notes, titles and URLs of the selected sources |
+| Outline stage | Key, model, brief fields (topic, talking points, audience, search intent, keyword phrases, tone, length, language, market, call to action, include/avoid notes), today's date, the writer profile, and the extracted notes, titles and URLs of the selected sources |
 | Draft stage | The same as the outline stage, plus the approved outline |
 | Propose writer profile | Key, your prompt text and any writing sample you paste |
 | Rewrite section | Key, the section content, your instruction and that section's source notes |
