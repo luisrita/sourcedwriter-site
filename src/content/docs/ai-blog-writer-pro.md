@@ -2,7 +2,7 @@
 title: AI Blog Writer Pro
 description: Set up the paid add-on that finds sources automatically and checks every claim in your drafts against them. License, Tavily key, and what the checks mean.
 order: 11
-updated: 2026-10-06
+updated: 2026-10-09
 ---
 
 AI Blog Writer Pro is a paid add-on for the free plugin. It adds three things:
@@ -17,7 +17,7 @@ Like the free plugin, it runs on your own AI key. Plans and the free trial are o
 
 ## Requirements
 
-- AI Blog Writer with Sources **1.1.0 or later**, installed and connected to an AI provider (see [Getting started](/docs/getting-started/))
+- AI Blog Writer with Sources **1.5.0 or later** (AI Blog Writer Pro 1.3.0; earlier Pro versions need 1.1.0), installed and connected to an AI provider (see [Getting started](/docs/getting-started/))
 - A license or free trial of AI Blog Writer Pro: Creator covers 1 site, Agency 5
 - A Tavily account for automatic research. The free plan is enough for most sites.
 
@@ -30,7 +30,7 @@ On the [pricing page](/pricing/), start the 14-day free trial (no card needed) o
 1. Download the `ai-blog-writer-pro` ZIP from the link in that email.
 2. In WordPress, go to **Plugins → Add New Plugin → Upload Plugin**, choose the ZIP, then click **Install Now** and **Activate**.
 
-If the free plugin is missing or older than 1.1.0, the add-on shows a notice on the Plugins screen and does nothing else until you install or update it.
+If the free plugin is missing or older than the version the add-on needs, the add-on shows a notice on the Plugins screen and does nothing else until you install or update it.
 
 ## 3. Activate your license
 
