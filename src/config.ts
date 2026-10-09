@@ -23,7 +23,7 @@ export const SITE = {
 
 export const PLUGIN = {
   slug: 'luis-rita-ai-blog-writer',
-  version: '1.4.1',
+  version: '1.5.0',
   requiresWp: '6.0',
   testedUpTo: '7.1',
   requiresPhp: '7.4',
