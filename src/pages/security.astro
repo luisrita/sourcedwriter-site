@@ -1,0 +1,102 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<Base
+  title="Security and privacy"
+  description="How AI Blog Writer with Sources handles API keys, what leaves your site and when, what it stores, who can use it, and how to report a security problem."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Security and privacy', path: '/security/' }])]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Trust</p>
+      <h1>Security and privacy</h1>
+      <p class="lead">
+        The plugin runs inside your WordPress site, on your own AI account. There is no account with us, and nothing
+        is sent anywhere until you add a key or supply a URL.
+      </p>
+
+      <h2>At a glance</h2>
+      <ul>
+        <li>Your API keys stay on your server, encrypted, and never reach the browser.</li>
+        <li>Content goes only to the AI provider you chose, and only when a job or a tool you start needs it.</li>
+        <li>Jobs, sources and drafts are stored in your own database, with a retention limit you set.</li>
+        <li>Usage data for the plugin's author is off by default and contains no content.</li>
+        <li>Nothing is ever published automatically.</li>
+      </ul>
+
+      <h2>Your API keys</h2>
+      <p>
+        Keys are used only in server-side requests. They are never sent to the browser or returned by the REST API,
+        and the settings screen never shows a saved key again. Saved keys are encrypted with Sodium, using <code>AIBCG_ENCRYPTION_KEY</code> or, if you don't define one, the WordPress <code>AUTH_KEY</code>. To keep a
+        key out of the database altogether, define it in <code>wp-config.php</code> instead, for example <code>AIBCG_OPENAI_API_KEY</code>. See <a href="/docs/ai-providers-and-api-keys/">AI providers and API keys</a>.
+      </p>
+
+      <h2>What leaves your site</h2>
+      <ul>
+        <li>
+          <strong>Your AI provider</strong> (OpenAI, Anthropic, Google or xAI) receives the brief, the writer profile,
+          and notes from the selected sources when a job runs, or what a tool you click needs, such as a section to
+          rewrite. Never WordPress credentials, other database contents, or visitor data.
+        </li>
+        <li>
+          <strong>The source URLs you supply</strong> are fetched by your server with a plain request that identifies
+          the plugin and your site. No brief content, key or user data is sent to them.
+        </li>
+        <li>
+          <strong>Usage data</strong>, only if an administrator turns it on: anonymous counts and settings, such as
+          which provider is used and whether drafts finish. Never your site address, names, keys, or anything written
+          in the plugin. Diagnostics shows exactly what is waiting to be sent, and can delete what was sent.
+        </li>
+      </ul>
+      <p>
+        AI Blog Writer Pro also sends search queries written from your brief to Tavily, with your own Tavily key, and
+        your site URL to Freemius when you activate a license. The full list, with each endpoint and when it is called,
+        is in <a href="/docs/privacy-and-external-services/">Privacy and external services</a>.
+      </p>
+
+      <h2>What stays on your site</h2>
+      <p>
+        Jobs, briefs, sources and their extracted notes, outlines, drafts, usage, and writer profiles are stored in
+        your WordPress database. A daily task deletes the sources, notes, outlines, draft versions and stored brief of
+        each completed job after the retention period you set (90 days by default); generated posts are always kept. WordPress's <strong>Export Personal Data</strong> and <strong>Erase Personal Data</strong> tools cover the plugin's data.
+        Uninstalling removes the plugin's capabilities and usage data settings, and, if you define <code>AIBCG_REMOVE_DATA_ON_UNINSTALL</code>, all its tables, options and keys.
+      </p>
+
+      <h2>Who can use it</h2>
+      <p>
+        Administrators manage keys and settings. Editors can create drafts and manage every job; authors create and
+        manage their own. Other roles can't use the plugin.
+      </p>
+
+      <h2>Fetching sources safely</h2>
+      <p>
+        Source URLs must be public web addresses: private and local network addresses are rejected, redirects are
+        limited to three, and each page is capped at 1 MB. Only HTML and plain-text pages are read.
+      </p>
+
+      <h2>You stay in control of publishing</h2>
+      <p>
+        Every result is a WordPress draft. The plugin never publishes, schedules or changes a published post on its
+        own, and replacing a section keeps the previous version in Revisions.
+      </p>
+
+      <h2>Open source</h2>
+      <p>
+        The plugin is free software under the GPL. Its full source code is public in the <a href="https://plugins.trac.wordpress.org/browser/luis-rita-ai-blog-writer/">WordPress.org plugin repository</a>,
+        and it was reviewed by the WordPress.org plugin team before it was listed.
+      </p>
+
+      <h2 id="report">Reporting a security problem</h2>
+      <p>
+        If you find a vulnerability, please email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a> rather than posting it in the public support forum. Include the plugin version and the steps to reproduce it.
+        You'll get a reply, and a fix is released as soon as it's ready, with credit if you want it.
+      </p>
+      <p>
+        For how this website itself handles data, see the <a href="/privacy/">website privacy policy</a>.
+      </p>
+    </div>
+  </section>
+</Base>

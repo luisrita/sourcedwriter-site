@@ -42,7 +42,8 @@
     "Terms of sale": "Termos de venda",
     "For agencies": "Para agências",
     "For publishers": "Para publicadores",
-    "See how it works": "Veja como funciona"
+    "See how it works": "Veja como funciona",
+    "Security and privacy": "Segurança e privacidade"
   },
   "es": {
     "Features": "Funciones",
@@ -87,7 +88,8 @@
     "Terms of sale": "Condiciones de venta",
     "For agencies": "Para agencias",
     "For publishers": "Para editores",
-    "See how it works": "Cómo funciona"
+    "See how it works": "Cómo funciona",
+    "Security and privacy": "Seguridad y privacidad"
   },
   "de": {
     "Features": "Funktionen",
@@ -132,7 +134,8 @@
     "Terms of sale": "Verkaufsbedingungen",
     "For agencies": "Für Agenturen",
     "For publishers": "Für Publisher",
-    "See how it works": "So funktioniert es"
+    "See how it works": "So funktioniert es",
+    "Security and privacy": "Sicherheit und Datenschutz"
   },
   "fr": {
     "Features": "Fonctionnalités",
@@ -177,7 +180,8 @@
     "Terms of sale": "Conditions de vente",
     "For agencies": "Pour les agences",
     "For publishers": "Pour les éditeurs",
-    "See how it works": "Voir comment ça marche"
+    "See how it works": "Voir comment ça marche",
+    "Security and privacy": "Sécurité et confidentialité"
   },
   "ja": {
     "Features": "機能",
@@ -222,6 +226,7 @@
     "Terms of sale": "販売条件",
     "For agencies": "代理店向け",
     "For publishers": "個人サイト運営者向け",
-    "See how it works": "使い方を見る"
+    "See how it works": "使い方を見る",
+    "Security and privacy": "セキュリティとプライバシー"
   }
 }
