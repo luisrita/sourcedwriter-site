@@ -1,0 +1,139 @@
+---
+import Base from '../layouts/Base.astro';
+import { PLUGIN, PRO } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+
+const reasons = [
+  {
+    title: 'Pay your AI provider, not a subscription',
+    text: 'The plugin is free, and you add your own OpenAI, Anthropic, Google or xAI key, so your provider bills you for what you use. Each job records its usage and estimated cost, and a monthly ceiling stops jobs before you go over it.',
+  },
+  {
+    title: 'Facts you can check',
+    text: 'The draft is written from the pages you choose, and cites them inline with the date each was read. Anything it could not confirm is listed as a warning, so you know where to look before you publish.',
+  },
+  {
+    title: 'It sounds like you',
+    text: "A writer profile holds your voice, expertise, opinions, and the words you never use. Have AI propose one from a sample of your writing, preview its style, and link it to your author account.",
+  },
+  {
+    title: 'Never stuck for a topic',
+    text: "Describe what your blog covers and get six specific topics your recent posts don't already cover. For a topic you pick, get a primary phrase, supporting terms, the search intent, and reader questions.",
+  },
+  {
+    title: 'Fix a section, not the whole article',
+    text: 'Shorten, expand, clarify or change the tone of one section, or regenerate it from the sources you tick. You see a preview first, and the previous version stays in Revisions.',
+  },
+  {
+    title: 'Fits the site you have',
+    text: "Drafts are core blocks, so they work with any theme. Rank Math gets the suggested title, description and focus keyword. The plugin's screens follow your WordPress language, and each article is written in the language you set.",
+  },
+];
+---
+
+<Base
+  title="AI Blog Writer for independent publishers"
+  description="For bloggers and site owners: turn a topic and the pages you trust into a cited WordPress draft in your own voice, on your own AI key. Free, and never published automatically."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'For publishers', path: '/publishers/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">For bloggers and site owners</p>
+      <h1>Your blog, your sources, your voice</h1>
+      <p class="lead">
+        Turn a topic and the pages you trust into a cited WordPress draft, written in your voice, on your own AI key.
+        You stay the editor: nothing goes live until you publish it.
+      </p>
+      <div class="actions">
+        <a class="btn" href={PLUGIN.wordpressOrgUrl} target="_blank" rel="external noopener">Get it free on WordPress.org</a>
+        <a class="btn btn--ghost" href="/docs/getting-started/">Setup guide</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2>Why it suits a one-person publication</h2>
+      <div class="grid reasons">
+        {reasons.map((reason) => (
+          <article class="card">
+            <h3>{reason.title}</h3>
+            <p>{reason.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <h2>A typical article</h2>
+      <ol>
+        <li>Pick a topic, or ask for ideas, and add 3 to 5 recent pages you would cite yourself.</li>
+        <li>Choose your writer profile and the Guided workflow.</li>
+        <li>Untick any stale or off-topic source, then approve or edit the outline.</li>
+        <li>Open the draft in the block editor, follow the citations to check the facts, and edit it into your own.</li>
+        <li>Publish it when you're happy, as you would any post.</li>
+      </ol>
+      <h3>What it costs to run</h3>
+      <p>
+        That depends on the model and the article. In our benchmark of 2 October 2026 on GPT-5.6 Luna, an efficient
+        OpenAI model, a 1,200-word draft from 3 sources cost about one US cent, and a 2,500-word draft from 8 sources
+        under two cents. Larger models cost 10 to 20 times as much at list prices. Your provider's current prices apply,
+        and the Usage and cost screen shows your estimated spend for the month.
+      </p>
+      <figure>
+        <img src="/images/screenshot-2.png" width="1280" height="1883" loading="lazy"
+          alt="New article brief with topic ideas, workflow, SEO fields with keyword suggestions, source URLs and writer profile" />
+        <figcaption>The brief: a topic, the pages you trust, and your writer profile.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container prose">
+      <h2>When you want it to do more: Creator</h2>
+      <p>
+        The free plugin is complete on its own. {PRO.name} Creator, for one site at €{PRO.prices.creatorMonthly} a month
+        or €{PRO.prices.creatorYearly} a year plus VAT, saves the research and checking time:
+      </p>
+      <ul>
+        <li><strong>Find sources automatically</strong> with a Tavily key; the free Tavily plan covers most blogs.</li>
+        <li>
+          <strong>Claim-to-source check:</strong> every factual claim in the draft is marked supported, weakly supported
+          or unsupported by the sources.
+        </li>
+        <li><strong>Citation and link check:</strong> broken links, uncited sources, and citations to pages that aren't sources.</li>
+        <li><strong>More SEO plugins:</strong> Yoast SEO, All in One SEO and SEOPress, as well as Rank Math.</li>
+      </ul>
+      <div class="actions">
+        <a class="btn" href={PRO.trialUrl} target="_blank" rel="noopener">Start the {PRO.trialDays}-day free trial</a>
+        <a href="/pricing/">Compare plans →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <h2>When it isn't the right tool</h2>
+      <p>
+        It isn't for publishing in bulk without reading what goes out: it never publishes on its own, and every draft
+        needs your review. It needs an account with an AI provider; there are no included credits. Keyword ideas come
+        from the AI model, not from search-volume data, and nothing here promises rankings or traffic.
+      </p>
+      <p>
+        Questions? Email <a href="mailto:info@sourcedwriter.com">info@sourcedwriter.com</a>,
+        or ask on the <a href="https://wordpress.org/support/plugin/luis-rita-ai-blog-writer/">support forum</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 1.5rem; }
+  .reasons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .reasons h3 { margin-top: 0; }
+  /* The brief screenshot is tall; show its top: topic ideas, the topic, workflow and SEO fields. */
+  figure img { width: 100%; height: auto; max-height: 34rem; object-fit: cover; object-position: top;
+    border: 1px solid var(--border); border-radius: 8px; }
+</style>

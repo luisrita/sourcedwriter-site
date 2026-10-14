@@ -27,7 +27,7 @@ export const SITE = {
 export const SELLER = {
   name: 'Luis Rita',
   description: 'sole trader in Portugal',
-  address: '',
+  address: 'Av. 5 de Outubro nº17 (Ed. Tridente), Gabinete 4, Faro 8000-077, Portugal',
 };
 
 export const PLUGIN = {
