@@ -1,0 +1,186 @@
+---
+import Base from '../layouts/Base.astro';
+import InstallCta from '../components/InstallCta.astro';
+import { breadcrumbNode } from '../lib/schema';
+
+// One article, from the brief to the cited draft, on the plugin's own screenshots.
+const steps = [
+  {
+    n: 2, h: 1883,
+    title: 'Write a brief, not a prompt',
+    text: 'Give it a topic, or ask for six topic ideas your recent posts don\'t already cover. Add the reader goal and keywords, or let it suggest them, then paste the pages you trust: only those URLs are fetched. Pick the writer profile whose voice the article should have.',
+    look: 'Look for "Need a topic? Get ideas", "Suggest keywords for this topic", and the Source URLs box.',
+    alt: 'New article brief with topic ideas, workflow, SEO fields with keyword suggestions, source URLs and writer profile',
+  },
+  {
+    n: 3, h: 1718,
+    title: 'Check what it read',
+    text: 'In Guided mode the job pauses after research. Each source shows the notes extracted from it and the date it was retrieved, and a page published more than five years ago is marked as possibly stale. Untick anything you don\'t want the article to rest on.',
+    look: 'Look for the "possibly stale" source, unticked here, and the warnings under the list.',
+    alt: 'Guided source review listing each source with extracted notes and its retrieval date',
+  },
+  {
+    n: 4, h: 890,
+    title: 'Approve the outline',
+    text: 'Before any article text exists, reorder, add, remove, or rewrite sections. Each section lists the sources it will draw on.',
+    look: 'Look for the "sources" under each section, then "Approve and draft".',
+    alt: 'Outline review with editable sections and the sources each one uses',
+  },
+  {
+    n: 5, h: 1275,
+    title: 'Get a draft you can audit',
+    text: 'The job ends with a WordPress draft, never a published post. The job page lists the sources used, SEO suggestions, the provider usage and estimated cost, and warnings for anything the draft couldn\'t confirm.',
+    look: 'Look for "Review in block editor", the source list, and the warnings.',
+    alt: 'Completed job with draft link, sources, SEO suggestions, provider usage and warnings',
+  },
+  {
+    n: 9, h: 844,
+    title: 'Check and fix it in the editor',
+    text: 'The draft is ordinary blocks with inline citations next to the claims they support. The sidebar keeps the provenance (provider, model, time), the warnings and the sources. Rewrite one section, or regenerate it from the sources you tick.',
+    look: 'Look for the citation links in the text and "Regenerate using selected sources" in the sidebar.',
+    alt: 'Block editor with a cited draft and the AI Blog Writer sidebar showing provenance and a section rewrite from selected sources',
+  },
+];
+---
+
+<Base
+  title="See how it works"
+  description="A step-by-step tour of AI Blog Writer with Sources: the brief, Guided source review, outline approval, the finished job, and the cited draft in the block editor."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'See how it works', path: '/demo/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Tour</p>
+      <h1>See how it works</h1>
+      <p class="lead">
+        Follow one article, "Getting around the Azores without a rental car", from its sources to the cited draft. These
+        are the plugin's real screens, in Guided mode.
+      </p>
+
+      <div class="tour" data-tour>
+        <ol class="tour-nav" aria-label="Tour steps" hidden data-tour-nav>
+          {steps.map((step, i) => (
+            <li><button type="button" data-goto={i}><span class="num">{i + 1}</span> {step.title}</button></li>
+          ))}
+        </ol>
+        <ol class="tour-steps">
+          {steps.map((step, i) => (
+            <li class="tour-step" id={`step-${i + 1}`} data-step={i}>
+              <div class="tour-text">
+                <p class="step-count">Step {i + 1} of {steps.length}</p>
+                <h2>{step.title}</h2>
+                <p>{step.text}</p>
+                <p class="look">{step.look}</p>
+              </div>
+              <figure>
+                <a href={`/images/screenshot-${step.n}.png`} title="Open the full screenshot">
+                  <img src={`/images/screenshot-${step.n}.png`} width="1280" height={step.h} alt={step.alt}
+                    loading={i === 0 ? 'eager' : 'lazy'} />
+                </a>
+              </figure>
+            </li>
+          ))}
+        </ol>
+        <div class="tour-controls" hidden data-tour-controls>
+          <button type="button" class="btn btn--ghost" data-prev>← Previous</button>
+          <span class="tour-position" aria-live="polite" data-position></span>
+          <button type="button" class="btn" data-next>Next →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container prose">
+      <h2>Try it on your own site</h2>
+      <p>
+        The plugin is free and runs on your own OpenAI, Anthropic, Google or xAI key. The setup guide takes you from
+        installing it to your first draft.
+      </p>
+      <InstallCta />
+      <p>
+        Want it to find the sources and check every claim against them? See <a href="/pricing/">AI Blog Writer Pro</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .tour { margin-top: 2rem; }
+  .tour-steps { list-style: none; padding: 0; margin: 0; display: grid; gap: 3rem; }
+  .tour-step { display: grid; gap: 1.25rem; }
+  .tour-text h2 { margin: 0.25rem 0 0.5rem; }
+  .step-count { margin: 0; font-size: 0.9rem; font-weight: 600; color: var(--accent); }
+  .look { font-size: 0.95rem; color: var(--text-soft); }
+  figure { margin: 0; }
+  figure img {
+    display: block; width: 100%; height: auto; max-height: 75vh; object-fit: cover; object-position: top;
+    border: 1px solid var(--border); border-radius: 8px;
+  }
+  @media (min-width: 900px) {
+    .tour-step { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); align-items: start; }
+  }
+
+  /* Stepper, once the script has run; until then its buttons stay hidden. */
+  .tour-nav[hidden], .tour-controls[hidden] { display: none; }
+  .tour.is-stepper .tour-steps { gap: 0; }
+  .tour.is-stepper .tour-step:not(.is-current) { display: none; }
+  .tour-nav { list-style: none; padding: 0; margin: 0 0 1.5rem; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .tour-nav button {
+    font: inherit; font-size: 0.9rem; cursor: pointer; border: 1px solid var(--border); background: var(--bg);
+    color: var(--text); border-radius: 999px; padding: 0.35rem 0.85rem 0.35rem 0.4rem;
+  }
+  .tour-nav button[aria-current='step'] { border-color: var(--accent); background: var(--accent-soft); }
+  .tour-nav .num {
+    display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; margin-right: 0.25rem;
+    border-radius: 50%; background: var(--accent); color: #fff; font-size: 0.8rem; font-weight: 700;
+  }
+  .tour-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 1.5rem; }
+  .tour-controls button:disabled { opacity: 0.4; cursor: default; }
+  .tour-position { font-size: 0.95rem; color: var(--text-soft); }
+</style>
+
+<script>
+  // Without this script the tour is a plain list of steps. With it, one step shows at a time,
+  // with step buttons, Previous and Next, the arrow keys, and the step in the URL hash.
+  const tour = document.querySelector<HTMLElement>('[data-tour]');
+  if (tour) {
+    const steps = [...tour.querySelectorAll<HTMLElement>('[data-step]')];
+    const nav = tour.querySelector<HTMLElement>('[data-tour-nav]')!;
+    const controls = tour.querySelector<HTMLElement>('[data-tour-controls]')!;
+    const tabs = [...nav.querySelectorAll<HTMLButtonElement>('[data-goto]')];
+    const prev = controls.querySelector<HTMLButtonElement>('[data-prev]')!;
+    const next = controls.querySelector<HTMLButtonElement>('[data-next]')!;
+    const position = controls.querySelector<HTMLElement>('[data-position]')!;
+    let current = 0;
+
+    // The hash changes only when the visitor moves; setting it on load would scroll the page to the tour.
+    const show = (index: number, focus = false, remember = true) => {
+      current = Math.max(0, Math.min(steps.length - 1, index));
+      steps.forEach((step, i) => step.classList.toggle('is-current', i === current));
+      tabs.forEach((tab, i) => (i === current ? tab.setAttribute('aria-current', 'step') : tab.removeAttribute('aria-current')));
+      prev.disabled = current === 0;
+      next.disabled = current === steps.length - 1;
+      position.textContent = `Step ${current + 1} of ${steps.length}`;
+      if (remember) history.replaceState(null, '', `#step-${current + 1}`);
+      if (focus) steps[current].querySelector('h2')?.focus();
+    };
+
+    steps.forEach((step) => step.querySelector('h2')?.setAttribute('tabindex', '-1'));
+    tabs.forEach((tab, i) => tab.addEventListener('click', () => show(i)));
+    prev.addEventListener('click', () => show(current - 1, true));
+    next.addEventListener('click', () => show(current + 1, true));
+    tour.addEventListener('keydown', (event) => {
+      if ((event.target as HTMLElement).closest('input, textarea, select')) return;
+      if (event.key === 'ArrowRight') show(current + 1);
+      if (event.key === 'ArrowLeft') show(current - 1);
+    });
+
+    const fromHash = () => Number((location.hash.match(/^#step-(\d+)$/) || [])[1]) - 1;
+    window.addEventListener('hashchange', () => { if (fromHash() >= 0) show(fromHash()); });
+    tour.classList.add('is-stepper');
+    nav.hidden = false;
+    controls.hidden = false;
+    show(fromHash() >= 0 ? fromHash() : 0, false, false);
+  }
+</script>

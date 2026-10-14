@@ -41,7 +41,8 @@
     "Generated content can contain errors or unsupported claims. Review before publishing.": "O conteúdo gerado pode conter erros ou afirmações sem respaldo. Revise antes de publicar.",
     "Terms of sale": "Termos de venda",
     "For agencies": "Para agências",
-    "For publishers": "Para publicadores"
+    "For publishers": "Para publicadores",
+    "See how it works": "Veja como funciona"
   },
   "es": {
     "Features": "Funciones",
@@ -85,7 +86,8 @@
     "Generated content can contain errors or unsupported claims. Review before publishing.": "El contenido generado puede contener errores o afirmaciones sin respaldo. Revísalo antes de publicar.",
     "Terms of sale": "Condiciones de venta",
     "For agencies": "Para agencias",
-    "For publishers": "Para editores"
+    "For publishers": "Para editores",
+    "See how it works": "Cómo funciona"
   },
   "de": {
     "Features": "Funktionen",
@@ -129,7 +131,8 @@
     "Generated content can contain errors or unsupported claims. Review before publishing.": "Generierte Inhalte können Fehler oder unbelegte Aussagen enthalten. Prüfen Sie sie vor dem Veröffentlichen.",
     "Terms of sale": "Verkaufsbedingungen",
     "For agencies": "Für Agenturen",
-    "For publishers": "Für Publisher"
+    "For publishers": "Für Publisher",
+    "See how it works": "So funktioniert es"
   },
   "fr": {
     "Features": "Fonctionnalités",
@@ -173,7 +176,8 @@
     "Generated content can contain errors or unsupported claims. Review before publishing.": "Le contenu généré peut contenir des erreurs ou affirmations non étayées. Relisez avant publication.",
     "Terms of sale": "Conditions de vente",
     "For agencies": "Pour les agences",
-    "For publishers": "Pour les éditeurs"
+    "For publishers": "Pour les éditeurs",
+    "See how it works": "Voir comment ça marche"
   },
   "ja": {
     "Features": "機能",
@@ -217,6 +221,7 @@
     "Generated content can contain errors or unsupported claims. Review before publishing.": "生成内容には誤りや裏付けのない主張が含まれる可能性があります。公開前に確認してください。",
     "Terms of sale": "販売条件",
     "For agencies": "代理店向け",
-    "For publishers": "個人サイト運営者向け"
+    "For publishers": "個人サイト運営者向け",
+    "See how it works": "使い方を見る"
   }
 }
