@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import { MODELS, PLUGIN } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<Base
+  title="Compatibility"
+  description={`What AI Blog Writer with Sources supports: WordPress ${PLUGIN.requiresWp}+, PHP ${PLUGIN.requiresPhp}+, OpenAI, Anthropic, Google and xAI models, Rank Math, Yoast SEO, All in One SEO, SEOPress, multisite, and six interface languages.`}
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Compatibility', path: '/compatibility/' }])]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Compatibility</p>
+      <h1>What it works with</h1>
+      <p class="lead">
+        Requirements and supported providers, models and plugins for version {PLUGIN.version} of the free plugin and
+        for AI Blog Writer Pro.
+      </p>
+
+      <h2>WordPress and PHP</h2>
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><th scope="row">WordPress</th><td>{PLUGIN.requiresWp} or later, tested up to {PLUGIN.testedUpTo}</td></tr>
+            <tr><th scope="row">PHP</th><td>{PLUGIN.requiresPhp} or later</td></tr>
+            <tr><th scope="row">Editor</th><td>Drafts are core blocks. The sidebar with provenance, sources, section rewrites and SEO suggestions needs the block editor.</td></tr>
+            <tr><th scope="row">Multisite</th><td>Yes. Activate per site or network-wide; each site keeps its own keys, settings, jobs and writer profiles.</td></tr>
+            <tr><th scope="row">Themes</th><td>Any theme that displays core blocks.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Server</h2>
+      <div class="table-wrap">
+        <table>
+          <tbody>
+            <tr><th scope="row">Outbound HTTPS</th><td>To your AI provider's API, and to the source URLs you supply.</td></tr>
+            <tr>
+              <th scope="row">Sodium</th>
+              <td>To save API keys encrypted in the database (included in PHP since 7.2). Without it, define the key in <code>wp-config.php</code> instead.</td>
+            </tr>
+            <tr>
+              <th scope="row">Background jobs</th>
+              <td>WP-Cron, or a server scheduler calling <code>wp-cron.php</code> every minute if <code>DISABLE_WP_CRON</code> is set. See <a href="/docs/background-jobs-and-wp-cron/">Background jobs and WP-Cron</a>.</td>
+            </tr>
+            <tr><th scope="row">WP-CLI</th><td>Optional: <code>wp aibcg job run &lt;job-id&gt;</code> runs one stage of a job.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>AI providers and models</h2>
+      <p>
+        Use your own API key from any of these providers; the model is chosen in Settings. Instead of saving a key, you
+        can define it in <code>wp-config.php</code> with the constant shown.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Provider</th><th scope="col">Models</th><th scope="col">Key constant</th></tr></thead>
+          <tbody>
+            {MODELS.map((entry) => (
+              <tr>
+                <th scope="row">{entry.provider}</th>
+                <td>{entry.models.map((model, i) => <>{i > 0 && ', '}{model === entry.recommended ? <strong>{model} (recommended)</strong> : model}</>)}</td>
+                <td><code>{entry.constant}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Whether a model is available also depends on your provider account. See <a href="/docs/ai-providers-and-api-keys/">AI providers and API keys</a>.
+      </p>
+
+      <h2>Plugins and services</h2>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Integration</th><th scope="col">What it does</th><th scope="col">Plugin</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Rank Math SEO</th><td>Apply the suggested SEO title, description and focus keyword from the editor sidebar</td><td>Free</td></tr>
+            <tr><th scope="row">Yoast SEO</th><td>The same, for Yoast SEO</td><td>Pro</td></tr>
+            <tr><th scope="row">All in One SEO</th><td>The same, for All in One SEO</td><td>Pro</td></tr>
+            <tr><th scope="row">SEOPress</th><td>The same, for SEOPress</td><td>Pro</td></tr>
+            <tr><th scope="row">Tavily</th><td>Find sources automatically, with your own Tavily key</td><td>Pro</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Languages</h2>
+      <p>
+        The plugin's screens are available in English, German, French, Spanish, Brazilian Portuguese and Japanese, and
+        follow each user's WordPress language. Articles are written in the language set in each brief, in any language
+        your AI model writes.
+      </p>
+
+      <h2>AI Blog Writer Pro</h2>
+      <p>
+        AI Blog Writer Pro 1.3.0 needs the free plugin 1.5.0 or later, with the same WordPress and PHP requirements. A
+        Creator license covers 1 site and an Agency license 5. See <a href="/docs/ai-blog-writer-pro/">the Pro guide</a> and <a href="/pricing/">pricing</a>.
+      </p>
+
+      <p>
+        Something missing from this list? Ask on the <a href="https://wordpress.org/support/plugin/luis-rita-ai-blog-writer/">support forum</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 0.6rem 0.75rem; border-bottom: 1px solid var(--border); }
+  tbody th { white-space: nowrap; }
+</style>

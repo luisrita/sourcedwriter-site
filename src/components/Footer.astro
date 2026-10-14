@@ -7,11 +7,11 @@ const t = (key: string) => translate(key, locale, { version: PLUGIN.version, aut
 const path = (english: string) => localizedPath(english, locale);
 const groups = [
   { title: 'Product', links: [['Features', '/features/'], ['See how it works', '/demo/'], ['Pricing', '/pricing/'], ['For publishers', '/publishers/'], ['For agencies', '/agencies/'], ['Changelog', '/changelog/'], ['FAQ', '/faq/']] },
-  { title: 'Resources', links: [['Docs', '/docs/'], ['Security and privacy', '/security/'], ['Privacy and external services', '/docs/privacy-and-external-services/']] },
+  { title: 'Resources', links: [['Docs', '/docs/'], ['Compatibility', '/compatibility/'], ['Security and privacy', '/security/'], ['Privacy and external services', '/docs/privacy-and-external-services/']] },
   { title: 'Company', links: [['About', '/about/'], ['Website privacy', '/privacy/'], ['Terms of sale', '/terms/']] },
 ];
 // Pages that exist only in English.
-const englishOnly = new Set(['/terms/', '/agencies/', '/publishers/', '/demo/', '/security/']);
+const englishOnly = new Set(['/terms/', '/agencies/', '/publishers/', '/demo/', '/security/', '/compatibility/']);
 ---
 <footer class="site-footer">
   <div class="container cols">

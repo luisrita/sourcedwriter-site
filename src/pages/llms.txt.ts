@@ -26,6 +26,7 @@ export const GET: APIRoute = async () => {
     `- [See how it works](${SITE.url}/demo/): A step-by-step tour of one article, from the brief and source review to the cited draft in the block editor`,
     `- [For publishers](${SITE.url}/publishers/): For bloggers and site owners: cited drafts in your own voice on your own AI key, topic ideas, section rewrites, typical cost, and the Creator plan`,
     `- [For agencies](${SITE.url}/agencies/): Client drafts on each client's own AI key, writer profiles per client, Guided review, cost ceilings, and the Agency plan`,
+    `- [Compatibility](${SITE.url}/compatibility/): WordPress and PHP requirements, server needs, every supported AI model with its wp-config.php key constant, SEO plugin integrations, languages, and Pro requirements`,
     `- [Security and privacy](${SITE.url}/security/): How API keys are stored, what leaves the site and when, what is stored, roles, safe source fetching, and how to report a vulnerability`,
     `- [FAQ](${SITE.url}/faq/): Auto-publishing, web search, models, costs, key safety, Rank Math, multisite`,
     `- [Changelog](${SITE.url}/changelog/): Release history`,

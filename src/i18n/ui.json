@@ -43,7 +43,8 @@
     "For agencies": "Para agências",
     "For publishers": "Para publicadores",
     "See how it works": "Veja como funciona",
-    "Security and privacy": "Segurança e privacidade"
+    "Security and privacy": "Segurança e privacidade",
+    "Compatibility": "Compatibilidade"
   },
   "es": {
     "Features": "Funciones",
@@ -89,7 +90,8 @@
     "For agencies": "Para agencias",
     "For publishers": "Para editores",
     "See how it works": "Cómo funciona",
-    "Security and privacy": "Seguridad y privacidad"
+    "Security and privacy": "Seguridad y privacidad",
+    "Compatibility": "Compatibilidad"
   },
   "de": {
     "Features": "Funktionen",
@@ -135,7 +137,8 @@
     "For agencies": "Für Agenturen",
     "For publishers": "Für Publisher",
     "See how it works": "So funktioniert es",
-    "Security and privacy": "Sicherheit und Datenschutz"
+    "Security and privacy": "Sicherheit und Datenschutz",
+    "Compatibility": "Kompatibilität"
   },
   "fr": {
     "Features": "Fonctionnalités",
@@ -181,7 +184,8 @@
     "For agencies": "Pour les agences",
     "For publishers": "Pour les éditeurs",
     "See how it works": "Voir comment ça marche",
-    "Security and privacy": "Sécurité et confidentialité"
+    "Security and privacy": "Sécurité et confidentialité",
+    "Compatibility": "Compatibilité"
   },
   "ja": {
     "Features": "機能",
@@ -227,6 +231,7 @@
     "For agencies": "代理店向け",
     "For publishers": "個人サイト運営者向け",
     "See how it works": "使い方を見る",
-    "Security and privacy": "セキュリティとプライバシー"
+    "Security and privacy": "セキュリティとプライバシー",
+    "Compatibility": "互換性"
   }
 }
