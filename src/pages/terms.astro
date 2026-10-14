@@ -1,0 +1,126 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE, SELLER } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+---
+
+<Base
+  title="Terms of sale"
+  description="Terms for buying and using AI Blog Writer Pro: licenses, the free trial, renewals and cancellation, the 14-day money-back guarantee, and your own AI and search accounts."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'Terms of sale', path: '/terms/' }])]}
+>
+  <section class="section">
+    <div class="container prose">
+      <p class="eyebrow">Legal</p>
+      <h1>Terms of sale</h1>
+      <p class="meta">Last updated 14 October 2026</p>
+
+      <p>
+        These terms cover buying and using AI Blog Writer Pro ("Pro"), the paid add-on for {SITE.productName}. The free
+        plugin is software you can use, change and share under its <a href="https://www.gnu.org/licenses/gpl-2.0.html">GPL
+        license</a>, and this website is covered by the <a href="/privacy/">website privacy policy</a>.
+      </p>
+
+      <h2>Who sells Pro</h2>
+      <p>
+        Pro is made and sold by {SELLER.name}, {SELLER.description}{SELLER.address && `, ${SELLER.address}`}{SELLER.taxId && ` (tax number ${SELLER.taxId})`}.
+        Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
+      </p>
+      <p>
+        Freemius, Inc. runs the checkout as our reseller: it takes the payment, charges VAT where it applies, and issues
+        your invoices. The <a href="https://freemius.com/terms/">Freemius terms</a>
+        and <a href="https://freemius.com/privacy/">privacy policy</a> also apply to the payment.
+      </p>
+
+      <h2>Plans and licenses</h2>
+      <p>
+        The <a href="/pricing/">pricing page</a> lists the plans and prices, which exclude VAT. A Creator license runs Pro
+        on 1 WordPress site at a time and an Agency license on up to 5. To move a license, deactivate it on one site and
+        activate it on another.
+      </p>
+      <p>
+        Pro's code is licensed under the GPL, version 2 or later, like WordPress. Your license gives you activation,
+        updates and support while it is active; it doesn't limit your rights under the GPL. Pro needs the free plugin and
+        the WordPress and PHP versions listed on the plugin's page.
+      </p>
+
+      <h2>Free trial</h2>
+      <p>
+        The 14-day trial of the Creator plan needs no payment card. When it ends, Pro stops unless you buy a license, and
+        nothing is charged.
+      </p>
+
+      <h2>Renewals and cancellation</h2>
+      <p>
+        Licenses are paid monthly or yearly and renew automatically until you cancel. If the price changes, the new price
+        applies from your next renewal after we have told you by email, so you can cancel first.
+      </p>
+      <p>
+        You can cancel at any time from your Freemius account or by emailing us. Pro keeps working until the end of the
+        period you paid for, then stops finding sources and checking drafts. The free plugin and every draft you created
+        keep working.
+      </p>
+
+      <h2>14-day money-back guarantee</h2>
+      <p>
+        If Pro isn't right for you, email us within 14 days of any payment, including a renewal, and we refund that payment
+        in full through Freemius to the way you paid. You don't need to give a reason. The guarantee is in addition to your
+        rights as a consumer.
+      </p>
+
+      <h2>Your AI and search accounts</h2>
+      <p>
+        Pro uses your own AI provider account and your own Tavily account, with keys you add to your site. Those providers
+        bill you directly, under their own terms, and we don't control their prices, limits or availability.
+      </p>
+
+      <h2>Reviewing what you publish</h2>
+      <p>
+        Generated drafts can contain errors, unsupported claims or out-of-date facts. Pro's claim-to-source check and link
+        check help you find problems but can't guarantee a draft is accurate or complete. Neither plugin ever publishes
+        automatically: you decide what to publish and are responsible for it.
+      </p>
+
+      <h2>Fair use</h2>
+      <p>
+        Use a license only on the number of sites your plan covers, and don't share, sell or publish license keys. Don't
+        use Pro to produce content that breaks the law or the terms of your AI provider. We may suspend a license that is
+        used this way, after telling you why.
+      </p>
+
+      <h2>Support and updates</h2>
+      <p>
+        While your license or trial is active you get Pro updates and email support
+        at <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. We answer as soon as we can, usually within two
+        working days.
+      </p>
+
+      <h2>Liability</h2>
+      <p>
+        Pro is provided as it is, to the extent the law allows. Our total liability for any claim about Pro is limited to
+        what you paid for it in the 12 months before the claim. Nothing in these terms limits liability that the law does
+        not allow to be limited, such as for intent or gross negligence, or your rights as a consumer, including the legal
+        guarantee that digital content conforms to the contract.
+      </p>
+
+      <h2>Changes to these terms</h2>
+      <p>
+        We may update these terms. Changes apply to new purchases from the date above, and to existing licenses from their
+        next renewal after we have told you by email.
+      </p>
+
+      <h2>Law and complaints</h2>
+      <p>
+        These terms are governed by Portuguese law. If you are a consumer, you keep the protections of the law of the
+        country where you live that can't be waived, and you can bring a claim in its courts.
+      </p>
+      <p>
+        If something goes wrong, please email us first. You can also file a complaint
+        in the <a href="https://www.livroreclamacoes.pt/">Livro de Reclamações Eletrónico</a> (the Portuguese electronic
+        complaints book). Consumers can take a dispute to an alternative dispute resolution body,
+        such as <a href="https://www.cniacc.pt/">CNIACC</a>, the Portuguese national consumer arbitration centre;
+        the <a href="https://www.consumidor.gov.pt/">Portal do Consumidor</a> lists the others.
+      </p>
+    </div>
+  </section>
+</Base>

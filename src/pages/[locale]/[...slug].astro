@@ -45,6 +45,7 @@ const markdownPath = path(route ? `/${route}.md` : '/index.md');
         <a class="btn btn--ghost" href={checkoutUrl(PRO.creatorUrl, locale)} rel="external noopener">{t('Buy Creator')}</a>
         <a class="btn btn--ghost" href={checkoutUrl(PRO.agencyUrl, locale)} rel="external noopener">{t('Buy Agency')}</a>
       </div>}
+      {route === 'pricing' && <p><a href="/terms/" hreflang="en">{t('Terms of sale')}</a></p>}
 
       {route === 'privacy' && <p id="cookies">
         <a href="#cookies" data-consent-open>{t('Cookie settings')}</a> ·

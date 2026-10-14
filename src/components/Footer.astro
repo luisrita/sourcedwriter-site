@@ -8,8 +8,10 @@ const path = (english: string) => localizedPath(english, locale);
 const groups = [
   { title: 'Product', links: [['Features', '/features/'], ['Pricing', '/pricing/'], ['Changelog', '/changelog/'], ['FAQ', '/faq/']] },
   { title: 'Resources', links: [['Docs', '/docs/'], ['Privacy and external services', '/docs/privacy-and-external-services/']] },
-  { title: 'Company', links: [['About', '/about/'], ['Website privacy', '/privacy/']] },
+  { title: 'Company', links: [['About', '/about/'], ['Website privacy', '/privacy/'], ['Terms of sale', '/terms/']] },
 ];
+// Pages that exist only in English.
+const englishOnly = new Set(['/terms/']);
 ---
 <footer class="site-footer">
   <div class="container cols">
@@ -20,7 +22,9 @@ const groups = [
     </div>
     {groups.map((group) => <nav aria-label={t(group.title)}>
       <p class="h">{t(group.title)}</p>
-      <ul>{group.links.map(([label, href]) => <li><a href={path(href)}>{t(label)}</a></li>)}</ul>
+      <ul>{group.links.map(([label, href]) => <li>{englishOnly.has(href)
+        ? <a href={href} hreflang="en">{t(label)}</a>
+        : <a href={path(href)}>{t(label)}</a>}</li>)}</ul>
     </nav>)}
     <div>
       <p><a href={path('/privacy/#cookies')} data-consent-open>{t('Cookie settings')}</a></p>

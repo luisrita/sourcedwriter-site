@@ -21,6 +21,15 @@ export const SITE = {
   ogImage: '/images/og-default.png',
 };
 
+// The trader named in the Terms of sale. EU and Portuguese consumer law require the
+// address; fill both before publishing /terms/.
+export const SELLER = {
+  name: 'Luis Rita',
+  description: 'sole trader in Portugal',
+  address: '',
+  taxId: '',
+};
+
 export const PLUGIN = {
   slug: 'luis-rita-ai-blog-writer',
   version: '1.5.0',
