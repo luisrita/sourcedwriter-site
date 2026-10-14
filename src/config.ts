@@ -21,13 +21,13 @@ export const SITE = {
   ogImage: '/images/og-default.png',
 };
 
-// The trader named in the Terms of sale. EU and Portuguese consumer law require the
-// address; fill both before publishing /terms/.
+// The maker named in the Terms of sale; Freemius is the seller of record. A postal address
+// (a business address is enough) is shown when set; whether it is required is part of
+// the legal review. No tax number: Freemius's details are on the invoices.
 export const SELLER = {
   name: 'Luis Rita',
   description: 'sole trader in Portugal',
   address: '',
-  taxId: '',
 };
 
 export const PLUGIN = {

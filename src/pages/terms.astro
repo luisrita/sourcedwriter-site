@@ -23,13 +23,14 @@ import { breadcrumbNode } from '../lib/schema';
 
       <h2>Who sells Pro</h2>
       <p>
-        Pro is made and sold by {SELLER.name}, {SELLER.description}{SELLER.address && `, ${SELLER.address}`}{SELLER.taxId && ` (tax number ${SELLER.taxId})`}.
-        Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
+        Freemius, Inc. sells Pro as our reseller and merchant of record: it runs the checkout, takes the payment, charges
+        VAT where it applies, and issues your invoices.
+        The <a href="https://freemius.com/terms/">Freemius terms</a> and <a href="https://freemius.com/privacy/">privacy policy</a> apply
+        to the purchase and payment.
       </p>
       <p>
-        Freemius, Inc. runs the checkout as our reseller: it takes the payment, charges VAT where it applies, and issues
-        your invoices. The <a href="https://freemius.com/terms/">Freemius terms</a> and{' '}
-        <a href="https://freemius.com/privacy/">privacy policy</a> also apply to the payment.
+        Pro is made by {SELLER.name}, {SELLER.description}{SELLER.address && `, ${SELLER.address}`}, who provides your
+        license, updates and support under these terms. Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.
       </p>
 
       <h2>Plans and licenses</h2>
