@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { LAUNCH_LOCALES, localeConfig, localizedPath } from '../src/i18n/locales.mjs';
 import { PUBLISHED_TRANSLATIONS, pageAlternates } from '../src/i18n/pages.mjs';
 
@@ -51,4 +51,23 @@ test('localized FAQ, error-help targets and machine-readable twins exist in prod
   }
   const blog = read('blog/index.html');
   assert.equal(tags(blog, 'link').filter((link) => link.hreflang && link.hreflang !== 'en' && link.hreflang !== 'x-default').length, 0);
+});
+
+test('no built page glues a word to a neighbouring link or inline tag', () => {
+  // Astro drops whitespace that contains a line break between text and an inline tag, so "see\n<a>" renders as "see<a>".
+  // Latin letters, digits and closing punctuation must not touch an inline tag; CJK text and opening punctuation may.
+  const inline = 'a|strong|em|b|i|code|kbd|time|abbr';
+  const word = '\\p{Script=Latin}\\p{Script=Greek}\\p{Script=Cyrillic}0-9';
+  const before = new RegExp(`[${word}.,;:!?·)\\]”’»]<(?:${inline})\\b`, 'u');
+  const after = new RegExp(`</(?:${inline})>[${word}(\\[“‘«]`, 'u');
+  const price = new RegExp(`[${word}][€$£]\\d`, 'u');
+  const glued = [];
+  for (const file of readdirSync(root, { recursive: true }).filter((file) => file.endsWith('.html'))) {
+    const html = read(file).replace(/<(script|style)\b[\s\S]*?<\/\1>/g, '');
+    for (const pattern of [before, after, price]) {
+      const match = html.match(pattern);
+      if (match) glued.push(`${file}: …${html.slice(Math.max(0, match.index - 40), match.index + 40)}…`);
+    }
+  }
+  assert.deepEqual(glued, []);
 });

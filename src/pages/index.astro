@@ -27,7 +27,7 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
         </p>
         <InstallCta variant="hero" />
         <p class="pro-nudge">
-          Want it to find the sources and check every claim?
+          Want it to find the sources and check every claim?{' '}
           <a href="#pro">Try {PRO.name} free for {PRO.trialDays} days →</a>
         </p>
       </div>
@@ -230,8 +230,8 @@ const guides = (await getCollection('blog', ({ data }) => !data.draft))
       </p>
       <InstallCta />
       <p class="pro-footnote">
-        Want the research and fact-checking done for you? <a href="/pricing/">See {PRO.name}</a>, from
-        {PRO.fromPrice} a month plus VAT.
+        Want the research and fact-checking done for you? <a href="/pricing/">See {PRO.name}</a>,
+        from {PRO.fromPrice} a month plus VAT.
       </p>
     </div>
   </section>
