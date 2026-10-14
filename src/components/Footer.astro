@@ -6,12 +6,12 @@ const locale = localeFromPath(Astro.url.pathname);
 const t = (key: string) => translate(key, locale, { version: PLUGIN.version, author: SITE.author.name });
 const path = (english: string) => localizedPath(english, locale);
 const groups = [
-  { title: 'Product', links: [['Features', '/features/'], ['Pricing', '/pricing/'], ['Changelog', '/changelog/'], ['FAQ', '/faq/']] },
+  { title: 'Product', links: [['Features', '/features/'], ['Pricing', '/pricing/'], ['For agencies', '/agencies/'], ['Changelog', '/changelog/'], ['FAQ', '/faq/']] },
   { title: 'Resources', links: [['Docs', '/docs/'], ['Privacy and external services', '/docs/privacy-and-external-services/']] },
   { title: 'Company', links: [['About', '/about/'], ['Website privacy', '/privacy/'], ['Terms of sale', '/terms/']] },
 ];
 // Pages that exist only in English.
-const englishOnly = new Set(['/terms/']);
+const englishOnly = new Set(['/terms/', '/agencies/']);
 ---
 <footer class="site-footer">
   <div class="container cols">

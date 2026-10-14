@@ -23,6 +23,7 @@ export const GET: APIRoute = async () => {
     '',
     `- [Features](${SITE.url}/features/): Every feature in the free plugin, with screenshots`,
     `- [Pricing](${SITE.url}/pricing/): Free plugin vs AI Blog Writer Pro (Creator and Agency plans), with the full comparison`,
+    `- [For agencies](${SITE.url}/agencies/): Client drafts on each client's own AI key, writer profiles per client, Guided review, cost ceilings, and the Agency plan`,
     `- [FAQ](${SITE.url}/faq/): Auto-publishing, web search, models, costs, key safety, Rank Math, multisite`,
     `- [Changelog](${SITE.url}/changelog/): Release history`,
     '',

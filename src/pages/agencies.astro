@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import { PLUGIN, PRO } from '../config';
+import { breadcrumbNode } from '../lib/schema';
+
+const reasons = [
+  {
+    title: 'Each client pays their own AI provider',
+    text: "Add the client's OpenAI, Anthropic, Google or xAI key on their site, or your own. The provider bills that account directly, so there is no usage to mark up, resell or reconcile. Keys are encrypted in the database, or kept in wp-config.php.",
+  },
+  {
+    title: 'Sources you can show the client',
+    text: 'Drafts cite the pages they were written from, inline, with retrieval dates. The provider, model and time are saved with the post, and anything the plugin could not confirm is listed as a warning.',
+  },
+  {
+    title: 'A voice per client',
+    text: "Writer profiles hold the voice, expertise, vocabulary and words to avoid, and are linked to the client's WordPress author, so drafts are credited to the right byline. Preview a profile's style before using it on a whole article.",
+  },
+  {
+    title: 'Review before anything is written',
+    text: 'Guided mode pauses twice: you approve the sources, then the outline. Drafts arrive as ordinary WordPress drafts in core blocks, and nothing is ever published automatically.',
+  },
+  {
+    title: 'Spending stays predictable',
+    text: 'Every job records its provider usage and estimated cost. Set a monthly ceiling for the site and for each user, and jobs stop before going over it.',
+  },
+  {
+    title: 'Roles that match your team',
+    text: 'Authors write and manage their own drafts, editors see and manage every job, and only administrators change keys and settings.',
+  },
+];
+---
+
+<Base
+  title="AI Blog Writer for agencies"
+  description="Write source-backed drafts on each client's WordPress site, in each client's voice, on each client's own AI key. Guided review, cost ceilings, and an Agency plan for 5 sites."
+  schema={[breadcrumbNode([{ name: 'Home', path: '/' }, { name: 'For agencies', path: '/agencies/' }])]}
+>
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">For agencies</p>
+      <h1>Client drafts you can stand behind</h1>
+      <p class="lead">
+        Write source-backed drafts on each client's WordPress site, in each client's voice, on each client's own AI
+        key. Every draft shows the sources it was written from, so your editors check facts by following links,
+        not by searching from scratch.
+      </p>
+      <div class="actions">
+        <a class="btn" href={PLUGIN.wordpressOrgUrl} target="_blank" rel="external noopener">Get it free on WordPress.org</a>
+        <a class="btn btn--ghost" href="#agency-plan">See the Agency plan</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <h2>Why it fits client work</h2>
+      <div class="grid reasons">
+        {reasons.map((reason) => (
+          <article class="card">
+            <h3>{reason.title}</h3>
+            <p>{reason.text}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <h2>One client, start to finish</h2>
+      <ol>
+        <li>Install the free plugin on the client's site and add their AI key. Set a monthly cost ceiling.</li>
+        <li>Create a writer profile for the client's author, from a sample of their writing if you have one.</li>
+        <li>Start a Guided article with the client's own pages and the sources you trust: up to eight URLs.</li>
+        <li>Approve the sources and the outline, then edit the draft in the block editor.</li>
+        <li>
+          Publish it yourself, or hand it to the client for sign-off. To write a new version later, reopen the
+          brief behind the job.
+        </li>
+      </ol>
+      <p>
+        On a multisite network, activate the plugin network-wide: each site keeps its own keys, settings, jobs and
+        writer profiles. The plugin's screens follow each user's WordPress language (English, German, French,
+        Spanish, Brazilian Portuguese or Japanese), and each article is written in the language set in its brief.
+      </p>
+      <figure>
+        <img src="/images/screenshot-6.png" width="1280" height="2100" loading="lazy"
+          alt="Writer profile editor with a linked WordPress author, voice fields, and Preview the style" />
+        <figcaption>A writer profile linked to the client's author, with a style preview.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--soft" id="agency-plan">
+    <div class="container prose">
+      <h2>{PRO.name}: the Agency plan</h2>
+      <p>
+        The free plugin works on any number of sites. {PRO.name} adds the checks that save editing time on client
+        work, on up to 5 sites for €{PRO.prices.agencyMonthly} a month or €{PRO.prices.agencyYearly} a year, plus VAT:
+      </p>
+      <ul>
+        <li><strong>Find sources automatically</strong>, with a Tavily key, when the client hasn't sent any.</li>
+        <li>
+          <strong>Claim-to-source check:</strong> every factual claim in the draft is marked supported, weakly supported
+          or unsupported by the sources, so editors know where to look.
+        </li>
+        <li><strong>Citation and link check:</strong> broken links, uncited sources, and citations to pages that aren't sources.</li>
+        <li><strong>Your clients' SEO plugins:</strong> apply the SEO title, description and focus keyword to Yoast SEO, All in One SEO or SEOPress, as well as Rank Math.</li>
+      </ul>
+      <p>
+        Two Creator licenses cost less than Agency; from three sites, Agency is cheaper.
+        Try it free for {PRO.trialDays} days, no card needed.
+      </p>
+      <div class="actions">
+        <a class="btn" href={PRO.agencyUrl} target="_blank" rel="noopener">Buy Agency</a>
+        <a class="btn btn--ghost" href={PRO.trialUrl} target="_blank" rel="noopener">Start the free trial</a>
+        <a href="/pricing/">Compare plans →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container prose">
+      <h2>What it doesn't do</h2>
+      <p>
+        It has no white-label branding, client approval links, or writer profiles shared across a team: each profile
+        belongs to the user who created it. It never publishes on its own, and it makes no promise about rankings or
+        traffic. Generated drafts can still contain errors, so they need the same editorial review as any other
+        writer's work.
+      </p>
+      <p>
+        Questions about using it for clients? Email <a href="mailto:info@sourcedwriter.com">info@sourcedwriter.com</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; margin-top: 1.5rem; }
+  .reasons { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+  .reasons h3 { margin-top: 0; }
+  /* The profile screenshot is tall; show its top: the profile, the linked author, and the voice fields. */
+  figure img { width: 100%; height: auto; max-height: 34rem; object-fit: cover; object-position: top;
+    border: 1px solid var(--border); border-radius: 8px; }
+</style>
