@@ -36,13 +36,14 @@ Pick the model under **Default model** in Settings. The plugin offers:
 
 | Model | Described in Settings as |
 | --- | --- |
+| Gemini 4 Argon | Highest capability |
+| Gemini 3.8 Flash | Newest Flash model |
 | Gemini 3.6 Flash | Recommended balance |
-| Gemini 3.5 Flash | Frontier performance |
 | Gemini 3.5 Flash-Lite | Fast and economical |
 | Gemini 3.1 Pro Preview | Complex work |
 | Gemini 2.5 Flash | Previous stable model |
 
-Start with **Gemini 3.6 Flash**, the default: fast, inexpensive, and good at working from long source notes. Use **Flash-Lite** to keep costs lowest, and **Gemini 3.1 Pro Preview** for complex topics; preview models can change or be withdrawn at short notice. Which models you can use also depends on your Google account.
+Start with **Gemini 3.6 Flash**, the default: fast, inexpensive, and good at working from long source notes. **Gemini 3.8 Flash** is the newer Flash model at the same price, and **Gemini 4 Argon** Google's flagship; we haven't evaluated either with the plugin's prompts yet. Google has announced price increases for Argon (1 December 2026) and both Flash models (1 January 2027); the plugin's estimates follow them. Use **Flash-Lite** to keep costs lowest; preview models can change or be withdrawn at short notice. Which models you can use also depends on your Google account.
 
 ## 4. Write your first draft
 
@@ -55,7 +56,7 @@ The [getting started guide](/docs/getting-started/) walks through the brief in d
 
 ## Costs and limits
 
-Google bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job. To see costs too, enter your model's prices per million input and output tokens in **Settings → Cost, privacy, and advanced controls**, from Google's pricing page; each job then shows an estimated cost, and **Usage and cost** the month's estimate for the site. With prices entered, a **monthly cost ceiling** stops jobs that would go over it. Set a spending limit with Google as well; its invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
+Google bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job and estimates its cost from the model's list price, and **Usage and cost** shows the month's estimate for the site. Set a **monthly cost ceiling** in Settings, and a spending limit with Google, so neither can surprise you; Google's invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
 
 ## Data and privacy
 

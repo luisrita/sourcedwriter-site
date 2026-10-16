@@ -32,7 +32,7 @@ export const SELLER = {
 
 export const PLUGIN = {
   slug: 'luis-rita-ai-blog-writer',
-  version: '1.5.0',
+  version: '1.6.0',
   requiresWp: '6.0',
   testedUpTo: '7.1',
   requiresPhp: '7.4',
@@ -50,19 +50,19 @@ export const PLUGIN = {
 export const MODELS = [
   {
     provider: 'OpenAI', constant: 'AIBCG_OPENAI_API_KEY', recommended: 'GPT-5.6 Luna',
-    models: ['GPT-5.6', 'GPT-5.6 Terra', 'GPT-5.6 Luna', 'GPT-5.1', 'GPT-5', 'GPT-5 mini', 'GPT-4.1', 'GPT-4.1 mini', 'GPT-4o', 'GPT-4o mini'],
+    models: ['GPT-6 Astra', 'GPT-6.1 Sol', 'GPT-6 Luna', 'GPT-5.6 Sol', 'GPT-5.6 Terra', 'GPT-5.6 Luna', 'GPT-5.1', 'GPT-5', 'GPT-5 mini', 'GPT-4.1', 'GPT-4.1 mini', 'GPT-4o', 'GPT-4o mini'],
   },
   {
     provider: 'Anthropic', constant: 'AIBCG_ANTHROPIC_API_KEY', recommended: 'Claude Sonnet 5',
-    models: ['Claude Opus 5', 'Claude Sonnet 5', 'Claude Haiku 4.5', 'Claude Opus 4.8', 'Claude Sonnet 4.6'],
+    models: ['Claude Opus 5.5', 'Claude Sonnet 5.5', 'Claude Haiku 5.5', 'Claude Opus 5', 'Claude Sonnet 5', 'Claude Haiku 4.5', 'Claude Opus 4.8', 'Claude Sonnet 4.6'],
   },
   {
     provider: 'Google', constant: 'AIBCG_GOOGLE_API_KEY', recommended: 'Gemini 3.6 Flash',
-    models: ['Gemini 3.6 Flash', 'Gemini 3.5 Flash', 'Gemini 3.5 Flash-Lite', 'Gemini 3.1 Pro Preview', 'Gemini 2.5 Flash'],
+    models: ['Gemini 4 Argon', 'Gemini 3.8 Flash', 'Gemini 3.6 Flash', 'Gemini 3.5 Flash-Lite', 'Gemini 3.1 Pro Preview', 'Gemini 2.5 Flash'],
   },
   {
     provider: 'xAI', constant: 'AIBCG_XAI_API_KEY', recommended: 'Grok 4.5',
-    models: ['Grok 4.5', 'Grok 4.3'],
+    models: ['Grok 4.7', 'Grok 4.5', 'Grok 4.3'],
   },
 ];
 

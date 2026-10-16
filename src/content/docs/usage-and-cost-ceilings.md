@@ -13,7 +13,9 @@ Because you use your own key, you pay your AI provider directly. The plugin reco
 
 ## How cost is estimated
 
-In Settings, **Input cost / 1M units (USD)** and **Output cost / 1M units (USD)** hold your model's per-million-token prices. The plugin multiplies them by the usage the provider reports. Set them from your provider's current price list. The result is an estimate, and your provider's invoice is the final figure.
+From version 1.6, the plugin knows each model's list price per million input and output tokens, checked against the providers' pricing pages on the date shown in Settings, and multiplies it by the usage the provider reports. Under **Cost, privacy, and advanced controls**, a note below the price fields shows the list price of the selected model.
+
+To use your own prices instead, for example a negotiated rate, enter them in **Input cost / 1M units (USD)** and **Output cost / 1M units (USD)**; they then apply to every model. A model with no known list price has no estimate until you enter its prices. The result is always an estimate, and your provider's invoice is the final figure.
 
 ## Cost ceilings
 

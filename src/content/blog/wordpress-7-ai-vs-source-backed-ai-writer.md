@@ -39,7 +39,7 @@ Hosts, Jetpack and several SEO plugins also include AI writing assistants in the
 - **You review before it writes.** In Guided mode the job pauses so you can untick weak sources and edit the outline before any text exists.
 - **It writes in a defined voice.** Writer profiles hold a voice, its opinions and the words it never uses, and credit drafts to the linked author.
 - **It keeps a record.** The provider, model, time, sources and warnings are saved with each draft, and nothing is published automatically.
-- **It controls spending.** Usage is recorded per job; with your model's prices entered, it estimates each job's cost and enforces monthly ceilings for the site and each user.
+- **It controls spending.** Usage and estimated cost are recorded per job, from each model's list price, with monthly ceilings for the site and each user.
 
 [AI Blog Writer Pro](/pricing/) adds automatic research and a claim-to-source check that marks each factual claim as supported, weakly supported or unsupported.
 

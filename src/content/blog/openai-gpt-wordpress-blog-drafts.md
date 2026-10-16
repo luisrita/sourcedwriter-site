@@ -36,7 +36,10 @@ Pick the model under **Default model** in Settings. The plugin offers:
 
 | Model | Described in Settings as |
 | --- | --- |
-| GPT-5.6 | Highest capability |
+| GPT-6 Astra | Highest capability |
+| GPT-6.1 Sol | Near-flagship capability at lower cost |
+| GPT-6 Luna | Most efficient current model |
+| GPT-5.6 Sol | Previous high-capability model |
 | GPT-5.6 Terra | Balanced capability and cost |
 | GPT-5.6 Luna | Recommended, efficient high-volume generation |
 | GPT-5.1 | Previous frontier model |
@@ -47,7 +50,7 @@ Pick the model under **Default model** in Settings. The plugin offers:
 | GPT-4o | Legacy multimodal model |
 | GPT-4o mini | Low-cost legacy model |
 
-Start with **GPT-5.6 Luna**, the default: it is the most economical current model and handles source-backed drafting well. In our benchmark of 2 October 2026, a 1,200-word draft from three sources cost about one US cent on it. Move up to Terra or GPT-5.6 if drafts on complex topics need more reasoning; at list prices they cost roughly 10 and 20 times as much. Which models you can use also depends on your OpenAI account.
+Start with **GPT-5.6 Luna**, the default: it handles source-backed drafting well at a very low price. In our benchmark of 2 October 2026, a 1,200-word draft from three sources cost about one US cent on it. **GPT-6 Luna** costs half as much and keeps closer to the requested length, but in our evaluation of 16 October 2026 it wrote far fewer warnings for the editor, so check its drafts more carefully. For complex topics, try GPT-5.6 Terra or GPT-6.1 Sol, at roughly ten times Luna's price. Which models you can use also depends on your OpenAI account.
 
 ## 4. Write your first draft
 
@@ -60,7 +63,7 @@ The [getting started guide](/docs/getting-started/) walks through the brief in d
 
 ## Costs and limits
 
-OpenAI bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job. To see costs too, enter your model's prices per million input and output tokens in **Settings → Cost, privacy, and advanced controls**, from OpenAI's pricing page; each job then shows an estimated cost, and **Usage and cost** the month's estimate for the site. With prices entered, a **monthly cost ceiling** stops jobs that would go over it. Set a spending limit with OpenAI as well; its invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
+OpenAI bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job and estimates its cost from the model's list price, and **Usage and cost** shows the month's estimate for the site. Set a **monthly cost ceiling** in Settings, and a spending limit with OpenAI, so neither can surprise you; OpenAI's invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
 
 ## Data and privacy
 

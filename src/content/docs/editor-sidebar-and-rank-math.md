@@ -12,7 +12,7 @@ Generated drafts are ordinary WordPress posts made of core blocks. They keep wor
 - **Provenance**: job ID, provider, model and generation time.
 - **Warnings**: everything to check before publishing (see [Sources and citations](/docs/sources-and-citations/)).
 - **Sources**: every source used, with retrieval dates.
-- **SEO suggestions**: meta title, meta description and focus keyword.
+- **SEO suggestions**: meta title, meta description and slug, and from version 1.6 up to five **related posts to link to**: published posts found by searching the brief's primary phrase, each supporting term, and the topic. They are looked up when the sidebar opens, so posts published after the draft count too. Open each before linking to check it fits.
 - **Rewrite one section**: see below.
 
 A reminder at the bottom of the sidebar says that generated content can contain errors or unsupported claims.

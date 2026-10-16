@@ -36,10 +36,11 @@ Pick the model under **Default model** in Settings. The plugin offers:
 
 | Model | Described in Settings as |
 | --- | --- |
+| Grok 4.7 | Most capable model |
 | Grok 4.5 | Recommended frontier model |
 | Grok 4.3 | Fast general model |
 
-Start with **Grok 4.5**, the default. Use **Grok 4.3** when speed and cost matter more than depth. Which models you can use also depends on your xAI account.
+Start with **Grok 4.5**, the default. **Grok 4.7** is xAI's most capable model at the same price; we haven't evaluated it with the plugin's prompts yet. Use **Grok 4.3** when speed and cost matter more than depth. Which models you can use also depends on your xAI account.
 
 ## 4. Write your first draft
 
@@ -52,7 +53,7 @@ The [getting started guide](/docs/getting-started/) walks through the brief in d
 
 ## Costs and limits
 
-xAI bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job. To see costs too, enter your model's prices per million input and output tokens in **Settings → Cost, privacy, and advanced controls**, from xAI's pricing page; each job then shows an estimated cost, and **Usage and cost** the month's estimate for the site. With prices entered, a **monthly cost ceiling** stops jobs that would go over it. Set a spending limit with xAI as well; its invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
+xAI bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job and estimates its cost from the model's list price, and **Usage and cost** shows the month's estimate for the site. Set a **monthly cost ceiling** in Settings, and a spending limit with xAI, so neither can surprise you; xAI's invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
 
 ## Data and privacy
 

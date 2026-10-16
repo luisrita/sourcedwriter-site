@@ -36,13 +36,16 @@ Pick the model under **Default model** in Settings. The plugin offers:
 
 | Model | Described in Settings as |
 | --- | --- |
-| Claude Opus 5 | Highest capability |
+| Claude Opus 5.5 | Highest capability |
+| Claude Sonnet 5.5 | Latest balance of speed and quality |
+| Claude Haiku 5.5 | Fastest and most economical |
+| Claude Opus 5 | Previous Opus model |
 | Claude Sonnet 5 | Recommended balance |
 | Claude Haiku 4.5 | Fast and economical |
 | Claude Opus 4.8 | Previous Opus model |
 | Claude Sonnet 4.6 | Previous Sonnet model |
 
-Start with **Claude Sonnet 5**, the default: it balances writing quality and cost, and follows a writer profile's voice closely. Choose **Claude Haiku 4.5** for lower cost on shorter or simpler articles, and **Claude Opus 5** when a topic needs the most careful reasoning, at a noticeably higher price per draft. Which models you can use also depends on your Anthropic account.
+Start with **Claude Sonnet 5**, the default: it balances writing quality and cost, and follows a writer profile's voice closely. **Claude Sonnet 5.5** is the newer model at the same price; we haven't evaluated it with the plugin's prompts yet. Choose **Claude Haiku 5.5** for the lowest cost on shorter or simpler articles, and **Claude Opus 5.5** when a topic needs the most careful reasoning, at about twice Sonnet's price. Which models you can use also depends on your Anthropic account.
 
 ## 4. Write your first draft
 
@@ -55,7 +58,7 @@ The [getting started guide](/docs/getting-started/) walks through the brief in d
 
 ## Costs and limits
 
-Anthropic bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job. To see costs too, enter your model's prices per million input and output tokens in **Settings → Cost, privacy, and advanced controls**, from Anthropic's pricing page; each job then shows an estimated cost, and **Usage and cost** the month's estimate for the site. With prices entered, a **monthly cost ceiling** stops jobs that would go over it. Set a spending limit with Anthropic as well; its invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
+Anthropic bills your account for every request: the outline, the draft, and tools such as section rewrites. The plugin records the usage of each job and estimates its cost from the model's list price, and **Usage and cost** shows the month's estimate for the site. Set a **monthly cost ceiling** in Settings, and a spending limit with Anthropic, so neither can surprise you; Anthropic's invoice is the final figure. See [usage and cost ceilings](/docs/usage-and-cost-ceilings/).
 
 ## Data and privacy
 
